@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Si vous citez ces archives, référencez-les comme ci-dessous."
+title: "RATISS Archives — mémoire opérationnelle, preuves et registre QPU"
+abstract: >-
+  Compilation des preuves, du registre des tâches IBM Quantum, de l'identité et
+  des outils de RATISS Labs au 26 septembre 2026. Contient la caractérisation de
+  l'encodage temporel des identifiants de tâches IBM Quantum, vérifiée sur 66
+  tâches horodatées par la plateforme (écart médian 278 ms).
+authors:
+  - family-names: "Evina"
+    given-names: "Jonathan"
+    orcid: "https://orcid.org/0009-0000-4092-5313"
+    email: "jonathan.ratisslabs@zohomail.com"
+    affiliation: "RATISS Labs (projet indépendant, mono-auteur)"
+version: "1.0.0"
+date-released: "2026-09-26"
+license: MIT
+keywords:
+  - IBM Quantum
+  - traçabilité
+  - reproductibilité
+  - audit scientifique exécutable
+  - topologie appliquée

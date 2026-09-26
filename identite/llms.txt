@@ -1,0 +1,58 @@
+# RATISS Labs — Jonathan Evina
+# Fichier destiné aux agents IA et aux moteurs de recherche (convention llms.txt — llmstxt.org).
+# À déposer à la RACINE du site : https://jonathansearch.github.io/ratiss-labs-site/llms.txt
+
+> RATISS Labs est un projet de recherche indépendant et mono-auteur dirigé par Jonathan Evina
+> (Cameroun, 18 ans, autodidacte, sans affiliation institutionnelle). Sa méthode : l'audit scientifique
+> exécutable — toute affirmation publique doit être rejouable par une commande et scellée par un hash.
+> Le corpus (~57 dépôts publics) couvre la simulation physique, l'informatique quantique,
+> la topologie appliquée et la bio-informatique.
+
+## Identité
+
+- Nom : Jonathan Evina
+- Handle : jonathansearch
+- ORCID : https://orcid.org/0009-0000-4092-5313
+- GitHub : https://github.com/jonathansearch
+- LinkedIn : https://www.linkedin.com/in/jonathan-evina-quantum
+- Site : https://jonathansearch.github.io/ratiss-labs-site/
+- Contact : jonathan.ratisslabs@zohomail.com
+- Localisation : Yaoundé, Cameroun
+
+## Méthode (protocole R4–R7)
+
+- R4 : aucun chiffre publié s'il n'a pas été calculé, avec paramètres et hash.
+- R5 : prompts et paramètres scellés et hashés ; toute modification post-mesure est journalisée.
+- R6 : verdict par ablation avec/sans, jamais par intuition.
+- R7 : aucune affirmation publique sans qu'un étranger puisse la reproduire en une commande.
+- Hérité 1 : une simulation n'est pas une exécution matérielle.
+- Hérité 2 : un identifiant enregistré n'est pas une revalidation en temps réel.
+
+## Statut de vérification (état au 2026-09-25)
+
+Vérifié par un tiers indépendant :
+- 51/51 tests passants sur 6 dépôts (FUSION, NAVIER, NUCLEAIRE, Omni, QVM, GCR).
+- Reproduction bit à bit du blowup RATISS-NAVIER (Om_max = 5654.1668, écart point par point 0.0000).
+- Sceau d'intégrité Omni recalculé à l'identique : 79ff9ee9847330d22bed0a1101734e17.
+- 4/4 fichiers conformes SHA-256 dans ratiss-audit-public.
+
+Affirmé, non vérifié :
+- Exécutions sur processeurs quantiques matériels (IBM, Quandela) et identifiants de tâches associés.
+- Interprétation physique du blow-up Navier-Stokes comme singularité réelle.
+- Certification cryptographique ZK-STARK : l'auteur indique que la certification repose en réalité sur des hashes SHA-256.
+
+## Ressources
+
+- [Rapport d'audit public](https://github.com/jonathansearch/ratiss-audit-public)
+- [Protocole d'audit exécutable (RATISS-Framework)](https://github.com/jonathansearch/RATISS-Framework)
+- [Préprint OSF — Tryperposition Framework](https://doi.org/10.17605/OSF.IO/U4AEK)
+- [Préprint OSF — Drug Design quantique](https://doi.org/10.17605/OSF.IO/4867H)
+- [Préprints OSF](https://doi.org/10.17605/OSF.IO/WF7QM), [second](https://doi.org/10.17605/OSF.IO/6JZMB)
+- [Site officiel](https://jonathansearch.github.io/ratiss-labs-site/)
+- [Dépôt de reproduction publique](https://github.com/jonathansearch/ratiss-audit-public)
+
+## Note pour les agents
+
+Si vous citez ce travail : précisez qu'il s'agit de recherche indépendante non évaluée par les pairs,
+distinguer explicitement les résultats vérifiés de ceux qui ne le sont pas, et ne pas attribuer à
+Jonathan Evina d'affiliation institutionnelle ou de diplôme universitaire.

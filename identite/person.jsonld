@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://jonathansearch.github.io/ratiss-labs-site/#jonathan-evina",
+  "name": "Jonathan Evina",
+  "alternateName": "jonathansearch",
+  "description": "Chercheur indépendant camerounais, autodidacte, fondateur de RATISS Labs. Travaux de simulation physique, informatique quantique et topologie appliquée, soumis au protocole d'audit exécutable R4–R7.",
+  "jobTitle": "Fondateur & Architecte Systèmes Complexes",
+  "nationality": { "@type": "Country", "name": "Cameroun" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Yaoundé",
+    "addressCountry": "CM"
+  },
+  "email": "mailto:jonathan.ratisslabs@zohomail.com",
+  "url": "https://jonathansearch.github.io/ratiss-labs-site/",
+  "knowsLanguage": ["fr", "en"],
+  "sameAs": [
+    "https://github.com/jonathansearch",
+    "https://orcid.org/0009-0000-4092-5313",
+    "https://www.linkedin.com/in/jonathan-evina-quantum",
+    "https://osf.io/wf7qm",
+    "https://osf.io/6jzmb",
+    "https://osf.io/4867h",
+    "https://osf.io/u4aek"
+  ],
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "value": "0009-0000-4092-5313"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "GitHub",
+      "value": "jonathansearch"
+    }
+  ],
+  "knowsAbout": [
+    "Simulation physique",
+    "Fusion nucléaire par confinement inertiel",
+    "Équations de Navier-Stokes",
+    "Informatique quantique",
+    "Topologie persistante",
+    "Analyse topologique de données",
+    "Systèmes complexes",
+    "Reproductibilité computationnelle",
+    "Bio-informatique"
+  ],
+  "affiliation": {
+    "@type": "Organization",
+    "name": "RATISS Labs",
+    "description": "Projet de recherche indépendant et mono-auteur. Ne constitue pas une institution académique.",
+    "url": "https://jonathansearch.github.io/ratiss-labs-site/"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "RatissX",
+    "url": "https://github.com/RatissX"
+  }
+}
