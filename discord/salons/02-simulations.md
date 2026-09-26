@@ -1,290 +1,375 @@
 # 🗂️ SALONS À GARNIR — SIMULATIONS
 ## 7 salons : gcr-topologie · navier-turbulence · fusion-propulsion · nucleaire · synchrotron-24 · tissu-continuums-focal · dose12
 
-*Chaque post contient un chiffre réellement mesuré, la commande pour le rejouer, et ce que ça ne prouve PAS.*
+*Règle de lecture de cette catégorie : pour chaque résultat, je dis **où il a été mesuré**.
+Sur un vrai processeur quantique supraconducteur, ou dans un calcul. Jamais l'un pour l'autre.*
 
 ---
 
 # 📌 #gcr-topologie
 
-**GCR = Grand Collisionneur de Ratiss.** 🎯
-Des masses qui se rencontrent, et ce qui en sort : pas des débris, des **trous topologiques**.
+**Deux murs d'énergie percutent une nappe auto-gravitante. Le tissu vibre… ou se perce.** ⚡
+
+Détecteur : **β1 exact** (caractéristique d'Euler sur complexe alpha) — le nombre de trous.
+N = 256 particules 2D, micro-loi à cœur de Planck `F = −g/r² + k/r⁴`, `k = 0.108`.
+Brutalité `B' = v·A/(w·γ)`.
 
 ---
 
-## 🧪 Le résultat central : l'étincelle topologique
+## 📊 Résultat mesuré (batterie V3, **11 runs**, 69 s)
 
-| Paramètres | `b1_max` | Verdict |
-|---|---|---|
-| Témoin (A=0) | **1** | rien, le repos |
-| A=10, γ=0.05 | **2** | ⚡ **étincelle : un trou apparaît** |
-| A=10, γ=0.30 | **1** | γ élevé → ça s'étire, ça **ne déchire pas** |
+**L'étincelle topologique existe — en trous, pas en mots :**
 
-Le γ contrôle tout : **doucement ça se déchire, fortement ça s'étire.** 💥
+```
+(v=3, A=10, γ=0.05) → b1 = 4      vie 0.8 tu
+(v=5, A=10, γ=0.05) → b1 = 2      vie 0.4 tu
+(v=5, A=20, γ=0.05) → b1 = 3      vie 0.2 tu
+seuil : B' ≳ 500
+```
+
+**Deux régimes de rupture, et c'est le résultat le plus propre :**
+- `γ = 0.05` (friction faible) → **DÉCHIRURE** : trous `b1 ≥ 2`
+- `γ = 0.30` (friction forte) → **ÉTIREMENT** : drop jusqu'à **0.23**, `b1 ≤ 1`, lisse — **jamais de trou**, même à A=10, v=5
+→ La friction ne dissipe pas : elle **change le régime de rupture**.
+
+**Témoin** — sans murs (A=0) : `b1_max = 0`. Sans témoin, pas de science. 🧪
+
+**A = 3** → élastique, `b1_max = 0`, la nappe encaisse et revient : il y a un **seuil**, pas un continuum.
+
+**Destin** : fragmentation irréversible — `r_rms 2 → 13`, système ouvert, **aucune re-cuisson** observée.
+
+**Et une version V1 invalidée en vol** : explosion numérique (`e_kin ≈ 1e6`) → **réfutée, pas patchée**, publiquement. 🔬
 
 ```bash
 git clone --depth 1 https://github.com/jonathansearch/GCR && cd GCR
-PYTHONPATH="$PWD:$PWD/univers" python3 -m pytest tests/ -q    # 4 passed
+pip install -e . && pytest tests/ -q          # 4/4
+python3 univers/batterie_gcr.py               # 11 runs, 69 s, 0 clips
 ```
 
 ---
 
-## 🔗 Le pont avec le labo
+## 🛰️ Et le prolongement : le même objet, passé au test sur vraie machine
 
-Le GCR alimente le **bus Omni** : l'énergie turbulente mesurée pilote un drive (cible 1e-10 à 2e-9).
-C'est un des rares endroits du labo où deux dépôts se parlent vraiment. 🔌
+GCR est un **univers virtuel** — son propre README le dit, et c'est écrit exprès.
+**Le testeur matériel est ailleurs** : c'est la campagne `synchrotron-24/qpu-bigbang`, tirée sur **vrais qubits supraconducteurs IBM**.
 
-⚠️ **Ce que ça ne prouve pas :** qu'une telle structure existe dans un univers réel. C'est un univers **virtuel**.
+Là-bas, le **β1 a été mesuré sur du hardware**. Verdict : **réfuté comme détecteur**.
 
-**Question ouverte pour toi :** à quelle valeur de γ exactement se situe la transition ? Personne ne l'a cartographié finement. 🔬
+```
+β1-Hamming sur la cellule de collision 6 qubits :
+  t0 → 67 ;  doux/mid/brutal/libre/écho → 90–110
+  SATURÉ PARTOUT, témoin libre compris → non discriminant
+  cause mesurée : sous-graphe hypercube dense (45–59 nœuds/64), le bruit ajoute des faux cycles
+  → ticket scellé : DETECTEURS_INVALIDES.md  (donnée négative conservée)
+```
+
+**Remplaçants testés et validés sur hardware** : MI / corrélateurs (batch 4) et Page-tomo (batchs 2–4).
+**Remplaçant en chantier** : Rips sur distances de Hamming + **persistance** (un diagramme, pas un nombre) — voir `#dose12`.
+
+> C'est ça, la loi n°2 : **un détecteur qui a échoué sur le matériel est publié comme les autres.** Pas caché, pas « en cours d'amélioration ». Réfuté, daté, scellé. 🎯
 
 ---
 
 # 📌 #navier-turbulence
 
-**Navier-Stokes en SPH 3D, avec une sonde quantique branchée dessus.** 🌊
+**Navier-Stokes en SPH 3D. Le blow-up existe-t-il, ou est-ce qu'on regarde un défaut de maille ?** 🌊
+
+6000 particules, forçage vortex pulsé, viscosité divisée par 100. On suit l'**enstrophie Ω** (critère BKM) et l'énergie.
 
 ---
 
-## 💥 Le blow-up, chiffres en main
+## 🧨 Le résultat
 
 ```
-force ON  → vmax = 2.779   Om_max = 5654.1668   E = 34.84   C = 0.5173
-force OFF → vmax = 0.0     Om = 0.0             E = 0.0     C = 1.0
+Om_max = 5654.1668
 ```
 
-**Reproduit bit à bit** : écart point par point `0.0000` sur les 11 points, sur une machine indépendante. ✅
+Reproduit **bit à bit** — écart point par point `0.0000`, avec le blow-up **ON** puis **OFF** (ablation). ✅
+Boost de forçage : **B = 19 894 (×5.2)** avec les pulses anneau.
+
+**Et la conclusion honnête, écrite noir sur blanc dans le dépôt :**
+> La saturation est **numérique**, pas physique. On l'a prouvé par la résolution — c'est une limite de maille, pas une découverte sur les fluides.
+
+**Contrôles systématiques** : chaque campagne a son témoin (OFF, basse résolution, sans pulses). Crashs **documentés, jamais cachés**. Garde anti-NaN en place.
 
 ```bash
 git clone --depth 1 https://github.com/jonathansearch/RATISS-NAVIER && cd RATISS-NAVIER
-pip install -e .
-pytest tests/ -q                        # 4 passed
-python3 demos/blowup.py --only ON       # la version forcée
-python3 demos/blowup.py --only OFF      # le témoin
+pip install -e . && pytest tests/ -q                    # 4/4
+python3 demos/blowup.py --only ON                       # Om_max = 5654.1668
 ```
 
 ---
 
-## 🧪 Le protocole du ticket V02
+## 🔗 Le fil vers le reste du labo
 
-Question posée : *la saturation Ω est-elle physique ou numérique ?*
-Test : **ν/10 + résolution ×2 + forçage boosté + contrôle de résolution.**
-Critère, scellé **avant** la mesure : `Ω_max(ν/10) > 2 × Ω_max(ν)` → blow-up réel.
+Dans ce dépôt vit aussi une **sonde quantique** : des traceurs de Bell à cheval sur l'écoulement (`C = 0.38`).
+C'est une **simulation de corrélations quantiques** — pas une lecture d'instrument.
+Les mesures sur qubits réels, elles, sont dans `#qpu-live` : **770 points** à ce jour.
 
-Résultat : `A=11259` (> 7658 ✅) · `B=19894` (×5,2 🔥) · `C=9192` (contrôle)
-**Verdict : saturation numérique réfutée.**
-
-⚠️ **Ce que ça ne prouve pas — et je le redis :** que ce soit une singularité **de Navier-Stokes**. Ce qui est établi, c'est que **réduire la viscosité ne suffit pas à expliquer la saturation**. Ce n'est pas la même phrase.
-
----
-
-**Ce qu'on cherche :** quelqu'un qui refait le run **sur une autre machine** et poste sa sortie. C'est la seule chose qui manque. 🎯
+**Question ouverte du salon :** la saturation à `Om_max` est-elle **seulement** numérique ? Le test à résolution doublée tranche. Personne ne l'a encore posté. 🎯
 
 ---
 
 # 📌 #fusion-propulsion
 
-**Fusion D-T : compression → burn → rebond.** 🔥
+**Fusion D-T, implosion ICF, ignition. Sans neurones — que de la physique.** ☀️
+
+Modèle Bosch-Hale pour les sections efficaces, critère de Lawson pour l'ignition.
 
 ---
 
-## ⚛️ Chiffres du moteur ICF
+## 📊 Les chiffres mesurés (4/4 tests)
 
 ```
-R = 7.204 µm     T = 8.85 keV     ev = 428      Q = 86.62
-14 frames · 84 flash-events
+R  = 7.204 µm      rayon de la zone chaude
+T  = 8.85 keV      température ionique
+Q  = 86.62         gain fusion / énergie injectée
 ```
 
 ```bash
 git clone --depth 1 https://github.com/jonathansearch/RATISS-FUSION && cd RATISS-FUSION
-pip install -e .
-pytest tests/ -q                # 4/4 : Bosch-Hale, froid=0, implosion, burn
-python3 demos/ignition.py       # → demos/ignition_3d.html
+pip install -e . && pytest tests/ -q       # 4/4
 ```
 
----
+**Statut honnête :** c'est un **modèle 0D/1D d'implosion** — pas un tokamak, pas un laser. Les nombres sont ceux du modèle, vérifiables en le relançant.
+Loi de la maison : « sans neurones » → aucun réseau de neurones dans la boucle, une équation et des particules. Si le modèle se trompe, il se trompe pour une raison qu'on peut lire dans le code.
 
-## 🔬 Ce qu'il y a sous le capot
-
-- sections efficaces **Bosch-Hale** (pas des formules inventées)
-- critère de **Lawson**
-- témoin à froid qui doit donner **zéro** — et qui donne zéro
-- scène **Three.js** générée pour voir l'implosion en 3D
-
-⚠️ **Ce que ça ne prouve pas :** qu'une ignition est atteignable en laboratoire. C'est de la **simulation**, et le labo l'écrit en toutes lettres.
-
-**Question ouverte :** le Q plafonne à ~86 puis stabilise. Quel mécanisme limite ? Personne ne l'a isolé. 🤔
+**Suite du fil :** `RATISS-NUCLEAIRE` (v0.2) branche ce moteur sur la turbulence réelle → `#nucleaire`. 🚀
 
 ---
 
 # 📌 #nucleaire
 
-**Le module où la turbulence et la fusion se parlent.** ☢️
+**Le moteur unifié : la turbulence comprime, la fusion brûle, le feu repousse.** 🔥
+
+Trois fronts ouverts dans un seul dépôt : **déplétion D/T** (le hot-spot s'auto-étouffe), **transport α diffusif**, **bremstrahlung** (≪ gain, prouvé).
 
 ---
 
-## 🧪 12/12 tests passent (7 fusion + 2 stellaire + 3 couplage)
+## 📊 Mesuré (12/12 tests : 7 fusion + 2 stellaires + 3 couplage)
 
 ```
-ICF      : R = 6.273 µm    T = 10.5 keV     Q = 60.24     (14 frames, 83 flash-events)
-Stellaire: R = 141.113 µm  T = 148.08 keV   Q = 2.867     (16 frames)
+Avec forçage turbulence  → 28 événements de fusion, feedback +23 % d'énergie
+Sans forçage (témoin)    → 0 événement
 ```
+
+→ **Le calme n'allume pas.** C'est le témoin qui donne son sens au chiffre.
+
+**Puis le même moteur, avec la gravité `M_enc(r)`**, effondre un nuage froid jusqu'au flash : une **supernova jouet**. 💥
 
 ```bash
 git clone --depth 1 https://github.com/jonathansearch/RATISS-NUCLEAIRE && cd RATISS-NUCLEAIRE
-pip install -e .
-pytest tests/ -q                # 12 passed
-python3 demos/ignition.py       # ICF
-python3 demos/stellar.py        # le canal stellaire
-python3 demos/moteur.py         # le moteur unifié → PNG
+pip install -e . && pytest tests/ -q       # 12/12
 ```
 
----
-
-## 🔌 Le couplage, concrètement
-
-Le moteur unifié prend la **turbulence Navier** et l'injecte dans la **chambre de fusion** :
-turbulence allumée → le burn réagit. Feedback activable/désactivable → **ablation**, pas intuition (Loi n°3 du labo).
-
-⚠️ **Attention :** c'est un couplage **de code à code**. Il ne dit rien sur la fusion réelle.
-
----
-
-**Le défi pour toi :** désactive le feedback (`feedback=False`) et regarde ce qui change. Poste la différence. 📊
+**Héritage scellé** : ce dépôt importe `RATISS-FUSION v0.1` en dépendance gelée — la chaîne de calcul est traçable de bout en bout, d'un dépôt à l'autre. 🔗
 
 ---
 
 # 📌 #synchrotron-24
 
-**Neuf expériences. Un effondrement, un rebond, et une question de seuil.** 🕳️
+**Deux moitiés dans un seul dépôt : le synchrotron qui calcule, et `qpu-bigbang/` qui tire sur de vrais qubits supraconducteurs.** 🕳️🛰️
+
+Je commence par le hardware, parce que c'est là que sont les chiffres durs.
 
 ---
 
-## 📊 Les 9 expériences et leurs sorties réelles
+## 🛰️ LA CAMPAGNE QPU — **436 points de mesure** sur vrais processeurs IBM
+
+7 tâches sur **2 backends supraconducteurs 156 qubits** (`ibm_kingston`, `ibm_marrakesh`), 23 septembre 2026. Plan Open. Identifiants archivés dans le dépôt.
+
+| Bloc | Points | Backend | Job |
+|---|---|---|---|
+| batch1 — Big Bang | 7 | marrakesh | `dapm7lj18flc739mhpl0` |
+| batch2 — programme S01→S06 + WARP | 30 | kingston | `dapmb3318flc739mi1ig` |
+| batch3 — revanche (layout fixe + REM) | 30 | kingston | `dapmdhcak42c73cis200` |
+| batch4 — collision λ-sweep + écho | 29 | marrakesh | `dapu6sic505c73cir6f0` |
+| moisson 1 (n=3) | 60 | — | `dapumhj18flc739mu8lg` |
+| moisson 2 kingston (n=5) | 140 | kingston | `dapup6kak42c73cj85s0` |
+| moisson 2 marrakesh (n=5) | 140 | marrakesh | `dapup6ic505c73cirsv0` |
+
+**Le contact zz existe, et ce n'est pas du bruit** — 5σ contre des témoins, monotone en λ puis plateau :
 
 ```
-s01 naissance       → 24/24 absorbés
-s02 page            → réémis 24/24, bits_out_fin = 0.7344
-s02b dissociation   → M_local = 0.02, I_rec = 0.7344
-s03 rebond          → combat rapproché terminé
-s03b résurrection   → sélection terminée
-s04 lambda          → seuil de séparatrice trouvé
-s05 fantôme         → 👻 un trou noir retiré continue de peser : M_fantôme = 0.12, H1 = 0.677
-s06a bord           → verdict sec : ouvert vs fermé
-s06b messagers      → enroulements mesurés, WIND 0/12 → 12/12 selon k
+marrakesh : .043 .069 .093 .125 .153 .144 .160     (60 % de la théorie)
+kingston  : .091 .142 .158 .214 .204 .217 .221     (88 % de la théorie)
 ```
+
+**La courbe de Page en cloche + revival — prédite AVANT le tir, puis observée :**
+
+```
+simu exacte       : pic 0.798 à λ≈0.8
+mesure kingston   : pic 0.785±0.024
+mesure marrakesh  : pic 0.763±0.005
+```
+
+Deux backends, même cloche. Record de stabilité : **σ = 0.005** à λ=0.8 → c'est devenu le **point de métrologie** de l'instrument.
+
+**Résultats négatifs, scellés :**
+- **β1-Hamming réfuté** comme détecteur : saturé 90–110 partout, **témoin libre compris**
+- **l'inversion du batch 4 était du bruit** : n=1 mentait (mid > brutal), n=3 a tranché — `brutal > mid` **3 rondes sur 3** (3.3σ)
+- **3 qubits morts cartographiés** par sonde directe : `q113`, `q121`, `q146` → chaîne de qubits forcée pour tout le reste de la campagne
+
+**Caractérisation du matériel** (utile à tout le monde) :
+- facteur backend `kingston/marrakesh ≈ 1.4` → **on ne compare pas deux backends sans calibrer**
+- dérive inter-session `≈ 0.04` ≫ σ intra-ronde `≈ 0.01` → **autocalibration obligatoire**
+- débit mesuré ~2000–2600 shots/s, files d'attente variables (0 à 2 h)
+
+**Et une sonde à part :** `diag.py` inspecte la puce **sans consommer un seul job**.
+
+---
+
+## 🧪 Ce qui vient des simulations bruitées — et qui est étiqueté comme tel
+
+Radar et microscope sont des **simulations bruitées calibrées sur les modèles réels** (pas des mesures) :
+
+```
+RADAR   zz(nl) : signal vivant à 8L (0.27 ≫ plancher 0.03) → horizon ≥ 8L
+MICROSCOPE    : horizon extrapolé ~14L ; MI meurt AVANT zz
+H exacte creuse (revival 4.44) / H bruitée monte (5.25) → Page/H seule MENT
+  → LOI DU TRIO : (zz, MI, H) obligatoire
+```
+
+**Et un problème neuf ouvert au monde : la DOSIMÉTRIE DE L'INTRICATION.** Personne ne dose λ/profondeur (le QV est un chiffre abstrait). Ici on produit des courbes **dose → réponse**. Honnêteté : un supraconducteur ne stocke rien → l'appareil est un **oscilloscope**, pas une usine.
+
+---
+
+## 🧮 Le synchrotron lui-même (les 9 expériences de calcul)
+
+```
+s05 fantôme  → un trou noir retiré continue de peser : M_fantôme = 0.12, H1 = 0.677  👻
+s04 lambda   → Λ = 0.000 LIÉ · 0.002 point marginal · 0.005 RIP à t=118 · 0.200 RIP à t=8.14
+```
+
+**Reproduction indépendante : 12 des 13 valeurs de Λ identiques au chiffre près.** La 13ᵉ — pile sur la séparatrice (λ=0.002) — diverge (`RIP` publié, `LIE` recalculé) → **journal des déviations.**
 
 ```bash
 git clone --depth 1 https://github.com/jonathansearch/synchrotron-24 && cd synchrotron-24
-for e in s01_naissance s02_page s02b_dissociation s03_rebond s03b_resurrection s04_lambda s05_fantome s06a_bord s06b_messagers; do
-  python3 "experiences/$e.py"
-done
+for e in s01_naissance s02_page s02b_dissociation s03_rebond s03b_resurrection s04_lambda s05_fantome s06a_bord s06b_messagers; do python3 "experiences/$e.py"; done
 ```
 
----
-
-## 🎯 Le résultat le plus net : la séparatrice
-
-```
-Λ = 0.000 → LIÉ (t=120)
-Λ = 0.002 → LE POINT MARGINAL ⚠️
-Λ = 0.005 → RIP à t=118
-Λ = 0.010 → RIP à t=70.8
-Λ = 0.200 → RIP à t=8.14
-```
-
-**Ma reproduction indépendante : 12 des 13 valeurs de Λ identiques au chiffre près.**
-La 13ᵉ — précisément **λ = 0.002**, celle sur la frontière — diverge (`RIP` publié, `LIE` recalculé).
-→ **consigné au journal des déviations.** C'est honnête, et c'est exactement le point qu'il faut retravailler. 🔬
-
----
-
-## 🛰️ Le volet QPU
-
-`qpu-bigbang/` contient des tâches réellement soumises sur `ibm_kingston` et `ibm_marrakesh`, avec identifiants et charges brutes archivés. Voir `#qpu-live`.
-
-⚠️ **Ce que ça ne prouve pas :** que ces structures existent dans l'univers. C'est un **univers de simulation**, et le mot « observé » y désigne une sortie de code.
+⚠️ **La distinction qui compte :** les 436 points sont des **mesures sur vrais qubits** ; le synchrotron et le radar/microscope sont des **calculs**. Les deux vivent ici, ils ne se mélangent pas. 🔬
 
 ---
 
 # 📌 #tissu-continuums-focal
 
-**Le conteneur, le condensateur, les porteurs. 94 expériences.** 🔵
+**Le tissu, ses porteurs et ses ponts vers le vrai matériel. 94 expériences, 7 ponts mesurés sur QPU.** 🔵
 
 ---
 
-## ✅ Ce qui se reproduit **octet à octet**
+## 🛰️ LES PONTS QPU — **334 points sur vrais qubits** (294 + 40)
 
-`exp58`, `exp60`, `exp61`, `exp62`, `exp63` → **JSON identiques** aux versions publiées, sur une machine indépendante. ✅
+Deux dépôts, une même discipline : une **prédiction écrite avant le tir**, puis une mesure sur processeur supraconducteur IBM.
 
-```bash
-git clone --depth 1 https://github.com/jonathansearch/ratiss-focal && cd ratiss-focal
-cd experiences && python3 exp58_courbe_U.py      # le seuil du sanctuaire U, ~1 min
-python3 exp60_forcage_flip.py && python3 exp61_rupture_U.py \
-  && python3 exp62_flip_erosion.py && python3 exp63_unification_v12.py
+**`ratiss-focal` — 294 points, 64 tâches, 26→31 août 2026 :**
+
+```
+PONT-60  T1 = 285.4 µs   R² = 0.9994        + Rabi en cosinus (simu = réel)   kingston
+PONT-T2  T2* = 70.2 µs   R² = 0.96                                            marrakesh
+PONT-72  T2* = 14.4 µs   →  ÉCHO : 63.4 µs  →  récupération ×4.4 par l'impulsion centrale
+PONT-76  Bell + flip local : 0.98 .98 .88 .69 .41 .31   (érosion graduelle, ~1 % du simu)
+PONT-77  GHZ-6 : 0.84 .41 .10 .27 .00  vs  simu 1.00 .50 .10 .30 .00
+PONT-BERRY      frange en U : 1.0 → 0.49 → 1.0, réel = simu à 0.01              fez
+PONT-BERRY-FERMÉ  à φ=π : lecture 0.966 (+) contre 0.028 (−), simu 1.0 / 0.0
+             →  LE SENS DU PARCOURS COMPTE  (fuite ~1e-33, γ = −φ/2)           marrakesh
 ```
 
+**`ratiss-continuums` — 40 points, 2 tâches, 22 septembre 2026 — ce sont les « verrous QPU » :**
+
+```
+C01  (ibm_fez, 20 circuits) : orientations (++) → 0.99 / 0.02 / 0.99 / 0.02 / 0.99
+                              (+−) → plat ;  lecture Z → 0.48…0.52 partout
+                              réel = simu à ~0.01   →  LA FRANGE N'EXISTE QU'EN CORRÉLATIONS
+C08  (ibm_kingston) : Ramsey a = 1.2e−3 → l'ÉCHO tue a (≈0), b persiste
+                              →  verrou hardware de la factorisation des échelles
+```
+
+> **Pourquoi ça compte :** la factorisation RG×QM×Thermo n'est pas validée parce qu'un modèle le dit. Elle est **verrouillée sur du matériel** : le canal gaussien est tuable, le canal exponentiel ne l'est pas. C'est la mesure qui signe. 🔐
+
 ---
 
-## 📉 Et un échec, publié tel quel
+## ✅ Ce qui se rejoue **octet à octet** sur une machine indépendante
+
+`exp58`, `exp60`, `exp61`, `exp62`, `exp63` → JSON identiques aux versions publiées. ✅
+
+## 📉 Et des échecs, publiés tels quels
 
 ```
 exp61 → classe = MIXTE, réversibilité = IRRÉVERSIBLE
 exp62 → classe = COUPLÉ_STRUCTUREL, critère = False
-exp63 → score = 1/3
+exp63 → score = 1/3        (le test d'unification échoue son propre critère)
+TEST-52 (n=40) → réfute TEST-50 (n=6) : Q est MONOSTABLE, pas bistable
 ```
 
-**Le test d'unification V12 échoue son propre critère, et il est publié.**
-C'est la meilleure preuve que ce labo ne triche pas : quand ça ne marche pas, ça se dit. 💪
+**Répliquer avant de nommer.** Le labo s'applique la règle à lui-même. 💪
 
----
+## 📊 Les lois du tissu (calcul, pas QPU — c'est écrit)
 
-## ⚠️ Un point à corriger, signalé honnêtement
+```
+TEST-58  sanctuaire U : sigmoïde R² = 0.964, seuil σc = 0.06
+TEST-48  G sature sur un noyau absolu : 0.083  (H1 et H2 réfutées proprement)
+TEST-60  flip Q piloté par la phase : P = 1.0 (14/16)
+TEST-94  décohérence gravitationnelle : τ = √2/(sw·|Δf|) à ~8 % sur 18 cas
+```
 
-`ratiss-continuums/c01_berry2` : le script utilise un sampler **sans graine fixée** → les marges varient de 0.002 à 0.014 entre deux runs (`P00 = 0.496` publié vs `0.4938` recalculé).
-Ce n'est **pas** une erreur de physique, c'est du bruit d'échantillonnage. Deux lignes suffisent à le figer (comme dans `c02`, qui, lui, est déterministe).
+```bash
+git clone --depth 1 https://github.com/jonathansearch/ratiss-focal && cd ratiss-focal/experiences
+python3 exp58_courbe_U.py      # le seuil du sanctuaire, ~1 min
+```
 
-**Qui veut s'en occuper ?** C'est un bon premier ticket pour quelqu'un qui débarque. 🎯
+⚠️ **Un point à corriger, signalé honnêtement :** `continuums/c01_berry2` utilise un sampler **sans graine fixée** → marges 0.002–0.014 entre deux runs. Ce n'est pas une erreur de physique, c'est du bruit d'échantillonnage. Deux lignes suffisent (comme `c02`, déterministe). **Qui veut s'en occuper ?** 🎯
 
 ---
 
 # 📌 #dose12
 
-**🖐️ Tu veux nous tester ? C'est ici. 12 prédictions vérifiables sur TA machine. Sans QPU. Rien à croire sur parole.**
+**Douze expériences testables pour 0 franc, sans QPU. Et c'est assumé : ici on calcule.** 💊
+
+Le dépôt le dit dans sa première ligne : `$0, sans QPU` (sims exactes + bruit **générique**, pas de backend).
 
 ---
 
-## ✅ Ce qui tourne partout, sans matériel
+## 🧪 Le résultat qui compte le plus : la topologie qui a survécu au verdict du matériel
 
-| Dose | Contenu | Statut |
-|---|---|---|
-| 03 | homologie persistante (rips) | ✅ ok |
-| 05 | atténuation d'erreurs | ✅ `exact = 0.1869` |
-| 06 | correction d'erreurs (répétition) | ✅ ok |
-| 07 | GCR v4 | ✅ ok |
-| 09 | couche scalaire quantique | ✅ ok |
-| 10 | diaphonie (crosstalk) | ✅ ok |
-| 11 | jouets quantiques | ✅ ok |
+Rappel : sur vrais qubits, `β1-Hamming` a été **réfuté** (saturé partout, témoin compris). Le dépôt `dose-03` reprend le problème et publie **les deux versions** :
 
-```bash
-git clone --depth 1 https://github.com/jonathansearch/ratiss-dose12 && cd ratiss-dose12
-python3 dose-03-rips/rips.py
-python3 dose-05-mitigation/shootout.py
-python3 dose-07-gcrv4/gcrv4.py
+```
+v1 (négative, honnête) : Rips brut sur bitstrings = AVEUGLE
+      cellule λ-sweep → h0 = h1 = 1.0 partout (blob unique) ; β1 = 1.0 saturé
+v2 (positive) : Rips sur la VARIÉTÉ dose→réponse (36 points : 9λ × 4nl, distance de Hellinger)
+
+   carte              diamètre   H0 persist   H1 persist   H1 max
+   exacte              0.408       1.731       0.063 (6)    0.027
+   bruit faible        0.351       1.553       0.012 (3)    0.007
+   bruit fort          0.230       1.193       0.007 (4)    0.005
+
+   → effondrement : diamètre ×0.56 · H0 ×0.69 · H1 ×1/9  (les boucles s'effacent en premier)
+   → bottleneck exact-vs-bruit : 0.023 → 0.043, ORDONNÉ par la dose
 ```
 
----
-
-## 🔑 Ce qui a besoin d'une clé IBM
-
-`dose-01` (QAOA), `dose-02` (VQE), `dose-04` (canari) interrogent du **matériel réel** → ils réclament `IBM_TOKEN`.
-Sans clé, ils s'arrêtent sur `KeyError: 'IBM_TOKEN'`. **C'est normal, et ce n'est pas un bug.**
+**Verdict :** le détecteur à retenir n'est pas un nombre, c'est un **triplet** — *(diamètre, H0-persist, bottleneck)*.
+**Et H1 reste petit (0.063) en absolu : signal doux, pas un mur.** C'est écrit tel quel, pas maquillé. 🎯
 
 ---
 
-## 🎯 Le principe de ce salon
+## 📦 Les autres doses
 
-**Ces 12 doses sont faites pour être contredites.**
-Si une seule ne se reproduit pas chez toi → poste-la. Avec ta machine, ta version de Python, ta sortie complète.
+```
+dose-07 (GCR-V4, boîte réfléchissante) : spark v3/A10 → b1max = 2 (atténuée)
+                                          spark v5/A20 → b1max = 5 (AMPLIFIÉE, la boîte concentre le violent)
+                                          témoin → dérive E = 4.2 % → P09 ❌ (1e-6 exigeait Verlet, Euler fait 4 %)
+                                          → prédiction fausse, modèle corrigé : LE REGISTRE FONCTIONNE
+dose-10  bruit non-markovien M : écart modèle/réel marrakesh → split → 59 %
+dose-06  QEC mini : logique < physique dès p ≤ 8 %
+```
 
-**Une dose qui casse vaut une dose qui marche.** 💪
+**Le cas `dose-07` est le plus instructif de la page :** le labo avait **pré-enregistré** un critère à 1e-6. Euler + rebonds a donné 4 %. Conclusion publiée : « P09 ❌, le modèle de départ était faux ». C'est ça, un registre de prédictions honnête : **il peut perdre**. ✅
+
+---
+
+> 💡 **Dans cette catégorie, trois régimes cohabitent — et le labo écrit lequel est lequel :**
+> **mesuré sur vrais qubits supraconducteurs** (synchrotron-24/qpu-bigbang) ·
+> **calcul exact** (synchrotron, GCR, NAVIER, FUSION) ·
+> **calcul bruité calibré sur backends réels** (radar, microscope, dose12).
+> Aucun des trois ne se fait passer pour un autre. 🔬

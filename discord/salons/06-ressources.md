@@ -13,26 +13,26 @@
 
 ## 🧭 Les dépôts par domaine
 
-**🌊 Physique & simulation**
-- [`RATISS-NAVIER`](https://github.com/jonathansearch/RATISS-NAVIER) — Navier-Stokes SPH 3D + sonde quantique
-- [`RATISS-FUSION`](https://github.com/jonathansearch/RATISS-FUSION) — fusion D-T, implosion ICF
-- [`RATISS-NUCLEAIRE`](https://github.com/jonathansearch/RATISS-NUCLEAIRE) — couplage turbulence × fusion
-- [`synchrotron-24`](https://github.com/jonathansearch/synchrotron-24) — effondrement, rebond, seuil de séparatrice
-- [`GCR`](https://github.com/jonathansearch/GCR) — collisionneur virtuel, étincelle topologique
+**🌊 Physique & calcul**
+- [`RATISS-NAVIER`](https://github.com/jonathansearch/RATISS-NAVIER) — Navier-Stokes SPH 3D, blow-up rejoué bit à bit (`Om_max = 5654.1668`)
+- [`RATISS-FUSION`](https://github.com/jonathansearch/RATISS-FUSION) — fusion D-T, implosion ICF (`R = 7.204 µm`, `T = 8.85 keV`, `Q = 86.62`)
+- [`RATISS-NUCLEAIRE`](https://github.com/jonathansearch/RATISS-NUCLEAIRE) — moteur unifié turbulence × fusion (28 événements, feedback +23 %)
+- [`synchrotron-24`](https://github.com/jonathansearch/synchrotron-24) — 9 expériences d'effondrement **+ `qpu-bigbang/` : campagne sur vrais qubits, 436 points**
+- [`GCR`](https://github.com/jonathansearch/GCR) — collisionneur **virtuel** : étincelle topologique, `β1` exact, 11 runs
 
 **⚛️ Quantique**
-- [`RATISS-QVM`](https://github.com/jonathansearch/RATISS-QVM) — ordinateur quantique virtuel, cQED, T1/T2
-- [`ratiss-dose12`](https://github.com/jonathansearch/ratiss-dose12) — 12 expériences testables sans QPU
-- [`ratiss-continuums`](https://github.com/jonathansearch/ratiss-continuums) — le tissu, l'enroulement, la cohérence
+- [`RATISS-QVM`](https://github.com/jonathansearch/RATISS-QVM) — ordinateur quantique virtuel, cQED, **jumeaux IBM calibrés sur moissons réelles**
+- [`ratiss-focal`](https://github.com/jonathansearch/ratiss-focal) — 94 expériences, sanctuaire, **7 ponts mesurés sur vrais qubits (294 points)**
+- [`ratiss-continuums`](https://github.com/jonathansearch/ratiss-continuums) — le tissu, Berry, **2 verrous QPU (40 points)**
+- [`ratiss-dose12`](https://github.com/jonathansearch/ratiss-dose12) — 12 expériences testables à 0 franc, plus le détecteur topologique de remplacement
 
-**🧠 Théorie & interface**
-- [`ratiss-focal`](https://github.com/jonathansearch/ratiss-focal) — 94 expériences, conteneur/condensateur/porteurs
-- [`RATISS-Omni`](https://github.com/jonathansearch/RATISS-Omni) — bus mémoire + boucle fermée
+**🧠 Mémoire & interface**
+- [`RATISS-Omni`](https://github.com/jonathansearch/RATISS-Omni) — bus mémoire + boucle fermée + sceau d'intégrité
 
 **📜 Méthode & preuves**
 - [`RATISS-Framework`](https://github.com/jonathansearch/RATISS-Framework) — le protocole d'audit, exécutable
 - [`ratiss-audit-public`](https://github.com/jonathansearch/ratiss-audit-public) — registre d'audit + journal des déviations
-- [`RATISS-ARCHIVES`](https://github.com/jonathansearch/RATISS-ARCHIVES) — **archives opérationnelles, captures, outils, mémoire**
+- [`RATISS-ARCHIVES`](https://github.com/jonathansearch/RATISS-ARCHIVES) — **archives opérationnelles : captures, registre QPU, outils, mémoire**
 
 ---
 
@@ -45,28 +45,28 @@ for f in PUBLIC-AUDIT-REPORT-EN.md NOTICES-OSF-2026-09-12.md JOURNAL-DEVIATIONS.
 done
 ```
 
-**2. Le labour labo** — 51 tests attendus, sur 6 dépôts
+**2. Lancer le labo** — les tests, sur une machine à toi
 ```bash
 git clone --depth 1 https://github.com/jonathansearch/RATISS-NAVIER && cd RATISS-NAVIER
 pip install -e . && pytest tests/ -q     # 4 passed
+python3 demos/blowup.py --only ON        # Om_max = 5654.1668
 ```
 
-**3. Dater un identifiant de tâche IBM**
+**3. Dater un identifiant de tâche IBM — sans compte**
 ```bash
-python3 decode_job_id.py dapm7lj18flc739mhpl0
-# → 2026-09-23 05:29:58 UTC
+python3 decode_job_id.py dapm7lj18flc739mhpl0     # → 2026-09-23 05:29:58 UTC
+python3 decode_job_id.py dap7su82fm4c73f6dsrg     # → 2026-09-22 13:11:21 UTC
 ```
 
 ---
 
-## 📌 Note de méthode
+## 📌 Deux notes de méthode
 
-Tous ces dépôts utilisent **des chemins absolus `/home/user/<dépôt>`** et des **imports croisés** (NAVIER ↔ NUCLEAIRE ↔ Omni).
+**1. Chemins absolus.** Les dépôts utilisent des chemins `/home/user/<dépôt>` et des imports croisés (NAVIER ↔ NUCLEAIRE ↔ Omni).
 → **Clone-les côte à côte sous `/home/user`** avant d'exécuter, sinon les imports échouent.
+Ce défaut est connu, il est dans `#carnet-de-pannes`, et il attend quelqu'un. 🛠️
 
-**Ce défaut est connu, il est dans `#carnet-de-pannes`, et il attend quelqu'un pour le corriger.** 🛠️
-
-Pas de compte à créer, pas de clé à demander, pas d'autorisation. `git clone` et c'est tout. 🌍
+**2. Ce qui consomme une clé.** Les scripts de tir QPU lisent une clé depuis la variable d'environnement `IBM_TOKEN` — **jamais commitée, jamais affichée**. Tout le reste tourne sans compte, sans clé, sans autorisation. 🌍
 
 ---
 
@@ -91,12 +91,30 @@ Pas de compte à créer, pas de clé à demander, pas d'autorisation. `git clone
 
 ---
 
+## 🗂️ Les documents internes qui font référence
+
+| Document | Ce qu'il contient | Où |
+|---|---|---|
+| `RAPPORT_DECOUVERTES.md` | les 7 découvertes de la campagne QPU (D1→D7), avec preuves et limites | `synchrotron-24/qpu-bigbang/` |
+| `SYNTHESE_MOISSONS.md` | exploitation des moissons : zz(λ), Page(λ), horizons, dérive | idem |
+| `PASSERELLE-REEL.md` | les 7 ponts QPU mesurés + tous les outils en ligne gratuits pour confronter au réel | `ratiss-focal/` |
+| `DETECTEURS_INVALIDES.md` | le détecteur réfuté, sa cause mesurée et ses remplaçants | `synchrotron-24/qpu-bigbang/qpu-collision/` |
+| `REGISTRE-QPU.md` | registre des tâches, comptabilité du quota, limites | `RATISS-ARCHIVES/preuves/qpu/` |
+| `JOURNAL-DEVIATIONS.md` | tout ce qui n'a pas reproduit, publié | `ratiss-audit-public` |
+
+---
+
 ## 📖 Le protocole maison (à lire avant de débattre)
 
 **Les trois lois du labo :**
 1. **Déclaré vs mesuré** — aucune affirmation sans son chiffre.
 2. **Les bugs se documentent**, ils ne se cachent pas.
 3. **Ce qui est prouvé devient public** — tout est sous licence MIT.
+
+**Les étiquettes obligatoires — un résultat se range dans UNE catégorie :**
+- 🛰️ **mesuré sur QPU réel** (identifiant archivé)
+- 🧮 **calcul exact** (rejouable bit à bit)
+- 🌫️ **calcul bruité calibré sur un backend réel** (modèle, pas mesure)
 
 **Deux principes hérités :**
 - Une **simulation** n'est pas une exécution matérielle.
@@ -111,9 +129,10 @@ Pas de compte à créer, pas de clé à demander, pas d'autorisation. `git clone
 | Sections efficaces fusion | **Bosch-Hale** |
 | Critère d'ignition | **Lawson** |
 | Décohérence cQED | **Purcell** · **Gambetta** |
-| Topologie | homologie persistante, `ripser`, `gudhi` |
+| Résonateur / extraction Q | **Probst 2015** (cercle de Kasa) |
+| Topologie | homologie persistante, complexe alpha, `ripser`, `gudhi` |
 | Quanta | `qiskit`, `qiskit-aer`, `qiskit-ibm-runtime` |
-| Matériel | architecture **Heron r2** (156 qubits) |
+| Matériel | architecture **Heron r2** (156 qubits), 15 mK |
 
 ---
 
@@ -144,17 +163,23 @@ Pas de compte à créer, pas de clé à demander, pas d'autorisation. `git clone
 ## 📝 En chantier
 
 **1. Datation et audit de tâches IBM Quantum à partir de l'identifiant seul** ⭐
-Les 9 premiers caractères d'un identifiant de tâche IBM encodent son instant de création (`base32(id[:9]) / 8192`).
-Étalonné sur **66 tâches horodatées par la plateforme** : écart médian **278 ms**.
-→ *Intérêt : trace l'origine temporelle d'un identifiant sans clé ni compte. Vérifiable en une commande.*
+Les 9 premiers caractères d'un identifiant encodent son instant de création : `base32(id[:9]) / 8192`.
+Étalonné sur **64 tâches horodatées par IBM** : écart médian **83 ms**, maximum **782 ms**.
+→ *Un identifiant devient datable et confrontable sans clé ni compte. Vérifiable en une ligne.*
 **Statut :** matière complète, rédaction à faire. **Qui veut aider ?**
 
-**2. Reproductibilité bit à bit d'un blow-up en SPH** 🌊
-`Om_max = 5654.1668`, écart point par point `0.0000`, reproduit sur une machine indépendante.
-**Statut :** le résultat est là, il faut choisir le format.
+**2. Campagne de mesures sur processeurs supraconducteurs 156 qubits** 🛰️
+770 points de mesure, 4 campagnes, 3 backends, identifiants archivés.
+Résultats phares : contact zz **5σ** (88 % de la théorie sur un backend) · courbe de Page en cloche **reproduite sur 2 puces** (pic 0.785 / 0.763) · récupération par écho **×4.4** · Berry fermé : **le sens compte** (0.966 vs 0.028).
+Inclut **les échecs** : détecteur réfuté, qubits morts, inversion tranchée par la statistique.
+**Statut :** les chiffres sont là, il manque la rédaction. **C'est le texte le plus fort du labo.**
 
-**3. Note technique : les chemins absolus codés en dur** 🛠️
-117 occurrences dans les dépôts. Casse tout clone. **Statut :** à corriger, puis à documenter.
+**3. Dosimétrie de l'intrication — un problème neuf** 🎚️
+Personne ne dose λ/profondeur (le quantum volume est un chiffre abstrait). Ici : des courbes **dose → réponse**, avec un instrument dont l'instrumentation est documentée (témoins, autocalibration, dérive).
+**Statut :** méthode et données en place, angle à choisir.
+
+**4. Les chemins absolus codés en dur : 117 occurrences, un cas d'école** 🛠️
+Pourquoi un dépôt scientifique doit être clonable partout. Petit texte, forte utilité. **Statut :** à corriger d'abord, à documenter ensuite.
 
 ---
 
@@ -162,6 +187,7 @@ Les 9 premiers caractères d'un identifiant de tâche IBM encodent son instant d
 
 ```
 📰 TITRE DE TRAVAIL :
+🏷️ TERRAIN :            QPU réel / calcul exact / calcul bruité
 🎯 LA PHRASE QU'ON VEUT PROUVER :
 📊 LES CHIFFRES (et où ils viennent) :
 ⚠️ CE QU'ON NE PROUVE PAS :
@@ -175,7 +201,8 @@ Les 9 premiers caractères d'un identifiant de tâche IBM encodent son instant d
 
 **Un brouillon qui annonce plus que ce qu'il ne mesure est refusé.** ⛔
 
-Pas de « nous démontrons que… » s'il n'y a qu'une simulation.
+Pas de « nous démontrons que… » s'il n'y a qu'un calcul.
+Pas de « mesuré sur QPU » sans identifiant de tâche archivé.
 Pas de « validé par… » s'il n'y a qu'un autotest.
 Pas de mot « découverte » pour un résultat non reproduit par un tiers.
 
