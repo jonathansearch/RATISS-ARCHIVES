@@ -137,3 +137,14 @@ git branch -M main
 
 Le dépôt distant existe déjà : `https://github.com/jonathansearch/RATISS-ARCHIVES` (public, branche `main`).
 Les 24 posts de salons Discord sont dans `discord/salons/` (index de copie : `discord/salons/INDEX.md`).
+
+---
+
+## 🛰️ MISE À JOUR DU 26/09 (soir) — LE HUB DISCORD TOURNE
+
+**Tout est détaillé dans `README.md`, section « 🛰️ LA MACHINE DISCORD ». Lis-la avant de toucher au Discord.**
+
+En deux lignes : un second dépôt, **`DISCORD-RATISS`**, héberge un agent (`agent.py`) qui **poste réellement**
+dans Discord — vérifié le 26/09 à 15:21 UTC (`55/55 empreintes conformes`, `HTTP 204`). Un workflow quotidien
+(08:00 UTC) repasse la vérification tout seul. Les textes des **24 salons** + le **manifeste personnel**
+sont dans `discord/salons/`.
