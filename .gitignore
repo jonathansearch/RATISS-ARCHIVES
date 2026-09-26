@@ -7,3 +7,4 @@ preuves-ibm/
 jobs_ibm/*.tmp
 .env
 *.token
+.ratiss-webhook

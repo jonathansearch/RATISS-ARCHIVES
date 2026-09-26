@@ -1,0 +1,93 @@
+# ⚙️ MODÈLE — « les tests du dépôt → Discord »
+#
+# À copier dans  <ton-dépôt>/.github/workflows/tests-discord.yml
+# puis ajouter le secret DISCORD_WEBHOOK dans CE dépôt
+# (Settings → Secrets and variables → Actions → New repository secret).
+#
+# Astuce importante : les dépôts RATISS utilisent des chemins absolus
+# /home/user/<dépôt>. Le runner GitHub s'appelle « runner », donc on
+# RECRÉE /home/user dans le runner avant de cloner. C'est ce qui fait
+# tourner les tests tels quels, sans toucher une ligne de code.
+#
+# COMPAGNONS : liste des dépôts voisins nécessaires aux imports croisés.
+#   RATISS-NUCLEAIRE → "RATISS-NAVIER RATISS-FUSION"
+#   RATISS-Omni      → "RATISS-NAVIER RATISS-QVM"
+#   GCR              → ""            (autonome)
+
+name: Tests → Discord
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  COMPAGNONS: ""            # ← ex. "RATISS-NAVIER RATISS-FUSION" si imports croisés
+  ICI: /home/user           # chemin absolu attendu par les dépôts
+
+jobs:
+  tests:
+    name: pytest + notification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Recréer /home/user et cloner
+        run: |
+          sudo mkdir -p "$ICI" && sudo chown "$USER" "$ICI"
+          for r in "${{ github.event.repository.name }}" $COMPAGNONS; do
+            git clone --depth 1 "https://github.com/${{ github.repository_owner }}/$r" "$ICI/$r"
+          done
+
+      - name: Installer les dépendances
+        continue-on-error: true
+        working-directory: /home/user/${{ github.event.repository.name }}
+        run: |
+          python3 -m pip install -U pip
+          pip install pytest -q
+          pip install -e . -q || echo "pas de pyproject/setup.py — on continue"
+
+      - name: Lancer les tests
+        id: tests
+        continue-on-error: true
+        working-directory: /home/user/${{ github.event.repository.name }}
+        run: |
+          set -o pipefail
+          PYTHONPATH="$ICI" python3 -m pytest tests/ -q 2>&1 | tee resultat.txt
+          tail -n 1 resultat.txt > resume.txt
+
+      - name: Préparer le message
+        id: message
+        if: always()
+        working-directory: /home/user/${{ github.event.repository.name }}
+        run: |
+          if [ "${{ steps.tests.outcome }}" = "success" ]; then
+            echo "statut=OK" >> "$GITHUB_OUTPUT"
+            echo "titre=${{ github.event.repository.name }} — tests OK" >> "$GITHUB_OUTPUT"
+          else
+            echo "statut=ECHEC" >> "$GITHUB_OUTPUT"
+            echo "titre=${{ github.event.repository.name }} — tests en échec" >> "$GITHUB_OUTPUT"
+          fi
+          ligne=$(tail -n 1 resume.txt 2>/dev/null | tr -d '\n' | cut -c1-300)
+          echo "details=${ligne:-pas de sortie}" >> "$GITHUB_OUTPUT"
+
+      - name: Notifier Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "${DISCORD_WEBHOOK}" ]; then
+            echo "⚠️  secret DISCORD_WEBHOOK absent dans ce dépôt — notification ignorée"
+            exit 0
+          fi
+          git clone --depth 1 "https://github.com/${{ github.repository_owner }}/RATISS-ARCHIVES" /tmp/archives
+          python3 /tmp/archives/outils/notifier_discord.py \
+            --statut "${{ steps.message.outputs.statut }}" \
+            --titre "${{ steps.message.outputs.titre }}" \
+            --details "${{ steps.message.outputs.details }}" \
+            --lien "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

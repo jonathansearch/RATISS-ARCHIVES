@@ -1,0 +1,69 @@
+name: Notifications Discord
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * 1"   # vérification automatique chaque lundi 08:00 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  verifier-et-notifier:
+    name: Empreintes → Discord
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Vérifier les empreintes du MANIFESTE
+        id: empreintes
+        continue-on-error: true
+        run: python3 outils/verifier_manifeste.py --json | tee resultat.json
+
+      - name: Préparer le message
+        id: message
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib
+          commit = os.environ.get("GITHUB_SHA", "")[:7]
+          try:
+              d = json.loads(pathlib.Path("resultat.json").read_text().strip().splitlines()[-1])
+              conformes, problemes = d["conformes"], d["problemes"]
+              if problemes:
+                  statut = "ECHEC"
+                  titre  = f"{problemes} empreinte(s) non conforme(s)"
+                  details = " · ".join(d["detail"][:8]) or "voir le journal du workflow"
+              else:
+                  statut  = "OK"
+                  titre   = f"{conformes}/{conformes} empreintes conformes"
+                  details = f"0 problème · commit {commit} · vérifié automatiquement"
+          except Exception as e:
+              statut, titre = "ECHEC", "Vérification impossible"
+              details = f"{type(e).__name__}: {e}"
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"statut={statut}\n")
+              f.write(f"titre={titre}\n")
+              f.write(f"details={details}\n")
+          PY
+
+      - name: Notifier Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "${DISCORD_WEBHOOK}" ]; then
+            echo "⚠️  secret DISCORD_WEBHOOK absent — notification ignorée (voir discord/CI-INSTALLATION.md)"
+            exit 0
+          fi
+          python3 outils/notifier_discord.py \
+            --statut "${{ steps.message.outputs.statut }}" \
+            --titre "${{ steps.message.outputs.titre }}" \
+            --details "${{ steps.message.outputs.details }}" \
+            --lien "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
