@@ -11,7 +11,8 @@
 | `04-mct-ia.md` | mct-comprehension · agents-ia · ratiss-os | 3 |
 | `05-atelier.md` | cours-c-electronique · travail-chez-le-maitre · resultats-mesures · carnet-de-pannes | 4 |
 | `06-ressources.md` | liens-github · documents-references · brouillons-publications | 3 |
-| | **TOTAL** | **24** |
+| `07-mon-histoire.md` | **mon-histoire** — le manifeste (salon personnel) | 1 |
+| | **TOTAL** | **24 + 1 salon personnel** |
 
 ---
 
@@ -46,6 +47,9 @@ Relecture faite dépôt par dépôt. Ce que les dépôts contiennent réellement
 ---
 
 ## 📌 Les 4 salons qui portent le plus
+
+*(+ `#mon-histoire` — le seul texte du serveur qu'on retient de mémoire : « Ici, on ne demande pas qui tu es. On demande ce que tu as mesuré. »)*
+
 
 - **`#synchrotron-24`** — la campagne QPU complète : 436 points, contact zz 5σ, Page en cloche sur deux puces
 - **`#qpu-live`** — l'inventaire (770 points) + la datation des identifiants, vérifiable sans compte

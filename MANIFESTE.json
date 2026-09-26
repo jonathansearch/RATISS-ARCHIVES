@@ -3,7 +3,7 @@
  "auteur": "Jonathan Evina — RATISS Labs",
  "compile_le": "2026-09-26T11:25:53.694170+00:00",
  "algorithme": "sha256",
- "total_fichiers": 49,
+ "total_fichiers": 50,
  "octets_total": 5738084,
  "captures_noms_origine": {
   "preuves/captures/2026-09-26_1107_arena-preuve-token-github.jpg": "Screenshot_20260926-110705.jpg",
@@ -38,7 +38,8 @@
   "discord/salons/04-mct-ia.md": "d7a93530a2024c5d82fbd87c581449cf783959773d8c8b2aff4c2111f7525662",
   "discord/salons/05-atelier.md": "0f46a94002d4b7b081ffb0d04c4de061f0bfe4d6423367634f01e99fccf7ae10",
   "discord/salons/06-ressources.md": "c71cf434446fabeed33193c8c13b87f59d74c589cda3e11230eacada1b717a40",
-  "discord/salons/INDEX.md": "617c7b97f55be38f83ac6eef7bd852a83e27eea641f30ebe8f59389fdafa1d29",
+  "discord/salons/07-mon-histoire.md": "5386cf324a8b936e3b656d1698a0a7764749438845cd0584e3e3f0215548e7b0",
+  "discord/salons/INDEX.md": "bdae413b8cfd5ff50cbec58f0afdb69bc201013c02b573ec817582714413b34d",
   "documents/MEMO-SESSION-RATISS.md": "cf4b7208d2aa152ca272375602b5364c370bbdf62db494cd672676b8fbbfb001",
   "documents/RECAP-SEMAINE-10-17-SEPT-2026.md": "4881f5a53b6445e4432cc9103517f00b97014f84ca78887f28ea5bf23f429188",
   "identite/AMORCE-AGENT.md": "60f6d0e25f4572e52934599fc49888e3d011e4703785d29b02739a0c3645b7e3",
