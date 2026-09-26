@@ -89,7 +89,7 @@ La documentation IBM est explicite : *« IBM Quantum automatically stores result
 y compris pour des processeurs retirés du service. Dès que ta carte est validée et ta session rouverte :
 
 ```bash
-python3 /home/user/qpu/recuperer_jobs_ibm.py --token <TON_TOKEN> --jours 120
+python3 outils/recuperer_jobs_ibm.py --token <TON_TOKEN> --jours 120
 ```
 
 Ce script rapatrie **toutes** tes tâches (identifiant, backend, statut, **date de création renvoyée par IBM**, temps QPU consommé),
