@@ -120,3 +120,20 @@ Commande : `python3 outils/comparer_export_ibm.py --exports-dir <dl>/ --archives
 
 **Prochaine action recommandée, dans l'ordre :** pousser ce dépôt → générer la clé API du compte n°2 →
 lancer `archiver_nouvelles_taches.py --jours 120`.
+
+---
+
+## 🔧 Après restauration du dépôt (26/09/2026)
+
+Le fichier `.git/config` **n'est pas conservé** dans les sauvegardes (exclu volontairement : il peut contenir des identifiants). Après restauration, refaire :
+
+```bash
+cd RATISS-ARCHIVES
+git config user.name  "Jonathan Evina"
+git config user.email "jonathan.ratisslabs@zohomail.com"
+git remote add origin https://github.com/jonathansearch/RATISS-ARCHIVES.git
+git branch -M main
+```
+
+Le dépôt distant existe déjà : `https://github.com/jonathansearch/RATISS-ARCHIVES` (public, branche `main`).
+Les 24 posts de salons Discord sont dans `discord/salons/` (index de copie : `discord/salons/INDEX.md`).
