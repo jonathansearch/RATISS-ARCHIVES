@@ -62,7 +62,7 @@ Trois chantiers, menés dans l'ordre :
 | 7 | Rédiger le **papier court** sur la datation des job IDs | aucun | 🟡 |
 | 8 | Publier les textes **Discord** (`discord/`) | aucun | 🟢 |
 | 9 | **Révoquer les tokens GitHub** exposés dans la session | aucun | 🟠 |
-| 10 | Activer la **2FA** GitHub | aucun | 🟠 |
+| ~~10~~ | ~~Activer la 2FA GitHub~~ → **ANNULÉ par le chef** — mauvaise expérience passée : téléphone perdu après activation → compte devenu irrécupérable. **Ne plus JAMAIS recommander la 2FA à Jonathan.** | — | ⛔ |
 
 ---
 
@@ -227,7 +227,7 @@ Tout est publié, scellé, testé. Détail complet : **`documents/RECAP-26-27-SE
 | # | Action | Blocage | Priorité |
 |---|---|---|---|
 | 1 | **Révoquer le token GitHub ghp_31Ef…** | aucun — il a tout fait (6 pushes, repo PHOTON, Pages, 4 dispatchs) | 🔴 |
-| 2 | Activer la **2FA** GitHub | aucun — toujours pas faite | 🔴 |
+| ~~2~~ | ~~Activer la 2FA GitHub~~ → **ANNULÉ par le chef** — mauvaise expérience passée : téléphone perdu après activation → compte devenu irrécupérable. **Ne plus JAMAIS recommander la 2FA à Jonathan.** | — | ⛔ |
 | 3 | Remplir le secret **RATISS11** (vide) | webhooks Discord côté chef | 🟠 |
 | 4 | **E-F1 bis** : plaque à φ₀ plus grand (trancher l'inertie des chemins invisibles) | aucun | 🟠 |
 | 5 | **H4 bis** : coupler les branches (non-linéarité) — lien ratiss-focal | design à instruire | 🟠 |

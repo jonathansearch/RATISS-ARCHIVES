@@ -84,7 +84,7 @@ Vérification RATISS de la résolution Qwen d'un examen d'analyse financière (E
 | Élément | État |
 |---|---|
 | Token GitHub `ghp_31Ef…` | **ENCORE ACTIF** — à révoquer (6 pushes, repo PHOTON, Pages, 4 dispatchs Discord) |
-| 2FA GitHub | toujours pas activée 🔴 |
+| 2FA GitHub | **refus définitif du chef** (téléphone perdu par le passé → compte irrécupérable) — ne plus recommander ⛔ |
 | RATISS11 | secret vide — à remplir |
 | GitHub Pages PHOTON | en ligne (index + visualisation) |
 | Comptes IBM | n°1 suspendu (carte à valider) · n°2 accessible (clé API dispo) |
