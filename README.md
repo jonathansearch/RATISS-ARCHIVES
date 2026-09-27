@@ -338,3 +338,18 @@ C'est la règle R5 appliquée au matériel. Ce qui n'est pas copié ne peut plus
 
 *RATISS Labs — Yaoundé, Cameroun · jonathan.ratisslabs@zohomail.com*
 *Licence : MIT (voir `LICENSE`)*
+
+---
+
+## 🆕 MISE À JOUR DU 27/09/2026 — RATISS-PHOTON, ETALONS, HUB 22 SALONS
+
+| Dépôt / événement | Ce qu'il faut retenir |
+|---|---|
+| [`RATISS-ETALONS`](https://github.com/jonathansearch/RATISS-ETALONS) | 4 étalons, critères figés avant exécution · **11/16 → 14/16** · 2 rouges assumés (E01-P2 hypothèse invalide, E04-P4 ψ₆ = 0,827/0,935) · sceau 23/23 · README + bannière au format labo |
+| [`RATISS-PHOTON`](https://github.com/jonathansearch/RATISS-PHOTON) | Reproduction de **Wen et al., Sci. Adv. 12, eaeh1011 (2026)** dans le monde simulé : **8 396 800 chemins** à module égal, fidélité **95,9–96,8 %** (fenêtre Canton 95–98,5 %) · **le hasard ÉMERGE du bain thermique** (T = 0 K → déterminisme) · contre-flux mesurés, redistribution falsifiée (linéarité) · 6 bugs documentés · [vue 3D interactive](https://jonathansearch.github.io/RATISS-PHOTON/visualisation.html) (Plotly embarqué, Pages actives) |
+| **HUB Discord multi-salons** | `DISCORD-RATISS` : `hub-central.yml` (commits `34ca814`, `fd6fef5`) route RATISS→RATISS23, mode `all` · **22 envois HTTP 204** au test global (run 36357382700) · RATISS11 à remplir · annonces PHOTON + ETALONS publiées le 27/09 à 22:05 UTC |
+| **Audit externe** | Examen d'analyse financière (ESSEC) : résolution Qwen vérifiée — fonctionnel juste, **bilan financier absent (6 pts)**, litige mal lu, IS oublié · corrigé complet testé 20/20 (actif réel = passif réel = 1 121 500 · FR 10 000 · BFR −34 000) |
+
+Le détail complet (chiffres, bugs, leçons héritées, actions à faire) :
+[`documents/RECAP-26-27-SEPT-2026.md`](documents/RECAP-26-27-SEPT-2026.md) et la section
+**« 🛰️🧮 MISE À JOUR DU 27/09 »** de [`POUR-LA-PROCHAINE-SESSION.md`](POUR-LA-PROCHAINE-SESSION.md).

@@ -5,6 +5,8 @@
 > Si tu es Jonathan, lis-le pour te rappeler où tout s'est arrêté.
 
 **Date de compilation :** 26 septembre 2026 · **Session concernée :** celle du 25–26 septembre 2026
+**MISE À JOUR 27/09 :** PHOTON + ETALONS publiés, hub Discord 22 salons, audit finance → lire la
+section « 🛰️🧮 MISE À JOUR DU 27/09 » en fin de fichier, et `documents/RECAP-26-27-SEPT-2026.md`.
 
 ---
 
@@ -148,3 +150,89 @@ En deux lignes : un second dépôt, **`DISCORD-RATISS`**, héberge un agent (`ag
 dans Discord — vérifié le 26/09 à 15:21 UTC (`55/55 empreintes conformes`, `HTTP 204`). Un workflow quotidien
 (08:00 UTC) repasse la vérification tout seul. Les textes des **24 salons** + le **manifeste personnel**
 sont dans `discord/salons/`.
+
+---
+
+## 🛰️🧮 MISE À JOUR DU 27/09/2026 — PHOTON, ETALONS PUBLIÉS, HUB 22 SALONS, AUDIT FINANCE
+
+Tout est publié, scellé, testé. Détail complet : **`documents/RECAP-26-27-SEPT-2026.md`**.
+
+### A. RATISS-ETALONS — la campagne d'étalons est PUBLIÉE (26/09 au soir)
+
+- dépôt : `github.com/jonathansearch/RATISS-ETALONS` · 4 étalons (percolation, Ising 2D, trois corps,
+  empilement) · critères figés AVANT exécution (`PROTOCOLE.md`) · **11/16 → 14/16** après corrections
+  déclarées · 2 rouges ASSUMÉS et diagnostiqués :
+  - **E01-P2** : l'hypothèse « pic de densité de trous à p_c » est INVALIDE (`h(p)` monotone) ;
+  - **E04-P4** : compresseur 3D sous-estime (0,61403 vs 0,64±0,020) — taille finie + état
+    **partiellement cristallin** (ψ₆ = 0,827 / 0,935), pas des verres ;
+- chiffres clés : `p_c` à **0,0006** · `d_f` 1,8934±0,0192 · `T_c` 2,2613 · γ/ν 1,7540 · ΔE/E **1,21e−15** ·
+  FCC **4,44e−16** · Burrau λ = 0,55402 stable à 0,78 % (RK4 pas fixe FALSIFIÉ : λ = +44 124, du bruit) ;
+- README au format labo + bannière vortex + figures R7 + sceau **23/23** · commits : `c230b65`,
+  `776658a`, `b86d027`, `8c12b73`.
+
+### B. RATISS-PHOTON — le photon multi-chemins reproduit dans le monde RATISS (27/09)
+
+- dépôt : `github.com/jonathansearch/RATISS-PHOTON` · **🧮 calcul uniquement** (zéro QPU) ;
+- référence reliée : **Wen et al., Science Advances 12, eaeh1011 (26/08/2026)** — 1 419 857 chemins,
+  fidélité 87,6→98,5 %, MAPE 8,17±3,50 %. PAS en compétition : eux le réel, nous le monde ;
+- moteur **paraxial v2** (l'équation même du papier), graine `20260927`, campagne ~1 s ;
+- **E-CANTON** : **8 396 800 chemins** à module égal — fidélité **95,92 %** (2 plans) / **95,96 %**
+  (3 plans) / **96,77 %** (action naïve) · corr. intensité **97,08–97,10 %** · contrôle croisé 96,06 % ·
+  **phase de l'écran à 5,4°** · MAPE in-mundo ≈ 0 → **fenêtre de Canton atteinte (95–98,5 %)** ;
+- **nuance publiée** : l'action d'un monde paraxial est QUADRATIQUE (k₀·dz + k₀·dy²/2dz) — le postulat 2
+  se lit avec l'action du monde ; non résoluble à ≤ 12° (concordance 95,9 vs 96,8 %) ;
+- **E-F3 (la pépite)** : le hasard ÉMERGE du bain thermique — **T = 0 K : 1 seule position d'impact sur
+  400** (déterminisme, AUCUN tirage de Born câblé) · Pearson max 0,73 à 300 K · noyé à 4T (0,24) ;
+- **E-F4** : contre-flux fantômes ✔ (−7,1e−4, flux net −3,4e−8) · **aucune redistribution** au blocage
+  d'une branche (1,00/0,98/0,96) — la linéarité l'interdit : H4 à moitié falsifié, publié tel quel ;
+- **E-F1 non tranché** (plaque π/2 sub-pixel : −1 px vs 0 prédit) → bis à φ₀ plus grand ;
+- E-F2 : entropie 4,92 vs 4,27 · vortex 326/371 (porte amplitude, instrument perfectible) ;
+- E-F5 : étalon une fente à **2,9 %** de la théorie — l'étalon tient ;
+- **6 bugs documentés** (B1 source au bord, B2 fentes, B3 action du monde, B4 porte vortex,
+  B5 moteur 2D boîte→paraxial, B6 chirpe inversé 29 %→95,9 %) ;
+- **vue 3D : PLOTLY embarqué** (décision C2 — jamais plus de visu fait-main : 2 canvas vides constatés
+  par Jonathan sur mobile) + **kaleido** pour le GIF du README (40 angles) ;
+- **GitHub Pages actives** : `jonathansearch.github.io/RATISS-PHOTON` · sceau **33/33** ;
+- commits clés : `2f18e80`, `6f7bd1b`, `b455621`, `fb81249`, `de138f2`, `0ccaac5`.
+
+### C. HUB DISCORD multi-salons — 22/22 salons répondent HTTP 204
+
+- hub construit par un second agent (`34ca814`), routé sur les secrets individuels par **`fd6fef5`**
+  (RATISS → RATISS23, mode `all`, continuation si secret absent, mentions désactivées
+  `allowed_mentions.parse = []`) ;
+- **test global `all` : 22 envois HTTP 204** (run 36357382700, `success`) — **RATISS11 vide** (à remplir) ;
+- **annonces PHOTON et ETALONS publiées dans Discord** le 27/09 à 22:05 UTC via `notifier.yml` ;
+- le commandement du Discord est confié à l'agent : campagnes, alertes, rapports.
+
+### D. Audit d'une copie externe — examen d'analyse financière ESSEC (27/09)
+
+- mission hors labo : vérifier la résolution Qwen d'un rattrapage (Entreprise X, 31/12/N) ;
+- **juste** : bilan fonctionnel (FR 143 000 / BFR 99 000 / TN 44 000) et variante emprunt reclassé ;
+- **manquant** : le **bilan financier entier (6 pts)**, le litige mal lu (la provision EXISTE :
+  50 000 = 20 000 litige + 30 000 garantie), l'IS 30 % jamais appliqué ;
+- corrigé complet testé par script (**20/20**) : actif réel = passif réel = **1 121 500** · FR **10 000** ·
+  BFR **−34 000** · TN 44 000 · robustesse fonds commercial testée (FR inchangé) ;
+- livrables docx dans le sandbox (`examen-finance/`).
+
+### E. Leçons méthodologiques à hériter (nouvelles)
+
+1. **C2 — jamais de visualisation fait-main** : Plotly embarqué pour l'interactif, kaleido pour les GIF.
+2. **Lire l'équation du papier AVANT de coder le moteur** (B5).
+3. **Miroir de projection avant export** : tout point projeté vérifié par calcul.
+4. **Sonder une config secrète par alias factice** : un run en échec révèle proprement la liste.
+5. **GitHub bloque le JS dans les README** : 3D interactive = Pages + GIF statique rendu par le moteur.
+
+### F. Ce qu'il reste à faire (état exact au 27/09 soir)
+
+| # | Action | Blocage | Priorité |
+|---|---|---|---|
+| 1 | **Révoquer le token GitHub ghp_31Ef…** | aucun — il a tout fait (6 pushes, repo PHOTON, Pages, 4 dispatchs) | 🔴 |
+| 2 | Activer la **2FA** GitHub | aucun — toujours pas faite | 🔴 |
+| 3 | Remplir le secret **RATISS11** (vide) | webhooks Discord côté chef | 🟠 |
+| 4 | **E-F1 bis** : plaque à φ₀ plus grand (trancher l'inertie des chemins invisibles) | aucun | 🟠 |
+| 5 | **H4 bis** : coupler les branches (non-linéarité) — lien ratiss-focal | design à instruire | 🟠 |
+| 6 | Rapatrier les tâches via le compte IBM n°2 (`--jours 120`, 5 exports phares) | clé API disponible | 🟠 |
+| 7 | **Software Heritage + Zenodo** (DOI) pour ETALONS + PHOTON | aucun | 🟡 |
+| 8 | **Papier court** : datation des job IDs + note PHOTON (reproduction in-silico) | aucun | 🟡 |
+| 9 | E-F2 : porte vortex adaptative (plans loin des bords) | aucun | 🟡 |
+| 10 | Mapping des salons Discord (alias par contenu : preuves/échecs/annonces) | décisions du chef | 🟢 |
