@@ -1,10 +1,10 @@
 {
  "depot": "RATISS-ARCHIVES",
  "auteur": "Jonathan Evina — RATISS Labs",
- "compile_le": "2026-09-27T23:24:04.046531+00:00",
+ "compile_le": "2026-09-28T14:28:31.207763+00:00",
  "algorithme": "sha256",
  "total_fichiers": 56,
- "octets_total": 5853835,
+ "octets_total": 5855132,
  "captures_noms_origine": {
   "preuves/captures/2026-09-26_1107_arena-preuve-token-github.jpg": "Screenshot_20260926-110705.jpg",
   "preuves/captures/2026-09-22_2312_ibm-compte-1_liste-66-taches.jpg": "Screenshot_20260922-231234.jpg",
@@ -27,8 +27,8 @@
   ".gitignore": "1c2569ed79f4a3e393ede2c949ad642c24b5e24679b5f131ef5b3285e95426f2",
   "CITATION.cff": "ebcc7810cddb40e09f63a0c51fd9c3e0947d59594e106ca9b6f9d52e4d5ec2fe",
   "LICENSE": "90283f5211ad8666178579721d3f17f62642e4c01f438158b4a032fa2920fc91",
-  "POUR-LA-PROCHAINE-SESSION.md": "3b0cd09cc354863b6bd633729de87813c3ceeb7586e53262a25566a7de653ded",
-  "README.md": "ba8053123743676345799e9c211a631fcbadc422606cc8d6540614592fc29f42",
+  "POUR-LA-PROCHAINE-SESSION.md": "80386ddbe92aa1c77703de7a23a3fbf7d6f96465ce374b93eb802cb21d780115",
+  "README.md": "66b7128f58d4e53819c1ad9bab9c7d8d4789a7dfdf287ca9ba80ed2450c4ac11",
   "creer-le-repo.sh": "5514ee8838ecc93da7553daf1159b718957846a0e0d32ce0de0cc38ee4ac0efd",
   "discord/01-bienvenue.md": "678df6eec3efa66502b57cffa5248474a7f7edbf86571d175d5e8242ae4513b2",
   "discord/02-regle-du-labo.md": "15220812bc36f6ebe4270ec94e6824b0dc273a7d34db8a9b14d524e5c6f91544",

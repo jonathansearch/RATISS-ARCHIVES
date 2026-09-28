@@ -236,3 +236,17 @@ Tout est publié, scellé, testé. Détail complet : **`documents/RECAP-26-27-SE
 | 8 | **Papier court** : datation des job IDs + note PHOTON (reproduction in-silico) | aucun | 🟡 |
 | 9 | E-F2 : porte vortex adaptative (plans loin des bords) | aucun | 🟡 |
 | 10 | Mapping des salons Discord (alias par contenu : preuves/échecs/annonces) | décisions du chef | 🟢 |
+
+### G. Du 28/09 — la série des deep dives (publiée)
+
+- nouveau dépôt **`RATISS-DEEPDIVE`** (commit `1778f0c`) : **14 PDF, 75 pages** — un deep dive par dépôt
+  de la période 20–28/09 (focal → PHOTON), rédigé depuis les sources primaires (README/RAPPORT/JOURNAL/JSON) ;
+- chaque document : histoire en 3 min · carte d'identité · glossaire · expériences chiffrées ·
+  frontières publiées · citations exactes · FAQ (prête pour des audio deep dives type NotebookLM) ;
+- mention RATISS Labs / Jonathan Evina / Yaoundé partout ; étiquettes [calcul]/[QPU] jamais mélangées ;
+- emission d'origine : demandée par le chef pour créer des deep dives audio depuis ses notes ;
+- le 28/09 : nettoyage Discord — l'agent a un mode purge (`hub-central.yml` → input `purger`, commit
+  `d166511` sur DISCORD-RATISS, testé local + réel, run success 0 message restant) ; le chef avait
+  déjà supprimé les messages de test à la main ;
+- décision du chef confirmée : 2FA refusée définitivement (téléphone perdu → compte irrécupérable) —
+  ne jamais recommander.

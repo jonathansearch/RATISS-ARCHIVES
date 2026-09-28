@@ -353,3 +353,6 @@ C'est la règle R5 appliquée au matériel. Ce qui n'est pas copié ne peut plus
 Le détail complet (chiffres, bugs, leçons héritées, actions à faire) :
 [`documents/RECAP-26-27-SEPT-2026.md`](documents/RECAP-26-27-SEPT-2026.md) et la section
 **« 🛰️🧮 MISE À JOUR DU 27/09 »** de [`POUR-LA-PROCHAINE-SESSION.md`](POUR-LA-PROCHAINE-SESSION.md).
+
+**28/09** : publication de [`RATISS-DEEPDIVE`](https://github.com/jonathansearch/RATISS-DEEPDIVE) —
+la série des 14 deep dives PDF (75 pages) couvrant tous les dépôts du 20 au 28 septembre 2026.
