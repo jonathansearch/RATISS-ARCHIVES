@@ -171,3 +171,8 @@ imports croisés (NAVIER ↔ NUCLEAIRE ↔ Omni). Cloner les dépôts **côte à
 
 Ce fichier est accompagné de `EMPREINTE.txt` (SHA-256 de chaque fichier du dossier `memoire/`).
 Si l'un d'eux est modifié, l'empreinte ne correspondra plus — c'est le principe.
+
+## Identité du chef (à ne JAMAIS oublier)
+
+- **Jonathan Evina, 18 ans** (au 28/09/2026) — fondateur et unique auteur de RATISS Labs, Yaoundé, Cameroun.
+- Le chef a demandé explicitement que cet âge soit mémorisé et cité quand pertinent (deep dives, présentations).

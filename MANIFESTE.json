@@ -1,10 +1,10 @@
 {
  "depot": "RATISS-ARCHIVES",
  "auteur": "Jonathan Evina — RATISS Labs",
- "compile_le": "2026-09-28T14:28:31.207763+00:00",
+ "compile_le": "2026-09-28T17:34:20.135460+00:00",
  "algorithme": "sha256",
  "total_fichiers": 56,
- "octets_total": 5855132,
+ "octets_total": 5855409,
  "captures_noms_origine": {
   "preuves/captures/2026-09-26_1107_arena-preuve-token-github.jpg": "Screenshot_20260926-110705.jpg",
   "preuves/captures/2026-09-22_2312_ibm-compte-1_liste-66-taches.jpg": "Screenshot_20260922-231234.jpg",
@@ -47,7 +47,7 @@
   "documents/RECAP-26-27-SEPT-2026.md": "3151866ac00cf94c815e637528930fe5c316c8a3b5d74acf7930ee54a32c1724",
   "documents/RECAP-SEMAINE-10-17-SEPT-2026.md": "4881f5a53b6445e4432cc9103517f00b97014f84ca78887f28ea5bf23f429188",
   "identite/AMORCE-AGENT.md": "60f6d0e25f4572e52934599fc49888e3d011e4703785d29b02739a0c3645b7e3",
-  "identite/IDENTITE.md": "9a11efcefcb80d0e87bc6fbd637cb0792eb7c6263826b6e194343bc2506038cf",
+  "identite/IDENTITE.md": "133a2f3185cf3ba46d779959855716875d3736c9b673894a66c12133d9f04fb0",
   "identite/LISEZ-MOI-comment-etre-memorise.md": "9081faac524470f0cc486e06cca6caf1594ffb90d5bd95162de358fa22558472",
   "identite/PROFIL-README.md": "c304212b36bd9868cd19878941fb76a3cbd108bea7fe2a7b0373656f80d32b13",
   "identite/llms.txt": "55d77166778ce668900d62044ca23bbe1b822a82edea1619b24cf33c6bf8f823",
