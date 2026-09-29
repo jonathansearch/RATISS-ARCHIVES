@@ -3,7 +3,7 @@
  "auteur": "Jonathan Evina — RATISS Labs",
  "compile_le": "2026-09-29T21:06:51.430772+00:00",
  "algorithme": "sha256",
- "total_fichiers": 83,
+ "total_fichiers": 82,
  "octets_total": 18234725,
  "captures_noms_origine": {
   "preuves/captures/2026-09-26_1107_arena-preuve-token-github.jpg": "Screenshot_20260926-110705.jpg",
@@ -27,7 +27,6 @@
   ".gitignore": "1c2569ed79f4a3e393ede2c949ad642c24b5e24679b5f131ef5b3285e95426f2",
   "CITATION.cff": "ebcc7810cddb40e09f63a0c51fd9c3e0947d59594e106ca9b6f9d52e4d5ec2fe",
   "LICENSE": "90283f5211ad8666178579721d3f17f62642e4c01f438158b4a032fa2920fc91",
-  "MANIFESTE.json": "5121d136152407deceef66af8d20003cf1c3b7c274f5e1c40260d261f7ba23d2",
   "POUR-LA-PROCHAINE-SESSION.md": "0780f382e3a99c0bdbdde4e3658dde81ca99e76f41b793d615d8047419b27f65",
   "README.md": "66b7128f58d4e53819c1ad9bab9c7d8d4789a7dfdf287ca9ba80ed2450c4ac11",
   "creer-le-repo.sh": "5514ee8838ecc93da7553daf1159b718957846a0e0d32ce0de0cc38ee4ac0efd",
