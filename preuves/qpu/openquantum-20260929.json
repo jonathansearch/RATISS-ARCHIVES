@@ -1,0 +1,137 @@
+{
+ "plateforme": "Open Quantum (attribution obligatoire: www.openquantum.com/citation)",
+ "date": "2026-09-29",
+ "note_ids": "IDs complets récupérés depuis les JSON de resultats/ du dépôt RATISS-PLANCK ; '(préfixe)' = seul le préfixe 8 car. est archivé, l'ID complet se re-récupère par list_jobs côté plateforme",
+ "jobs": [
+  {
+   "job_id": "a1f0fbef-90cb-4d56-9110-b0f9d0b76b5d",
+   "circuit": "Bell 2q",
+   "backend": "IBEX Q1 (ions)",
+   "statut": "COMPLETED",
+   "resultat": "99,61 % (515/505/2/2)",
+   "cout": "15 Spark"
+  },
+  {
+   "job_id": "f348285e-1d02-4fcb-b263-e73ccba4597b",
+   "circuit": "GHZ-7",
+   "backend": "IBEX Q1 (ions)",
+   "statut": "COMPLETED",
+   "resultat": "90,04 % (470/452)",
+   "cout": "15 Spark"
+  },
+  {
+   "job_id": "85b3b9df-5384-48f4-aab2-6a1e5e6ae89e",
+   "circuit": "Épisode v1 (étoiles)",
+   "backend": "Garnet (supra 20q)",
+   "statut": "COMPLETED",
+   "resultat": "GHZ-3 92,3 % · B/C ~46 %",
+   "cout": "2 Spark"
+  },
+  {
+   "job_id": "337abf4b (préfixe)",
+   "circuit": "Épisode v2 (chaînes)",
+   "backend": "Garnet",
+   "statut": "COMPLETED",
+   "resultat": "même signature → hypothèse réfutée",
+   "cout": "2 Spark"
+  },
+  {
+   "job_id": "b00d5038-bcb1-4f77-9c6d-c2a0846ac3e5",
+   "circuit": "GHZ-3 chaîne séparé",
+   "backend": "Garnet",
+   "statut": "COMPLETED",
+   "resultat": "94,5 %",
+   "cout": "2 Spark"
+  },
+  {
+   "job_id": "0c094342-694d-4acf-8a59-a8fad72119a6",
+   "circuit": "GHZ-4 chaîne séparé",
+   "backend": "Garnet",
+   "statut": "COMPLETED",
+   "resultat": "94,6 %",
+   "cout": "2 Spark"
+  },
+  {
+   "job_id": "e167f04c-d813-4af1-804c-d73ec4029db4",
+   "circuit": "GHZ-5 chaîne séparé",
+   "backend": "Garnet",
+   "statut": "COMPLETED",
+   "resultat": "88,5 %",
+   "cout": "2 Spark"
+  },
+  {
+   "job_id": "7eadb11e-5b9c-4dc6-9495-7418bee413a1",
+   "circuit": "GHZ-3 chaîne séparé",
+   "backend": "Cepheus-1-108Q",
+   "statut": "COMPLETED",
+   "resultat": "89,7 % (000=471/111=448)",
+   "cout": "1 Spark"
+  },
+  {
+   "job_id": "cac2fbe7-d64c-4a05-a4b6-f9d2cf0d4396",
+   "circuit": "GHZ-4 chaîne séparé",
+   "backend": "Cepheus-1-108Q",
+   "statut": "COMPLETED",
+   "resultat": "79,3 %",
+   "cout": "1 Spark"
+  },
+  {
+   "job_id": "a4db428f-b059-4567-ba9d-630fbe3e922c",
+   "circuit": "GHZ-5 chaîne séparé",
+   "backend": "Cepheus-1-108Q",
+   "statut": "COMPLETED",
+   "resultat": "68,7 %",
+   "cout": "1 Spark"
+  },
+  {
+   "job_id": "b373d22f-609e-49ec-9c19-6cab08877065",
+   "circuit": "GHZ-12 LE CHAT-12",
+   "backend": "Garnet",
+   "statut": "COMPLETED",
+   "resultat": "66,0 % (000…0=387/111…1=289)",
+   "cout": "2 Spark"
+  },
+  {
+   "job_id": "df23deac-8158-46e2-acef-62c2d47823a6",
+   "circuit": "GHZ-4 chaîne séparé",
+   "backend": "IBEX Q1 (ions)",
+   "statut": "EN FILE au 29/09 22h (Pending)",
+   "resultat": "à récolter : (0000+1111)/1024",
+   "cout": "15 Spark"
+  },
+  {
+   "job_id": "77bc5a08 (préfixe)",
+   "circuit": "doublon épisodique",
+   "backend": "IBEX",
+   "statut": "ANNULÉ avant exécution (stop du chef)",
+   "resultat": "—",
+   "cout": "0"
+  },
+  {
+   "job_id": "407cd969-f5d8-4a59-8698-9f1f93bc0b62",
+   "circuit": "épisodique 3 compartiments",
+   "backend": "IBEX",
+   "statut": "ANNULÉ à la demande du chef",
+   "resultat": "15 Spark REMBOURSÉS (1er remboursement du labo)",
+   "cout": "0"
+  }
+ ],
+ "tarifs_reels_par_1024_tirs": {
+  "Cepheus-1-108Q": "1 Spark",
+  "IQM Garnet": "2 Spark",
+  "IBEX Q1 ions": "15 Spark"
+ },
+ "soldes_au_soir": {
+  "Patrice Lagloire": 20,
+  "Jonathan Evina": 10,
+  "Tym Sama": 10,
+  "Jonathan Sama": 0,
+  "offre": "50 $ gratuits par compte À RÉCLAMER"
+ },
+ "lois": [
+  "LOI RATISS du shot épisodique: compartiments co-hébergés = all-to-all ONLY (45 % vs 94 % sur lattice)",
+  "Doctrine du chef: tir 1 par 1 Garnet→Cepheus→IBEX; devis lu avant approbation; long = workflow sauvé, revenir demain",
+  "Jamais annuler un job sans ordre explicite du chef; après tout abort: lister + annuler le résidu",
+  "Jamais re-tirer un job payé: download_job_output récupère les comptages côté plateforme"
+ ]
+}

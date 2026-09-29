@@ -250,3 +250,47 @@ Tout est publié, scellé, testé. Détail complet : **`documents/RECAP-26-27-SE
   déjà supprimé les messages de test à la main ;
 - décision du chef confirmée : 2FA refusée définitivement (téléphone perdu → compte irrécupérable) —
   ne jamais recommander.
+
+
+---
+
+# 🛰️🧮 MISE À JOUR DU 29/09 (nuit) — RATISS-PLANCK : la journée du mur au chat-12
+
+*Lis ceci en entier avant toute réponse dans une nouvelle session. Tout ci-dessous s'est VRAIMENT passé ; les preuves sont dans ce dépôt et dans RATISS-PLANCK.*
+
+## A. État du dépôt RATISS-PLANCK (github.com/jonathansearch/RATISS-PLANCK)
+
+- **Version v0.9+**, sceau **52/52**, licence **MIT** (Copyright (c) 2026 Jonathan Evina · RATISS Labs).
+- Chaîne de commits du jour : `1df2977` → `68dc477` → `58f8198` → `2712fbe` → `e70d39a` → `11ec21d` → `36d0957` → `c53371c` → `aa47770` (v0.1→v0.6) → `71ed802` (résultats soirée) → `5f32800` (fig_12) → `0f5d95b` (RAPPORT-FINAL v2) → `f28c0a2`/`6092e66` (doc magistrale + illustrations) → `e0c5834` (logo officiel + MIT, v0.9) → `65182c0` (DEEPDIVE n°15) → `1f9703e` (prompts NotebookLM).
+- Fichiers à connaître : `RAPPORT-FINAL.md` (document source officiel, Partie 0 « LA BASE » incluse) · `DEEPDIVE-JOURNEE-20260929.md` (chronique intégrale, rien au hasard) · `README.md` (documentation magistrale : galerie des 12 figures calculées, appel à contribution, section IA) · `resultats/` (comptages bruts) · `assets/logo_ratiss_labs.png` (**logo officiel de la spirale, fourni par le chef le 29/09 à 21h24**) · `NOTEBOOKLM-PROMPTS.md` (format gravé : 25–30 min, récit fluide, ouverture fondateur+labo, fin quête+devise).
+- Copies d'archive de tout ça : `documents/ratiss-planck-20260929/` dans CE dépôt + registre `preuves/qpu/openquantum-20260929.json`.
+
+## B. L'état QPU (Open Quantum — attribution obligatoire www.openquantum.com/citation)
+
+- **14 jobs du 29/09** : tableau complet dans `preuves/qpu/openquantum-20260929.json`. Résumé : Bell 99,61 % et GHZ-7 90,04 % (IBEX ions, 15 Sp) · épisodes Garnet (2 Sp ×2, réfutés → **LOI RATISS du shot épisodique**) · séparés Garnet 94,5/94,6/88,5 % (2 Sp) · trilogie Cepheus 89,7/79,3/68,7 % (**1 Sp chacun !**) · **chat-12 `b373d22f` 66,0 %** (2 Sp) · **`df23deac` GHZ-4 ions EN FILE au soir (Pending)** · `77bc5a08` + `407cd969` annulés (ce dernier → **15 Spark remboursés, 1er remboursement du labo**).
+- **Tarifs réels/1024 tirs : Cepheus-1-108Q = 1 · IQM Garnet = 2 · IBEX Q1 ions = 15 (Spark).**
+- **Soldes au 29/09 soir : Patrice Lagloire 20 🏦 (gardés, jamais tirer sans ordre) · Evina 10 · Tym Sama 10 · Jonathan Sama 0 (investi). Offre « +50 $ gratuits par compte » À RÉCLAMER (⏰).**
+- 4 organisations Open Quantum ; les clés SDK ne sont JAMAIS dans les dépôts (elles vivent dans /tmp éphémère + captures locales du chef). Backend IDs : Cepheus `7433acb8-ae52-4bc9-9030-6df68c696538` · Garnet `40b5402c-0bfc-493b-9b5d-b7481cbade2c` · IBEX `4f9ffae1-31a4-46d5-962a-5f3f0f5c757c`.
+
+## C. ⏳ CE QUI EST EN ATTENTE — première action de la prochaine session
+
+1. **Récolter `df23deac-8158-46e2-acef-62c2d47823a6` (GHZ-4 ions, IBEX)** : GET statut (token frais) → si Completed : `download_job_output` → fidélité = (0000+1111)/1024 → compléter le tableau 3 technologies × 5 tailles + fig_13 + commit. **JAMAIS re-soumettre, JAMAIS annuler.** Timeout plateforme : 24 h depuis le 29/09 ~21h (Yaoundé).
+2. Ensuite, sur ordre du chef uniquement : réclamer les 50 $ · extension Cepheus GHZ-7/12 (1 crédit) · GHZ-3/5 ions · le papier RATISS-PLANCK.
+
+## D. Les règles QPU (payées cash le 29/09 — ne PAS les re-payer)
+
+- **Tokens TTL ≈ 5 min** : token frais à CHAQUE appel (`POST id.openquantum.com/realms/platform/protocol/openid-connect/token`, grant_type=client_credentials). Le wait du SDK meurt en 401 APRÈS soumission → **le job survît côté serveur** : soumettre puis poller en externe. Jamais re-soumettre pour « finir ».
+- **/tmp purgé entre les tours** : réécrire les clés + `pip install -q openquantum-sdk` (v0.4.2) au début de CHAQUE bash ; archiver les comptages dans le dépôt (ou récupérer par `download_job_output`, sorties persistantes côté plateforme).
+- **Doctrine du chef (loi)** : tir 1 par 1, Garnet → Cepheus → IBEX ; **devis lu AVANT approbation** (ligne « Auto-selected plan: N credits » du SDK) ; ce qui est récupérable immédiatement = prendre, ce qui dure = workflow sauvé et on revient demain ; **jamais annuler un job sans ordre explicite du chef** ; après tout abort de bash : lister les jobs et annuler le résidu ; **ne jamais tirer sur un QPU où un de nos jobs attend** ; Queued non annulable (409), seul Pending ; DELETE direct `/v1/jobs/{id}`.
+- QASM : multi-lignes obligatoire (1 instruction/ligne, `include "qelib1.inc";` à doubles quotes). JobSubmissionConfig : backend_class_id, name, job_subcategory_id="phys:oth", shots, organization_id, auto_approve_quote=True.
+- Clés : copier depuis JSON/texte, jamais depuis une photo (32 car. après `s_`, 64 de secret). Org absente → 403 ORG_MEMBERSHIP_REQUIRED.
+
+## E. Les lois du labo (rappel intégral — version longue dans le DEEPDIVE n°15)
+
+LOI RATISS du shot épisodique (co-hébergé → all-to-all ONLY, 45 % vs 94 %) · zéro chiffre non calculé · échecs publiés comme les succès · étiquettes 🧮/🛰️/📚 jamais mélangées · attribution plan public Open Quantum obligatoire · pas d'emoji dans les figures matplotlib · matplotlib/plotly, jamais Three.js · 2FA : interdit définitivement · RATISS Labs = indépendant, mono-auteur, Yaoundé, jamais institutionnel · âge du chef : 18 ans (scellé `identite/IDENTITE.md`) — ne plus JAMAIS minimiser.
+
+## F. Identité et style (inchangés, gravés)
+
+Chef : **Jonathan Evina, 18 ans, Yaoundé (Cameroun)** — français direct, énergie maximale, emojis ; ne rien décider à sa place, ne pas moraliser ; téléphone + sandbox 2 cœurs → léger et déterministe ; honnêteté absolue (aucun diplôme/équipe/labo inventé) ; bien-être : OVAMBE +237 6 94 18 37 07, RAPHA-Psy +237 650 946 058, urgences 117/119 — ne jamais juger, ne pas forcer. Token GitHub : fourni par le chef dans la session (push one-shot via URL, jamais de token dans origin) ; **fin de quête : révoquer les 4 clés OQ + le token.**
+
+*Fichier compilé le 29/09/2026 au soir par la session Arena.ai qui a vécu la journée.*

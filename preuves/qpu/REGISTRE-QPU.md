@@ -339,3 +339,16 @@ Puis : `git add jobs_ibm/ JOURNAL-TACHES.md && git commit -m "taches IBM du <dat
 **Deux précisions honnêtes :**
 - `d762omnq1anc738d2cj0` est **l'exemple de la documentation IBM** — je l'ai confirmé : il apparaît tel quel dans la page officielle *« Retrieve and save job results »* (`quantum.cloud.ibm.com/docs/en/guides/save-jobs`). Il décode au 31 mars 2026 et sert de référence de format dans ton `RATISS-Framework/ratiss/verify.py`. Il est marqué `exemple_doc_ibm: true` dans le JSON — ne le compte jamais dans ton registre. 🎯
 - Aucun de tes 85 autres identifiants ne tombe dans le registre public IBM : leur correspondance appartient à ton compte.
+
+
+---
+
+## Ajout du 29/09/2026 — Première journée Open Quantum (multi-machines)
+
+**14 jobs sur 3 architectures (IBEX ions · IQM Garnet · Rigetti Cepheus-1-108Q)** — registre complet
+et tarifs réels dans `openquantum-20260929.json` ; chronique intégrale dans
+`documents/ratiss-planck-20260929/DEEPDIVE-JOURNEE-20260929.md` ; comptages bruts dans
+`documents/ratiss-planck-20260929/resultats/`.
+Résultats tête d'affiche : **Bell 99,61 %** (ions) · **chat-12 : 66,0 %** (Garnet) ·
+première comparaison inter-familles (108q décohère plus vite que le 20q à taille égale).
+Attribution plateforme obligatoire : www.openquantum.com/citation.

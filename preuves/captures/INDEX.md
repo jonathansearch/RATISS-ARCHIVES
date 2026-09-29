@@ -44,3 +44,13 @@
 ---
 
 *Toutes les captures sont dans `preuves/captures/`. Les empreintes SHA-256 sont dans `MANIFESTE.json`.*
+
+## Captures du 29/09/2026 (journée RATISS-PLANCK)
+
+| Fichier | Heure | Contenu |
+|---|---|---|
+| `2026-09-29_1924_chef-capture-etat-caisses.jpg` | 19h24 | Capture du chef : état des caisses Open Quantum (4 comptes) |
+| `2026-09-29_2124_logo-officiel-ratiss-labs.jpg` | 21h24 | **Logo officiel RATISS Labs** (spirale quantique) — devenu bannière de RATISS-PLANCK |
+| `2026-09-29_2154_notebooklm-prompt-episide-audio.jpg` | 21h54 | Écran NotebookLM : personnalisation de l'épisode audio (prompt archivé dans NOTEBOOKLM-PROMPTS.md) |
+
+*Empreintes SHA-256 dans `MANIFESTE.json`.*
