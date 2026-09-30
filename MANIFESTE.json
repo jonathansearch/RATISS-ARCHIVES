@@ -3,7 +3,7 @@
  "auteur": "Jonathan Evina — RATISS Labs",
  "compile_le": "2026-09-29T21:06:51.430772+00:00",
  "algorithme": "sha256",
- "total_fichiers": 85,
+ "total_fichiers": 86,
  "octets_total": 18234725,
  "captures_noms_origine": {
   "preuves/captures/2026-09-26_1107_arena-preuve-token-github.jpg": "Screenshot_20260926-110705.jpg",
@@ -107,6 +107,7 @@
   "preuves/tests/RAPPORT-TESTS-RATISS.md": "30649d06297032a35fe3745cc5f9876396e8a42c557b5ddef24ba7a25a57916c",
   "documents/post-reddit-frenchtech-20260930.md": "71502611bfaa7d438a84d3f2b7e3e97e16903d1b7114a20eade5583f4a0b6a01",
   "documents/post-reddit-base-ia.png": "a7c9d37bf126d7ebf53f9ac2ab67af6b4217cd9ddfc20134aa25edd38abef73c",
-  "documents/post-reddit-final.png": "0a7a16ba32c85866b13b8bf967d3b9fd4aa18ecdacff683f46270f94e339610a"
+  "documents/post-reddit-final.png": "0a7a16ba32c85866b13b8bf967d3b9fd4aa18ecdacff683f46270f94e339610a",
+  "documents/post-rphysics-fiche-faits-et-strategie.md": "2b4adf2e5db465e962cc52cbfeef966b6b7b0c8baae791a30a92194bbeff97a7"
  }
 }
