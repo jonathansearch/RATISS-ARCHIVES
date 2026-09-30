@@ -66,3 +66,35 @@ IQM Garnet, Rigetti Cepheus-1-108Q.
 Happy to answer questions about the circuits, the counts, or the platform workflow.
 
 *Fiche archivée par le labo — sceau RATISS-ARCHIVES.*
+
+---
+
+# MISE À JOUR 30/09 11h11 — Règles r/quantumcomputing lues (captures du chef) : stratégie révisée
+
+## Ce que dit le règlement (résumé fidèle)
+1. **Qualité** : post soigné, on-topic QC, **« Your post cannot be AI-generated »**, pas de memes.
+2. Carrière/études → megathread hebdo uniquement.
+3. **« Not the place to post your own independent research »** (anti-crank) → pas de dump "mon projet révolutionnaire".
+4. **Anti-pub** : les projets/outils maison peuvent être partagés « for the sake of QC discussion », **MAIS « pretending you're only seeking feedback counts as self-promotion »** → ne PAS formuler "juste chercher du feedback".
+5. Pas de lien nu → corps de texte ou commentaire d'amorce obligatoire.
+6. **Compte ≥ 2 jours + karma suffisant** (sinon AutoMod ban temporaire/permanent).
+7. Anglais obligatoire.
+
+## Conclusion du labo (honnêteté loi n°11)
+Les deux grands subs interdisent le contenu généré par IA → sur Reddit, SEUL le chef écrit le post.
+L'IA fournit : la fiche de faits (ci-dessus), la STRUCTURE conforme, et la relecture. Jamais le texte à coller.
+
+## Structure conforme recommandée (r/quantumcomputing, écrit par le chef)
+- Titre = l'observation, pas le projet : "GHZ fidelity across 3 real QPUs: chiplet 108q decoheres faster than 20q lattice — data from 14 jobs (ions, Garnet, Cepheus)"
+- 1re phrase = le phénomène discuté (pas "check my repo") ; corps = 5-8 phrases factuelles + tableau mini ;
+  la question à la communauté à la fin ("has anyone measured similar transpiler leakage on lattice topologies?")
+- Le lien GitHub DANS le corps comme source des données (règle 5 ok), sans brandage RATISS dans le titre.
+- Proscrire : "seeking feedback", "my project", tonnes publicitaire, emojis.
+- Prérequis dur (règle 6) : compte ≥ 2 jours + karma → sinon AutoMod supprime/ban.
+
+## Alternatives où partager sans friction (selon choix du chef)
+- **Show HN** (news.ycombinator.com) : projets ouverts bienvenus, format "Show HN: RATISS-PLANCK —
+  cross-benchmark of 3 real QPUs (ions, 20q lattice, 108q chiplets)" ; honnêteté appréciée.
+- **Quantum Computing Stack Exchange** : la question technique pure (fuite SWAP co-hébergée sur lattice
+  vs all-to-all, données à l'appui) → retours d'experts garantis, format Q&A légitime.
+- **r/LLMPhysics / r/HypotheticalPhysics** : recommandés par les modos de r/Physics pour contenu assisté par IA.
