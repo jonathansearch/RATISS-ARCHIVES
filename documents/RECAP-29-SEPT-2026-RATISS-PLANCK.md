@@ -32,7 +32,7 @@
 
 ## 4. Ce qui reste ouvert (prochaine session)
 
-1. **Récolter `df23deac`** (GHZ-4 ions, en file IBEX au 29/09 soir, timeout plateforme 24 h) → (0000+1111)/1024 → grand tableau 3 technos × 5 tailles.
+1. ✅ **FAIT le 30/09** : `df23deac` récolté → **97,27 %** (0000=497 + 1111=499)/1024 — meilleur GHZ-4 du tableau ; fig_13 « la carte complète » ; commit RATISS-PLANCK `4f39c90`+`7fb9939`.
 2. **Réclamer les 50 $ gratuits** par compte (offre « 1 jour » ⏰).
 3. Extension **Cepheus GHZ-7/12 à 1 crédit** ; GHZ-3/5 ions quand crédits.
 4. **Le papier RATISS-PLANCK** (théorie + terrain). Prompts NotebookLM déjà archivés (`NOTEBOOKLM-PROMPTS.md`).

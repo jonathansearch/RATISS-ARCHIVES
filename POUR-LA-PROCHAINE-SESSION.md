@@ -274,8 +274,8 @@ Tout est publié, scellé, testé. Détail complet : **`documents/RECAP-26-27-SE
 
 ## C. ⏳ CE QUI EST EN ATTENTE — première action de la prochaine session
 
-1. **Récolter `df23deac-8158-46e2-acef-62c2d47823a6` (GHZ-4 ions, IBEX)** : GET statut (token frais) → si Completed : `download_job_output` → fidélité = (0000+1111)/1024 → compléter le tableau 3 technologies × 5 tailles + fig_13 + commit. **JAMAIS re-soumettre, JAMAIS annuler.** Timeout plateforme : 24 h depuis le 29/09 ~21h (Yaoundé).
-2. Ensuite, sur ordre du chef uniquement : réclamer les 50 $ · extension Cepheus GHZ-7/12 (1 crédit) · GHZ-3/5 ions · le papier RATISS-PLANCK.
+1. ✅ **RÉCOLTÉ le 30/09** : `df23deac` = Completed → **97,27 %** ((0000=497 + 1111=499)/1024). Comptages bruts : RATISS-PLANCK `resultats/qpu_ghz4_ibex_counts.json` ; fig_13 « la carte complète » ; README+RAPPORT à jour (commits `4f39c90`, `7fb9939`). NOTE TECHNIQUE : `download_job_output` du SDK bugge (`'str' object has no attribute 'output_data_url'`) → récolter via `get_job(...).output_data_url` (URL signée CloudFront) + requests.GET. La trilogie GHZ-4 est COMPLÈTE : ions 97,3 > Garnet 94,6 > Cepheus 79,3 ; pente ions −1,9 pt/qubit confirmée sur 3 points.
+2. Prochaines, sur ordre du chef uniquement : réclamer les 50 $ · extension Cepheus GHZ-7/12 (1 crédit) · GHZ-3/5 ions · le papier RATISS-PLANCK · communication anglo (kit `documents/kit-communication-anglo-20260930.md` : séquence Reddit(plume du chef) → Show HN → QC StackExchange).
 
 ## D. Les règles QPU (payées cash le 29/09 — ne PAS les re-payer)
 

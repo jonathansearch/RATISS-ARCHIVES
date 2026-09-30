@@ -95,8 +95,8 @@
    "job_id": "df23deac-8158-46e2-acef-62c2d47823a6",
    "circuit": "GHZ-4 chaîne séparé",
    "backend": "IBEX Q1 (ions)",
-   "statut": "EN FILE au 29/09 22h (Pending)",
-   "resultat": "à récolter : (0000+1111)/1024",
+   "statut": "COMPLETED le 30/09 (récolté ~11h30 Yaoundé, après ~16 h de file)",
+   "resultat": "97,27 % — (0000=497 + 1111=499)/1024 — meilleur GHZ-4 du tableau cross-backend",
    "cout": "15 Spark"
   },
   {
