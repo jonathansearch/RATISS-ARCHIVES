@@ -3,7 +3,7 @@
  "auteur": "Jonathan Evina — RATISS Labs",
  "compile_le": "2026-09-29T21:06:51.430772+00:00",
  "algorithme": "sha256",
- "total_fichiers": 86,
+ "total_fichiers": 87,
  "octets_total": 18234725,
  "captures_noms_origine": {
   "preuves/captures/2026-09-26_1107_arena-preuve-token-github.jpg": "Screenshot_20260926-110705.jpg",
@@ -108,6 +108,7 @@
   "documents/post-reddit-frenchtech-20260930.md": "71502611bfaa7d438a84d3f2b7e3e97e16903d1b7114a20eade5583f4a0b6a01",
   "documents/post-reddit-base-ia.png": "a7c9d37bf126d7ebf53f9ac2ab67af6b4217cd9ddfc20134aa25edd38abef73c",
   "documents/post-reddit-final.png": "0a7a16ba32c85866b13b8bf967d3b9fd4aa18ecdacff683f46270f94e339610a",
-  "documents/post-rphysics-fiche-faits-et-strategie.md": "3754224a54bb99a982279f1eae6e1f9915d53b86d29dad918e1e4443a1844767"
+  "documents/post-rphysics-fiche-faits-et-strategie.md": "3754224a54bb99a982279f1eae6e1f9915d53b86d29dad918e1e4443a1844767",
+  "documents/kit-communication-anglo-20260930.md": "bc5c5462fa004da41386a576238f03970d3e5e9e004baf714b0e68588585195c"
  }
 }
