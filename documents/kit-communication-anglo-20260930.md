@@ -83,3 +83,34 @@ correct practice? (3) Any published characterization of this compartment-leakage
 3. **Demain** : QC Stack Exchange (Volet 3) — les retours d'experts nourriront le papier RATISS-PLANCK.
 4. Chaque post = une phrase d'honnêteté prête si on demande « did you use AI? » : « Yes — as a calculator
    and a pilot under my orders. Every number is computed, tested and reproducible; the words are mine. »
+
+---
+
+# ADDENDUM 30/09 12h48 — r/ArtificialIntelligence (733k) : menu de posts « hors Planck »
+
+*Règles lues (captures) : PAS d'interdit IA · R3 « Builders Welcome with Substance » (flair Project/Build existe)
+· R2 high-signal (doit enseigner qqch) · R4 autorise first-person industry experience · R8 titre <120 car, spécifique, no clickbait.
+Danger : R3 — si le post perd son utilité sans le lien = marketing funnel = BAN PERMANENT. Le corps doit valoir seul.*
+
+## Option A (recommandée) — Flair Project/Build
+**Titre :** I ran a one-person physics lab with an AI agent under strict human orders — 14 repos in 9 days, 3 real QPUs, every failure published
+**Corps :** l'histoire du GOUVERNANCE (pas du produit) : la doctrine (1 action par ordre, devis avant approbation, échecs publiés),
+les 3 leçons techniques (tokens TTL 5 min, abort → job résiduel, tests pré-enregistrés qui ont attrapé 2 bugs de l'IA),
+l'économie (crédits comptés), et le lien en fin de corps. Utilité standalone : le modèle de gouvernance est réutilisable
+par quiconque fait bosser une IA sur du technique. Honnêteté : c'est un post SUR l'usage rigoureux de l'IA — disclosure naturel.
+
+## Option B — Flair Tutorial/Guide
+**Titre :** A practical checklist for keeping an AI agent honest in technical work (learned across 14 open-source projects)
+**Corps :** les 8 règles généralisables extraites des 18 lois du labo : tests pré-enregistrés AVANT de lancer,
+étiquette d'origine sur chaque chiffre (calculé/mesuré/littérature), une action par ordre humain, devis lu avant approbation,
+jamais « re-soumettre pour finir » (le job survit), après tout crash lister les effets de bord, publier les échecs,
+sceller (hash) les livrables. Chaque règle = 1 anecdote réelle qui la justifie. Zéro lien obligatoire (le lien peut aller en commentaire).
+
+## Option C — Flair Discussion
+**Titre :** Where should the line be between AI-executed and AI-authored science? My governance model after 14 projects
+**Corps :** première personne + contre-arguments (R4) : l'IA a calculé, piloté, vérifié — jamais « inventé » ;
+et si le critère n'était pas QUI écrit mais QUOI vérifie ? Question ouverte à la communauté. Pas de lien nu (le dépôt en commentaire).
+
+## À NE PAS poster ici (violations claires)
+« What's the best AI for X » (R5) · screenshots de conversations IA sans analyse (R2) · « AI will replace scientists » générique (R4)
+· lien du repo nu sans substance (R3 = ban permanent) · titre clickbait (R8).
