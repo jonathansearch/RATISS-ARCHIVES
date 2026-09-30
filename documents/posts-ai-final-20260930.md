@@ -96,3 +96,12 @@ Vous en pensez quoi ? Vous mettez la ligne où, vous ?
 - **Aucun des trois n'est un lien nu** : le lien n'apparaît qu'en fin de corps, et le post reste utile sans (règle 3 validée)
 - **Répondre aux 3 premiers commentaires vite** (le thread vit ou meurt dans l'heure)
 - Si demande « did you use AI? » : « Oui — comme calculatrice et pilote, sous mes ordres. Chaque chiffre est calculé, testé et rejouable. Les mots sont de moi. »
+
+---
+# DÉCISION DU CHEF (30/09 ~13h) : ordre de frappe + images
+- **POST A en premier, SEUL** (flair Project/Build, post texte pur, créneau 12h-14h Yaoundé = matin US).
+- **PAS d'image** sur r/ArtificialIntelligence : R2 supprime le contenu image sans signal, R3 traque le funnel.
+  L'illustration téléphone→3 QPU reste réservée à r/FrenchTech.
+- **Séquence anti-ban** (R3 « repetitive self-promotion » = ban permanent) :
+  A aujourd'hui → B dans 3-4 jours SI A a bien tourné → C plus tard, idéalement nourri du débat de A.
+- Lien du repo : jamais dans le titre, en fin de corps pour A, en commentaire pour B/C si demandé.
