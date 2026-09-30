@@ -45,3 +45,25 @@ Questions et critiques bienvenues — c'est fait pour ça. 🙏
 
 ---
 *Note interne : pas d'âge mentionné dans le post (demande du chef — les curieux le verront dans le dépôt). Rien d'inventé : tous les chiffres du post sont réels et calculés.*
+
+---
+
+# VERSION COURTE (30/09 matin — choix du chef : « trop long, personne ne lit »)
+
+**Titre :** J'ai piloté de vrais ordinateurs quantiques depuis mon téléphone (projet open source)
+
+Salut les gars,
+
+Journée perso un peu folle : le matin je recalcule le « mur de Planck » en Python (des scripts + tests automatiques, chaque chiffre vérifié), l'après-midi je loue de vrais ordinateurs quantiques sur une plateforme cloud et je fais tourner de vraies expériences.
+
+Le résultat en 3 chiffres :
+
+- une paire de photons intriqués réussie à **99,6 %**
+- un état de **12 qubits intriqués en même temps** à 66 % (le plus gros du projet)
+- 3 machines différentes comparées (12, 20 et 108 qubits) — et la surprise : la plus grosse est la moins chère 😂
+
+Tout est publié : le code, les données brutes, les échecs compris (licence MIT, une commande pour tout rejouer). L'idée, c'est de partager une méthode de travail rigoureuse et gratuite pour tous ceux qui font de la physique ou veulent s'y mettre.
+
+Critiques, questions, contributions : bienvenues. 🙏
+
+👉 https://github.com/jonathansearch/RATISS-PLANCK
