@@ -18,7 +18,7 @@ Compilé le **26 septembre 2026** · mis à jour le **26/09 au soir** → voir
 | **2** | [`identite/AMORCE-AGENT.md`](identite/AMORCE-AGENT.md) | Le bloc à coller en début de conversation avec n'importe quelle IA. |
 | **3** | [`identite/IDENTITE.md`](identite/IDENTITE.md) | Qui je suis, ce qui est vérifié, ce qui ne l'est pas. |
 | **4** | [`preuves/qpu/REGISTRE-QPU.md`](preuves/qpu/REGISTRE-QPU.md) | Les tâches IBM Quantum : décodage, corroboration, quota. |
-| **5** | [**§ 🛰️ La machine Discord**](#-la-machine-discord--section-mémoire-pour-la-prochaine-session-ia) ↓ | **Tout ce qui a été construit le 26/09 au soir : hub, webhook, CI, 24 salons.** |
+| **5** | [**§ 🛰️ La machine Discord**](#-la-machine-discord--section-mémoire-pour-la-prochaine-session-ia) ↓ | **Tout ce qui a été construit le 26/09 au soir : hub, webhook, CI, 24 textes de salons (22 branchés au hub).** |
 
 ---
 
@@ -264,7 +264,7 @@ python3 agent.py … --dry-run      # n'envoie rien, affiche le JSON (marche SAN
 
 ---
 
-### 📣 LE CONTENU DISCORD — 24 salons + le manifeste
+### 📣 LE CONTENU DISCORD — 24 textes de salons + le manifeste (le hub DISCORD-RATISS en branche 22)
 
 Tout est dans **`discord/salons/`**, prêt à copier-coller. Index de copie : `discord/salons/INDEX.md`.
 

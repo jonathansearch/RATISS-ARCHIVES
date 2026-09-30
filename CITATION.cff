@@ -5,7 +5,8 @@ abstract: >-
   Compilation des preuves, du registre des tâches IBM Quantum, de l'identité et
   des outils de RATISS Labs au 26 septembre 2026. Contient la caractérisation de
   l'encodage temporel des identifiants de tâches IBM Quantum, vérifiée sur 66
-  tâches horodatées par la plateforme (écart médian 278 ms).
+  tâches horodatées par la plateforme (écart médian 278 ms) ; rejouable sur 64
+  charges brutes archivées (médiane 269 ms, max 799 ms).
 authors:
   - family-names: "Evina"
     given-names: "Jonathan"

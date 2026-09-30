@@ -1,683 +1,688 @@
-[
- {
-  "job_id": "d762omnq1anc738d2cj0",
-  "created_utc": "2026-03-31T20:19:38.929278+00:00",
-  "fichiers": [
-   "RATISS-Framework/ratiss/ids.py",
-   "RATISS-Framework/ratiss/verify.py"
-  ]
- },
- {
-  "job_id": "d9ttpfj43mgs73es7feg",
-  "created_utc": "2026-08-12T02:38:54.343585+00:00",
-  "fichiers": [
-   "RATISS-ODV-AEON/LCT.md",
-   "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
-  ]
- },
- {
-  "job_id": "d9tu0kd35hes73fj6edg",
-  "created_utc": "2026-08-12T02:54:09.589923+00:00",
-  "fichiers": [
-   "RATISS-ODV-AEON/LCT.md",
-   "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
-  ]
- },
- {
-  "job_id": "d9tut3r43mgs73es9elg",
-  "created_utc": "2026-08-12T03:54:55.343585+00:00",
-  "fichiers": [
-   "RATISS-ODV-AEON/LCT.md",
-   "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
-  ]
- },
- {
-  "job_id": "d9u42dt35hes73fje2bg",
-  "created_utc": "2026-08-12T09:47:35.589923+00:00",
-  "fichiers": [
-   "RATISS-ODV-AEON/LCT.md",
-   "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
-  ]
- },
- {
-  "job_id": "d9u47t0u5hac73agnhj0",
-  "created_utc": "2026-08-12T09:59:16.070392+00:00",
-  "fichiers": [
-   "RATISS-Framework/tests/test_ids.py",
-   "RATISS-Framework/tests/test_verify.py"
-  ]
- },
- {
-  "job_id": "d9u48aj43mgs73esfle0",
-  "created_utc": "2026-08-12T10:00:10.343585+00:00",
-  "fichiers": [
-   "RATISS-ODV-AEON/LCT.md",
-   "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
-  ]
- },
- {
-  "job_id": "d9u48o498n5s7392c0jg",
-  "created_utc": "2026-08-12T10:01:04.488727+00:00",
-  "fichiers": [
-   "RATISS-ODV-AEON/LCT.md",
-   "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
-  ]
- },
- {
-  "job_id": "da53s4jotlns739bfgu0",
-  "created_utc": "2026-08-23T00:25:54.424884+00:00",
-  "fichiers": [
-   "ratiss-decoherence-atlas/README.md",
-   "ratiss-topological-decoherence-engine/README.md"
-  ]
- },
- {
-  "job_id": "da58ftmaa69c739kic90",
-  "created_utc": "2026-08-23T05:41:10.742877+00:00",
-  "fichiers": [
-   "ratiss-decoherence-atlas/README.md",
-   "ratiss-topological-decoherence-engine/README.md"
-  ]
- },
- {
-  "job_id": "da5uajeaa69c739latgg",
-  "created_utc": "2026-08-24T06:31:41.742877+00:00",
-  "fichiers": [
-   "Algorithmes-quantique-Ratiss-labs-/README.md"
-  ]
- },
- {
-  "job_id": "da5uituaa69c739lb6m0",
-  "created_utc": "2026-08-24T06:49:27.742877+00:00",
-  "fichiers": [
-   "Algorithmes-quantique-Ratiss-labs-/README.md"
-  ]
- },
- {
-  "job_id": "da5ujreaa69c739lb7m0",
-  "created_utc": "2026-08-24T06:51:25.742877+00:00",
-  "fichiers": [
-   "Algorithmes-quantique-Ratiss-labs-/README.md"
-  ]
- },
- {
-  "job_id": "da7ke8c6l22c73dnn2mg",
-  "created_utc": "2026-08-26T20:05:53.478595+00:00",
-  "fichiers": [
-   "Travaux/artifacts/qpu_ibmmarrakesh.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json"
-  ]
- },
- {
-  "job_id": "da7lomk6l22c73dnohr0",
-  "created_utc": "2026-08-26T21:36:26.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lomk6l22c73dnohr0.json"
-  ]
- },
- {
-  "job_id": "da7lopbsq5js73bk459g",
-  "created_utc": "2026-08-26T21:36:37.440143+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lopbsq5js73bk459g.json"
-  ]
- },
- {
-  "job_id": "da7lorusidac73afh7g0",
-  "created_utc": "2026-08-26T21:36:47.814166+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lorusidac73afh7g0.json"
-  ]
- },
- {
-  "job_id": "da7loumsidac73afh7k0",
-  "created_utc": "2026-08-26T21:36:58.814166+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7loumsidac73afh7k0.json"
-  ]
- },
- {
-  "job_id": "da7lp1e0ukec7383f43g",
-  "created_utc": "2026-08-26T21:37:09.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lp1e0ukec7383f43g.json"
-  ]
- },
- {
-  "job_id": "da7lp3m0ukec7383f470",
-  "created_utc": "2026-08-26T21:37:18.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lp3m0ukec7383f470.json"
-  ]
- },
- {
-  "job_id": "da7lp5rsq5js73bk45n0",
-  "created_utc": "2026-08-26T21:37:27.440143+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lp5rsq5js73bk45n0.json"
-  ]
- },
- {
-  "job_id": "da7lp8c6l22c73dnoic0",
-  "created_utc": "2026-08-26T21:37:37.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lp8c6l22c73dnoic0.json"
-  ]
- },
- {
-  "job_id": "da7lpausidac73afh82g",
-  "created_utc": "2026-08-26T21:37:47.814166+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpausidac73afh82g.json"
-  ]
- },
- {
-  "job_id": "da7lpd46l22c73dnoihg",
-  "created_utc": "2026-08-26T21:37:56.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpd46l22c73dnoihg.json"
-  ]
- },
- {
-  "job_id": "da7lpfk6l22c73dnoikg",
-  "created_utc": "2026-08-26T21:38:06.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpfk6l22c73dnoikg.json"
-  ]
- },
- {
-  "job_id": "da7lphs6l22c73dnoio0",
-  "created_utc": "2026-08-26T21:38:15.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lphs6l22c73dnoio0.json"
-  ]
- },
- {
-  "job_id": "da7lpk60ukec7383f4pg",
-  "created_utc": "2026-08-26T21:38:24.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpk60ukec7383f4pg.json"
-  ]
- },
- {
-  "job_id": "da7lpme0ukec7383f4s0",
-  "created_utc": "2026-08-26T21:38:33.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpme0ukec7383f4s0.json"
-  ]
- },
- {
-  "job_id": "da7lpom0ukec7383f4v0",
-  "created_utc": "2026-08-26T21:38:42.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpom0ukec7383f4v0.json"
-  ]
- },
- {
-  "job_id": "da7lpqs6l22c73dnoj10",
-  "created_utc": "2026-08-26T21:38:51.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpqs6l22c73dnoj10.json"
-  ]
- },
- {
-  "job_id": "da7lptc6l22c73dnoj40",
-  "created_utc": "2026-08-26T21:39:01.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lptc6l22c73dnoj40.json"
-  ]
- },
- {
-  "job_id": "da7lpvm0ukec7383f58g",
-  "created_utc": "2026-08-26T21:39:10.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpvm0ukec7383f58g.json"
-  ]
- },
- {
-  "job_id": "da7m1es6l22c73dnoqgg",
-  "created_utc": "2026-08-26T21:55:07.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1es6l22c73dnoqgg.json"
-  ]
- },
- {
-  "job_id": "da7m1hm0ukec7383fco0",
-  "created_utc": "2026-08-26T21:55:18.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1hm0ukec7383fco0.json"
-  ]
- },
- {
-  "job_id": "da7m1m60ukec7383fct0",
-  "created_utc": "2026-08-26T21:55:36.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1m60ukec7383fct0.json"
-  ]
- },
- {
-  "job_id": "da7m1ojsq5js73bk4e30",
-  "created_utc": "2026-08-26T21:55:46.440143+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1ojsq5js73bk4e30.json"
-  ]
- },
- {
-  "job_id": "da7m1r6sidac73afhgh0",
-  "created_utc": "2026-08-26T21:55:56.814166+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1r6sidac73afhgh0.json"
-  ]
- },
- {
-  "job_id": "da7m1u60ukec7383fd5g",
-  "created_utc": "2026-08-26T21:56:08.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1u60ukec7383fd5g.json"
-  ]
- },
- {
-  "job_id": "da7m20usidac73afhgn0",
-  "created_utc": "2026-08-26T21:56:19.814166+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m20usidac73afhgn0.json"
-  ]
- },
- {
-  "job_id": "da7m2360ukec7383fdag",
-  "created_utc": "2026-08-26T21:56:28.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2360ukec7383fdag.json"
-  ]
- },
- {
-  "job_id": "da7m27rsq5js73bk4ehg",
-  "created_utc": "2026-08-26T21:56:47.440143+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m27rsq5js73bk4ehg.json"
-  ]
- },
- {
-  "job_id": "da7m2au0ukec7383fdhg",
-  "created_utc": "2026-08-26T21:56:59.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2au0ukec7383fdhg.json"
-  ]
- },
- {
-  "job_id": "da7m2de0ukec7383fdk0",
-  "created_utc": "2026-08-26T21:57:09.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2de0ukec7383fdk0.json"
-  ]
- },
- {
-  "job_id": "da7m2fu0ukec7383fdn0",
-  "created_utc": "2026-08-26T21:57:19.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2fu0ukec7383fdn0.json"
-  ]
- },
- {
-  "job_id": "da7m2i3sq5js73bk4eqg",
-  "created_utc": "2026-08-26T21:57:28.440143+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2i3sq5js73bk4eqg.json"
-  ]
- },
- {
-  "job_id": "da7m2km0ukec7383fdrg",
-  "created_utc": "2026-08-26T21:57:38.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2km0ukec7383fdrg.json"
-  ]
- },
- {
-  "job_id": "da7m2oesidac73afhhcg",
-  "created_utc": "2026-08-26T21:57:53.814166+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2oesidac73afhhcg.json"
-  ]
- },
- {
-  "job_id": "da7m2ru0ukec7383fe30",
-  "created_utc": "2026-08-26T21:58:07.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2ru0ukec7383fe30.json"
-  ]
- },
- {
-  "job_id": "da7m2umsidac73afhhkg",
-  "created_utc": "2026-08-26T21:58:18.814166+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2umsidac73afhhkg.json"
-  ]
- },
- {
-  "job_id": "da7m316sidac73afhhp0",
-  "created_utc": "2026-08-26T21:58:28.814166+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m316sidac73afhhp0.json"
-  ]
- },
- {
-  "job_id": "da7m9l46l22c73dnp3s0",
-  "created_utc": "2026-08-26T22:12:36.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m9l46l22c73dnp3s0.json"
-  ]
- },
- {
-  "job_id": "da7m9ns6l22c73dnp3v0",
-  "created_utc": "2026-08-26T22:12:47.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7m9ns6l22c73dnp3v0.json"
-  ]
- },
- {
-  "job_id": "da7mad60ukec7383fmrg",
-  "created_utc": "2026-08-26T22:14:12.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7mad60ukec7383fmrg.json"
-  ]
- },
- {
-  "job_id": "da7mahe0ukec7383fn00",
-  "created_utc": "2026-08-26T22:14:29.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7mahe0ukec7383fn00.json"
-  ]
- },
- {
-  "job_id": "da7makc6l22c73dnp4pg",
-  "created_utc": "2026-08-26T22:14:41.478595+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7makc6l22c73dnp4pg.json"
-  ]
- },
- {
-  "job_id": "da7mane0ukec7383fn5g",
-  "created_utc": "2026-08-26T22:14:53.706256+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/da7mane0ukec7383fn5g.json"
-  ]
- },
- {
-  "job_id": "da81b5m0ukec7383sf20",
-  "created_utc": "2026-08-27T10:46:46.706256+00:00",
-  "fichiers": [
-   "Travaux/MEMO_KTN_LI.md",
-   "Travaux/artifacts/ktn_phase5_qpu.json"
-  ]
- },
- {
-  "job_id": "da81r1k6l22c73do6msg",
-  "created_utc": "2026-08-27T11:20:38.478595+00:00",
-  "fichiers": [
-   "Travaux/MEMO_KTN_LI.md",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json"
-  ]
- },
- {
-  "job_id": "daa1nahqtnsc73d24jhg",
-  "created_utc": "2026-08-30T12:01:46.182696+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/daa1nahqtnsc73d24jhg.json"
-  ]
- },
- {
-  "job_id": "daa1nferbfbs73ci6kfg",
-  "created_utc": "2026-08-30T12:02:05.809405+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/daa1nferbfbs73ci6kfg.json"
-  ]
- },
- {
-  "job_id": "daa1rmcjbipc73ffdc3g",
-  "created_utc": "2026-08-30T12:11:05.528155+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/daa1rmcjbipc73ffdc3g.json"
-  ]
- },
- {
-  "job_id": "daa1rp4e74ec73akac30",
-  "created_utc": "2026-08-30T12:11:16.508136+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/daa1rp4e74ec73akac30.json"
-  ]
- },
- {
-  "job_id": "daa1rs9qtnsc73d24o70",
-  "created_utc": "2026-08-30T12:11:29.182696+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/daa1rs9qtnsc73d24o70.json"
-  ]
- },
- {
-  "job_id": "daa1s39qtnsc73d24oeg",
-  "created_utc": "2026-08-30T12:11:57.182696+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/daa1s39qtnsc73d24oeg.json"
-  ]
- },
- {
-  "job_id": "daa1s6mrbfbs73ci6p8g",
-  "created_utc": "2026-08-30T12:12:10.809405+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/daa1s6mrbfbs73ci6p8g.json"
-  ]
- },
- {
-  "job_id": "daakncpqtnsc73d2qf60",
-  "created_utc": "2026-08-31T09:38:59.182696+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/daakncpqtnsc73d2qf60.json"
-  ]
- },
- {
-  "job_id": "dab0oamrrl7c738678k0",
-  "created_utc": "2026-08-31T23:20:10.811358+00:00",
-  "fichiers": [
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/dab0oamrrl7c738678k0.json"
-  ]
- },
- {
-  "job_id": "dap7su82fm4c73f6dsrg",
-  "created_utc": "2026-09-22T13:11:20.962237+00:00",
-  "fichiers": [
-   "ratiss-focal/JOURNAL.md",
-   "ratiss-focal/PASSERELLE-REEL.md"
-  ]
- },
- {
-  "job_id": "dap8368pqrnc739avu2g",
-  "created_utc": "2026-09-22T13:24:41.053424+00:00",
-  "fichiers": [
-   "ratiss-focal/JOURNAL.md",
-   "ratiss-focal/PASSERELLE-REEL.md"
-  ]
- },
- {
-  "job_id": "dap88g02fm4c73f6eb3g",
-  "created_utc": "2026-09-22T13:35:59.962237+00:00",
-  "fichiers": [
-   "ratiss-focal/JOURNAL.md",
-   "ratiss-focal/PASSERELLE-REEL.md"
-  ]
- },
- {
-  "job_id": "dap8ca78gn2s739osa10",
-  "created_utc": "2026-09-22T13:44:08.860797+00:00",
-  "fichiers": [
-   "ratiss-focal/JOURNAL.md",
-   "ratiss-focal/PASSERELLE-REEL.md"
-  ]
- },
- {
-  "job_id": "dap8jg8pqrnc739b0hc0",
-  "created_utc": "2026-09-22T13:59:29.053424+00:00",
-  "fichiers": [
-   "ratiss-focal/JOURNAL.md",
-   "ratiss-focal/PASSERELLE-REEL.md"
-  ]
- },
- {
-  "job_id": "dapc3t4ak42c73cibdd0",
-  "created_utc": "2026-09-22T17:59:16.494098+00:00",
-  "fichiers": [
-   "ratiss-focal/JOURNAL.md",
-   "ratiss-focal/PASSERELLE-REEL.md"
-  ]
- },
- {
-  "job_id": "dapcj5ac505c73chvsh0",
-  "created_utc": "2026-09-22T18:31:49.250079+00:00",
-  "fichiers": [
-   "ratiss-focal/JOURNAL.md",
-   "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json"
-  ]
- },
- {
-  "job_id": "dapck92c505c73chvtqg",
-  "created_utc": "2026-09-22T18:34:12.250079+00:00",
-  "fichiers": [
-   "ratiss-focal/JOURNAL.md",
-   "ratiss-focal/PASSERELLE-REEL.md"
-  ]
- },
- {
-  "job_id": "daper94ak42c73cife9g",
-  "created_utc": "2026-09-22T21:05:40.494098+00:00",
-  "fichiers": [
-   "ratiss-continuums/JOURNAL.md",
-   "ratiss-continuums/PROTOCOLES.md"
-  ]
- },
- {
-  "job_id": "dapfgpgr7bnc73b3brpg",
-  "created_utc": "2026-09-22T21:51:34.058917+00:00",
-  "fichiers": [
-   "ratiss-continuums/JOURNAL.md",
-   "ratiss-continuums/PROTOCOLES.md"
-  ]
- },
- {
-  "job_id": "dapm7lj18flc739mhpl0",
-  "created_utc": "2026-09-23T05:29:58.332477+00:00",
-  "fichiers": [
-   "synchrotron-24/qpu-bigbang/job1_id.txt"
-  ]
- },
- {
-  "job_id": "dapmb3318flc739mi1ig",
-  "created_utc": "2026-09-23T05:37:16.332477+00:00",
-  "fichiers": [
-   "synchrotron-24/qpu-bigbang/job2_id.txt"
-  ]
- },
- {
-  "job_id": "dapmdhcak42c73cis200",
-  "created_utc": "2026-09-23T05:42:29.494098+00:00",
-  "fichiers": [
-   "synchrotron-24/qpu-bigbang/job3_id.txt",
-   "synchrotron-24/qpu-bigbang/qpu_batch3.json"
-  ]
- },
- {
-  "job_id": "dapu6sic505c73cir6f0",
-  "created_utc": "2026-09-23T14:34:26.250079+00:00",
-  "fichiers": [
-   "synchrotron-24/qpu-bigbang/RAPPORT_DECOUVERTES.md",
-   "synchrotron-24/qpu-bigbang/job4_id.txt"
-  ]
- },
- {
-  "job_id": "dapumhj18flc739mu8lg",
-  "created_utc": "2026-09-23T15:07:50.332477+00:00",
-  "fichiers": [
-   "synchrotron-24/qpu-bigbang/SYNTHESE_MOISSONS.md",
-   "synchrotron-24/qpu-bigbang/moissonneur/job_h1_id.txt"
-  ]
- },
- {
-  "job_id": "dapup6ic505c73cirsv0",
-  "created_utc": "2026-09-23T15:13:30.250079+00:00",
-  "fichiers": [
-   "RATISS-QVM/rqvm/data/twins.json",
-   "synchrotron-24/qpu-bigbang/moissonneur/job_h2_ibm_marrakesh.txt"
-  ]
- },
- {
-  "job_id": "dapup6kak42c73cj85s0",
-  "created_utc": "2026-09-23T15:13:30.494098+00:00",
-  "fichiers": [
-   "RATISS-QVM/rqvm/data/twins.json",
-   "synchrotron-24/qpu-bigbang/moissonneur/job_h2_ibm_kingston.txt"
-  ]
- },
- {
-  "job_id": "dapv4t0r7bnc73b441lg",
-  "created_utc": "2026-09-23T15:38:28.058917+00:00",
-  "fichiers": [
-   "synchrotron-24/qpu-bigbang/moissonneur/job_r3_kingston.txt"
-  ]
- },
- {
-  "job_id": "daq07ij18flc739n0eog",
-  "created_utc": "2026-09-23T16:52:26.332477+00:00",
-  "fichiers": [
-   "synchrotron-24/qpu-bigbang/moissonneur/job_r3b.txt"
-  ]
- }
-]
+{
+  "decodeur_version": "decode_job_id.py@b4fafa7 (base32(id[:9])/8192)",
+  "regenere_le": "2026-09-30T14:21:27+00:00",
+  "note": "horodatages DÉCODÉS de l'ID (pas des horodatages serveur). Ancienne version conservée en .legacy.json (écart constant −47,4 ms sur tous-les-jobs).",
+  "jobs": [
+    {
+      "job_id": "d762omnq1anc738d2cj0",
+      "created_utc": "2026-03-31T20:19:38.976685+00:00",
+      "fichiers": [
+        "RATISS-Framework/ratiss/ids.py",
+        "RATISS-Framework/ratiss/verify.py"
+      ]
+    },
+    {
+      "job_id": "d9ttpfj43mgs73es7feg",
+      "created_utc": "2026-08-12T02:38:54.390991+00:00",
+      "fichiers": [
+        "RATISS-ODV-AEON/LCT.md",
+        "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
+      ]
+    },
+    {
+      "job_id": "d9tu0kd35hes73fj6edg",
+      "created_utc": "2026-08-12T02:54:09.637329+00:00",
+      "fichiers": [
+        "RATISS-ODV-AEON/LCT.md",
+        "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
+      ]
+    },
+    {
+      "job_id": "d9tut3r43mgs73es9elg",
+      "created_utc": "2026-08-12T03:54:55.390991+00:00",
+      "fichiers": [
+        "RATISS-ODV-AEON/LCT.md",
+        "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
+      ]
+    },
+    {
+      "job_id": "d9u42dt35hes73fje2bg",
+      "created_utc": "2026-08-12T09:47:35.637329+00:00",
+      "fichiers": [
+        "RATISS-ODV-AEON/LCT.md",
+        "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
+      ]
+    },
+    {
+      "job_id": "d9u47t0u5hac73agnhj0",
+      "created_utc": "2026-08-12T09:59:16.117798+00:00",
+      "fichiers": [
+        "RATISS-Framework/tests/test_ids.py",
+        "RATISS-Framework/tests/test_verify.py"
+      ]
+    },
+    {
+      "job_id": "d9u48aj43mgs73esfle0",
+      "created_utc": "2026-08-12T10:00:10.390991+00:00",
+      "fichiers": [
+        "RATISS-ODV-AEON/LCT.md",
+        "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
+      ]
+    },
+    {
+      "job_id": "d9u48o498n5s7392c0jg",
+      "created_utc": "2026-08-12T10:01:04.536133+00:00",
+      "fichiers": [
+        "RATISS-ODV-AEON/LCT.md",
+        "RATISS-ODV-AEON/RATISS_TECHNICAL_REPORT.md"
+      ]
+    },
+    {
+      "job_id": "da53s4jotlns739bfgu0",
+      "created_utc": "2026-08-23T00:25:54.472290+00:00",
+      "fichiers": [
+        "ratiss-decoherence-atlas/README.md",
+        "ratiss-topological-decoherence-engine/README.md"
+      ]
+    },
+    {
+      "job_id": "da58ftmaa69c739kic90",
+      "created_utc": "2026-08-23T05:41:10.790283+00:00",
+      "fichiers": [
+        "ratiss-decoherence-atlas/README.md",
+        "ratiss-topological-decoherence-engine/README.md"
+      ]
+    },
+    {
+      "job_id": "da5uajeaa69c739latgg",
+      "created_utc": "2026-08-24T06:31:41.790283+00:00",
+      "fichiers": [
+        "Algorithmes-quantique-Ratiss-labs-/README.md"
+      ]
+    },
+    {
+      "job_id": "da5uituaa69c739lb6m0",
+      "created_utc": "2026-08-24T06:49:27.790283+00:00",
+      "fichiers": [
+        "Algorithmes-quantique-Ratiss-labs-/README.md"
+      ]
+    },
+    {
+      "job_id": "da5ujreaa69c739lb7m0",
+      "created_utc": "2026-08-24T06:51:25.790283+00:00",
+      "fichiers": [
+        "Algorithmes-quantique-Ratiss-labs-/README.md"
+      ]
+    },
+    {
+      "job_id": "da7ke8c6l22c73dnn2mg",
+      "created_utc": "2026-08-26T20:05:53.526001+00:00",
+      "fichiers": [
+        "Travaux/artifacts/qpu_ibmmarrakesh.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json"
+      ]
+    },
+    {
+      "job_id": "da7lomk6l22c73dnohr0",
+      "created_utc": "2026-08-26T21:36:26.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lomk6l22c73dnohr0.json"
+      ]
+    },
+    {
+      "job_id": "da7lopbsq5js73bk459g",
+      "created_utc": "2026-08-26T21:36:37.487549+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lopbsq5js73bk459g.json"
+      ]
+    },
+    {
+      "job_id": "da7lorusidac73afh7g0",
+      "created_utc": "2026-08-26T21:36:47.861572+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lorusidac73afh7g0.json"
+      ]
+    },
+    {
+      "job_id": "da7loumsidac73afh7k0",
+      "created_utc": "2026-08-26T21:36:58.861572+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7loumsidac73afh7k0.json"
+      ]
+    },
+    {
+      "job_id": "da7lp1e0ukec7383f43g",
+      "created_utc": "2026-08-26T21:37:09.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lp1e0ukec7383f43g.json"
+      ]
+    },
+    {
+      "job_id": "da7lp3m0ukec7383f470",
+      "created_utc": "2026-08-26T21:37:18.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lp3m0ukec7383f470.json"
+      ]
+    },
+    {
+      "job_id": "da7lp5rsq5js73bk45n0",
+      "created_utc": "2026-08-26T21:37:27.487549+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lp5rsq5js73bk45n0.json"
+      ]
+    },
+    {
+      "job_id": "da7lp8c6l22c73dnoic0",
+      "created_utc": "2026-08-26T21:37:37.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lp8c6l22c73dnoic0.json"
+      ]
+    },
+    {
+      "job_id": "da7lpausidac73afh82g",
+      "created_utc": "2026-08-26T21:37:47.861572+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpausidac73afh82g.json"
+      ]
+    },
+    {
+      "job_id": "da7lpd46l22c73dnoihg",
+      "created_utc": "2026-08-26T21:37:56.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpd46l22c73dnoihg.json"
+      ]
+    },
+    {
+      "job_id": "da7lpfk6l22c73dnoikg",
+      "created_utc": "2026-08-26T21:38:06.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpfk6l22c73dnoikg.json"
+      ]
+    },
+    {
+      "job_id": "da7lphs6l22c73dnoio0",
+      "created_utc": "2026-08-26T21:38:15.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lphs6l22c73dnoio0.json"
+      ]
+    },
+    {
+      "job_id": "da7lpk60ukec7383f4pg",
+      "created_utc": "2026-08-26T21:38:24.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpk60ukec7383f4pg.json"
+      ]
+    },
+    {
+      "job_id": "da7lpme0ukec7383f4s0",
+      "created_utc": "2026-08-26T21:38:33.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpme0ukec7383f4s0.json"
+      ]
+    },
+    {
+      "job_id": "da7lpom0ukec7383f4v0",
+      "created_utc": "2026-08-26T21:38:42.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpom0ukec7383f4v0.json"
+      ]
+    },
+    {
+      "job_id": "da7lpqs6l22c73dnoj10",
+      "created_utc": "2026-08-26T21:38:51.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpqs6l22c73dnoj10.json"
+      ]
+    },
+    {
+      "job_id": "da7lptc6l22c73dnoj40",
+      "created_utc": "2026-08-26T21:39:01.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lptc6l22c73dnoj40.json"
+      ]
+    },
+    {
+      "job_id": "da7lpvm0ukec7383f58g",
+      "created_utc": "2026-08-26T21:39:10.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7lpvm0ukec7383f58g.json"
+      ]
+    },
+    {
+      "job_id": "da7m1es6l22c73dnoqgg",
+      "created_utc": "2026-08-26T21:55:07.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1es6l22c73dnoqgg.json"
+      ]
+    },
+    {
+      "job_id": "da7m1hm0ukec7383fco0",
+      "created_utc": "2026-08-26T21:55:18.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1hm0ukec7383fco0.json"
+      ]
+    },
+    {
+      "job_id": "da7m1m60ukec7383fct0",
+      "created_utc": "2026-08-26T21:55:36.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1m60ukec7383fct0.json"
+      ]
+    },
+    {
+      "job_id": "da7m1ojsq5js73bk4e30",
+      "created_utc": "2026-08-26T21:55:46.487549+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1ojsq5js73bk4e30.json"
+      ]
+    },
+    {
+      "job_id": "da7m1r6sidac73afhgh0",
+      "created_utc": "2026-08-26T21:55:56.861572+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1r6sidac73afhgh0.json"
+      ]
+    },
+    {
+      "job_id": "da7m1u60ukec7383fd5g",
+      "created_utc": "2026-08-26T21:56:08.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m1u60ukec7383fd5g.json"
+      ]
+    },
+    {
+      "job_id": "da7m20usidac73afhgn0",
+      "created_utc": "2026-08-26T21:56:19.861572+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m20usidac73afhgn0.json"
+      ]
+    },
+    {
+      "job_id": "da7m2360ukec7383fdag",
+      "created_utc": "2026-08-26T21:56:28.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2360ukec7383fdag.json"
+      ]
+    },
+    {
+      "job_id": "da7m27rsq5js73bk4ehg",
+      "created_utc": "2026-08-26T21:56:47.487549+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m27rsq5js73bk4ehg.json"
+      ]
+    },
+    {
+      "job_id": "da7m2au0ukec7383fdhg",
+      "created_utc": "2026-08-26T21:56:59.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2au0ukec7383fdhg.json"
+      ]
+    },
+    {
+      "job_id": "da7m2de0ukec7383fdk0",
+      "created_utc": "2026-08-26T21:57:09.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2de0ukec7383fdk0.json"
+      ]
+    },
+    {
+      "job_id": "da7m2fu0ukec7383fdn0",
+      "created_utc": "2026-08-26T21:57:19.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2fu0ukec7383fdn0.json"
+      ]
+    },
+    {
+      "job_id": "da7m2i3sq5js73bk4eqg",
+      "created_utc": "2026-08-26T21:57:28.487549+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2i3sq5js73bk4eqg.json"
+      ]
+    },
+    {
+      "job_id": "da7m2km0ukec7383fdrg",
+      "created_utc": "2026-08-26T21:57:38.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2km0ukec7383fdrg.json"
+      ]
+    },
+    {
+      "job_id": "da7m2oesidac73afhhcg",
+      "created_utc": "2026-08-26T21:57:53.861572+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2oesidac73afhhcg.json"
+      ]
+    },
+    {
+      "job_id": "da7m2ru0ukec7383fe30",
+      "created_utc": "2026-08-26T21:58:07.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2ru0ukec7383fe30.json"
+      ]
+    },
+    {
+      "job_id": "da7m2umsidac73afhhkg",
+      "created_utc": "2026-08-26T21:58:18.861572+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m2umsidac73afhhkg.json"
+      ]
+    },
+    {
+      "job_id": "da7m316sidac73afhhp0",
+      "created_utc": "2026-08-26T21:58:28.861572+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m316sidac73afhhp0.json"
+      ]
+    },
+    {
+      "job_id": "da7m9l46l22c73dnp3s0",
+      "created_utc": "2026-08-26T22:12:36.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m9l46l22c73dnp3s0.json"
+      ]
+    },
+    {
+      "job_id": "da7m9ns6l22c73dnp3v0",
+      "created_utc": "2026-08-26T22:12:47.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7m9ns6l22c73dnp3v0.json"
+      ]
+    },
+    {
+      "job_id": "da7mad60ukec7383fmrg",
+      "created_utc": "2026-08-26T22:14:12.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7mad60ukec7383fmrg.json"
+      ]
+    },
+    {
+      "job_id": "da7mahe0ukec7383fn00",
+      "created_utc": "2026-08-26T22:14:29.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7mahe0ukec7383fn00.json"
+      ]
+    },
+    {
+      "job_id": "da7makc6l22c73dnp4pg",
+      "created_utc": "2026-08-26T22:14:41.526001+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7makc6l22c73dnp4pg.json"
+      ]
+    },
+    {
+      "job_id": "da7mane0ukec7383fn5g",
+      "created_utc": "2026-08-26T22:14:53.753662+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/da7mane0ukec7383fn5g.json"
+      ]
+    },
+    {
+      "job_id": "da81b5m0ukec7383sf20",
+      "created_utc": "2026-08-27T10:46:46.753662+00:00",
+      "fichiers": [
+        "Travaux/MEMO_KTN_LI.md",
+        "Travaux/artifacts/ktn_phase5_qpu.json"
+      ]
+    },
+    {
+      "job_id": "da81r1k6l22c73do6msg",
+      "created_utc": "2026-08-27T11:20:38.526001+00:00",
+      "fichiers": [
+        "Travaux/MEMO_KTN_LI.md",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json"
+      ]
+    },
+    {
+      "job_id": "daa1nahqtnsc73d24jhg",
+      "created_utc": "2026-08-30T12:01:46.230103+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/daa1nahqtnsc73d24jhg.json"
+      ]
+    },
+    {
+      "job_id": "daa1nferbfbs73ci6kfg",
+      "created_utc": "2026-08-30T12:02:05.856812+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/daa1nferbfbs73ci6kfg.json"
+      ]
+    },
+    {
+      "job_id": "daa1rmcjbipc73ffdc3g",
+      "created_utc": "2026-08-30T12:11:05.575562+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/daa1rmcjbipc73ffdc3g.json"
+      ]
+    },
+    {
+      "job_id": "daa1rp4e74ec73akac30",
+      "created_utc": "2026-08-30T12:11:16.555542+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/daa1rp4e74ec73akac30.json"
+      ]
+    },
+    {
+      "job_id": "daa1rs9qtnsc73d24o70",
+      "created_utc": "2026-08-30T12:11:29.230103+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/daa1rs9qtnsc73d24o70.json"
+      ]
+    },
+    {
+      "job_id": "daa1s39qtnsc73d24oeg",
+      "created_utc": "2026-08-30T12:11:57.230103+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/daa1s39qtnsc73d24oeg.json"
+      ]
+    },
+    {
+      "job_id": "daa1s6mrbfbs73ci6p8g",
+      "created_utc": "2026-08-30T12:12:10.856812+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/daa1s6mrbfbs73ci6p8g.json"
+      ]
+    },
+    {
+      "job_id": "daakncpqtnsc73d2qf60",
+      "created_utc": "2026-08-31T09:38:59.230103+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/daakncpqtnsc73d2qf60.json"
+      ]
+    },
+    {
+      "job_id": "dab0oamrrl7c738678k0",
+      "created_utc": "2026-08-31T23:20:10.858765+00:00",
+      "fichiers": [
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/dab0oamrrl7c738678k0.json"
+      ]
+    },
+    {
+      "job_id": "dap7su82fm4c73f6dsrg",
+      "created_utc": "2026-09-22T13:11:21.009644+00:00",
+      "fichiers": [
+        "ratiss-focal/JOURNAL.md",
+        "ratiss-focal/PASSERELLE-REEL.md"
+      ]
+    },
+    {
+      "job_id": "dap8368pqrnc739avu2g",
+      "created_utc": "2026-09-22T13:24:41.100830+00:00",
+      "fichiers": [
+        "ratiss-focal/JOURNAL.md",
+        "ratiss-focal/PASSERELLE-REEL.md"
+      ]
+    },
+    {
+      "job_id": "dap88g02fm4c73f6eb3g",
+      "created_utc": "2026-09-22T13:36:00.009644+00:00",
+      "fichiers": [
+        "ratiss-focal/JOURNAL.md",
+        "ratiss-focal/PASSERELLE-REEL.md"
+      ]
+    },
+    {
+      "job_id": "dap8ca78gn2s739osa10",
+      "created_utc": "2026-09-22T13:44:08.908203+00:00",
+      "fichiers": [
+        "ratiss-focal/JOURNAL.md",
+        "ratiss-focal/PASSERELLE-REEL.md"
+      ]
+    },
+    {
+      "job_id": "dap8jg8pqrnc739b0hc0",
+      "created_utc": "2026-09-22T13:59:29.100830+00:00",
+      "fichiers": [
+        "ratiss-focal/JOURNAL.md",
+        "ratiss-focal/PASSERELLE-REEL.md"
+      ]
+    },
+    {
+      "job_id": "dapc3t4ak42c73cibdd0",
+      "created_utc": "2026-09-22T17:59:16.541504+00:00",
+      "fichiers": [
+        "ratiss-focal/JOURNAL.md",
+        "ratiss-focal/PASSERELLE-REEL.md"
+      ]
+    },
+    {
+      "job_id": "dapcj5ac505c73chvsh0",
+      "created_utc": "2026-09-22T18:31:49.297485+00:00",
+      "fichiers": [
+        "ratiss-focal/JOURNAL.md",
+        "ratiss-focal/passerelle_quantique/jobs_ibm/INDEX.json"
+      ]
+    },
+    {
+      "job_id": "dapck92c505c73chvtqg",
+      "created_utc": "2026-09-22T18:34:12.297485+00:00",
+      "fichiers": [
+        "ratiss-focal/JOURNAL.md",
+        "ratiss-focal/PASSERELLE-REEL.md"
+      ]
+    },
+    {
+      "job_id": "daper94ak42c73cife9g",
+      "created_utc": "2026-09-22T21:05:40.541504+00:00",
+      "fichiers": [
+        "ratiss-continuums/JOURNAL.md",
+        "ratiss-continuums/PROTOCOLES.md"
+      ]
+    },
+    {
+      "job_id": "dapfgpgr7bnc73b3brpg",
+      "created_utc": "2026-09-22T21:51:34.106323+00:00",
+      "fichiers": [
+        "ratiss-continuums/JOURNAL.md",
+        "ratiss-continuums/PROTOCOLES.md"
+      ]
+    },
+    {
+      "job_id": "dapm7lj18flc739mhpl0",
+      "created_utc": "2026-09-23T05:29:58.379883+00:00",
+      "fichiers": [
+        "synchrotron-24/qpu-bigbang/job1_id.txt"
+      ]
+    },
+    {
+      "job_id": "dapmb3318flc739mi1ig",
+      "created_utc": "2026-09-23T05:37:16.379883+00:00",
+      "fichiers": [
+        "synchrotron-24/qpu-bigbang/job2_id.txt"
+      ]
+    },
+    {
+      "job_id": "dapmdhcak42c73cis200",
+      "created_utc": "2026-09-23T05:42:29.541504+00:00",
+      "fichiers": [
+        "synchrotron-24/qpu-bigbang/job3_id.txt",
+        "synchrotron-24/qpu-bigbang/qpu_batch3.json"
+      ]
+    },
+    {
+      "job_id": "dapu6sic505c73cir6f0",
+      "created_utc": "2026-09-23T14:34:26.297485+00:00",
+      "fichiers": [
+        "synchrotron-24/qpu-bigbang/RAPPORT_DECOUVERTES.md",
+        "synchrotron-24/qpu-bigbang/job4_id.txt"
+      ]
+    },
+    {
+      "job_id": "dapumhj18flc739mu8lg",
+      "created_utc": "2026-09-23T15:07:50.379883+00:00",
+      "fichiers": [
+        "synchrotron-24/qpu-bigbang/SYNTHESE_MOISSONS.md",
+        "synchrotron-24/qpu-bigbang/moissonneur/job_h1_id.txt"
+      ]
+    },
+    {
+      "job_id": "dapup6ic505c73cirsv0",
+      "created_utc": "2026-09-23T15:13:30.297485+00:00",
+      "fichiers": [
+        "RATISS-QVM/rqvm/data/twins.json",
+        "synchrotron-24/qpu-bigbang/moissonneur/job_h2_ibm_marrakesh.txt"
+      ]
+    },
+    {
+      "job_id": "dapup6kak42c73cj85s0",
+      "created_utc": "2026-09-23T15:13:30.541504+00:00",
+      "fichiers": [
+        "RATISS-QVM/rqvm/data/twins.json",
+        "synchrotron-24/qpu-bigbang/moissonneur/job_h2_ibm_kingston.txt"
+      ]
+    },
+    {
+      "job_id": "dapv4t0r7bnc73b441lg",
+      "created_utc": "2026-09-23T15:38:28.106323+00:00",
+      "fichiers": [
+        "synchrotron-24/qpu-bigbang/moissonneur/job_r3_kingston.txt"
+      ]
+    },
+    {
+      "job_id": "daq07ij18flc739n0eog",
+      "created_utc": "2026-09-23T16:52:26.379883+00:00",
+      "fichiers": [
+        "synchrotron-24/qpu-bigbang/moissonneur/job_r3b.txt"
+      ]
+    }
+  ]
+}

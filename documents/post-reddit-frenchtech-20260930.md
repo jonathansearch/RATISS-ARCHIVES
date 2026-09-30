@@ -19,7 +19,7 @@ J'ai travaillé toute cette journée sur un projet perso : RATISS-PLANCK (RATISS
 
 - une paire intriquée de type Bell : 99,6 % de réussite — la machine la plus chère est aussi la plus pure ;
 - des états intriqués de 3, 4, 5 puis 7 particules, sur trois machines différentes (12, 20 et 108 qubits) ;
-- et le clou : un « chat » de 12 qubits intriqués en même temps, à 66 % de fidélité — le plus grand état jamais produit par le projet.
+- et le clou : un « chat » de 12 qubits intriqués en même temps, à 66 % de fidélité de population (base Z, borne haute) — le plus grand état jamais produit par le projet.
 
 Au passage, j'ai documenté une petite loi pratique inattendue : quand on essaie de faire plusieurs expériences dans un seul tir pour économiser, ça ne marche que sur certains types de machines — le logiciel de compilation déborde des frontières des compartiments et tout se mélange. Mêmes circuits, même machine, même heure : 45 % contre 94 %. Des chiffres propres pour isoler exactement d'où vient le problème.
 

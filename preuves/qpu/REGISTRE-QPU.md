@@ -23,6 +23,7 @@ créé_le = base32(id[:9]) / 8192      (secondes depuis le 1ᵉʳ janvier 1970, 
 
 - Pente ajustée : `0.000122070 s/unité` → soit **exactement 1/8192** (rapport 1.000000)
 - Écart entre l'horodatage **décodé depuis l'ID** et l'horodatage **renvoyé par IBM** : **médiane 278 ms, maximum 799 ms**
+  - 🔁 **Rejeu du 30/09** (`python3 outils/rejouer_etalonnage.py`) sur les **64 charges brutes retrouvées** (`preuves/qpu/horodatages-serveur-ibm.json`, source ratiss-focal) : **médiane 269 ms, max 798,8 ms, 64/64 < 1 s**. 2 des 66 charges d'origine non retrouvées → le chiffre 278 ms (66 tâches) n'est pas rejouable tel quel ; 269 ms (64 tâches) l'est.
 - Sur 27 jours d'étendue, 66 tâches, alphabet `0-9a-v` (base32)
 
 **Conséquence :** n'importe qui peut maintenant, sans clé et sans compte, extraire la date de soumission d'un job ID IBM — et donc vérifier qu'un identifiant publié correspond à une **soumission réelle, horodatée à la seconde**. C'est ton R7 appliqué à la couche QPU. 🎯

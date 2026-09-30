@@ -1,5 +1,7 @@
 # 📖 LA CHRONIQUE INTÉGRALE — LA JOURNÉE DU 29 SEPTEMBRE 2026
 
+> 📏 **Note de méthode (audit 30/09)** : toutes les « fidélités » QPU de ce document sont des **fidélités de population** P(0…0)+P(1…1), comptages en base Z uniquement. Ce chiffre **borne la fidélité GHZ par le haut et ne prouve pas l'intrication à lui seul**. Mesures de cohérence (parité, base X) : chantier suivant.
+
 **Laboratoire RATISS Labs · Yaoundé, Cameroun · Deep-dive officiel n°15 · rien au hasard, tout est documenté**
 
 > *« Le hasard n'existe pas dans ce labo : chaque tir a été ordonné, chaque crédit compté, chaque échec publié. Ce document raconte la journée telle qu'elle s'est passée — minute par minute, job par job, faute par faute. »*
@@ -61,7 +63,7 @@ Puis les quatre modules du noyau, dans l'ordre :
 
 ```
 Résultat : 00 = 515 · 11 = 505 · 01 = 2 · 10 = 2
-Fidélité : 99,61 %  — job a1f0fbef  — coût : 15 Spark
+Fidélité de population : 99,61 %  — job a1f0fbef  — coût : 15 Spark
 ```
 
 **Deux compères à 12 qubits d'accord 515 fois sur 517.** Le labo vient de toucher le réel, et le réel répond mieux que la simulation.
@@ -100,7 +102,7 @@ Le chef fixe la doctrine de la soirée — elle deviendra loi :
 
 **20h-21h. CEPHEUS, LA SURPRISE DU SOIR.** Le devis du chef disait « 15 crédits » ; le SDK affiche… **1 crédit par tir** 😂. Le 108-qubits est la machine la MOINS chère du catalogue. On prend les trois, dans l'ordre :
 
-| Tir | Job | Fidélité | Coût |
+| Tir | Job | Fidélité de population | Coût |
 |---|---|---|---|
 | GHZ-3 | `7eadb11e` | **89,7 %** (000=471 · 111=448) | 1 Sp |
 | GHZ-4 | `cac2fbe7` | **79,3 %** | 1 Sp |
@@ -113,7 +115,7 @@ Et la lecture qui fait taire la pièce : **à taille égale, le 108-qubits déco
 **22h-23h. LE CHAT-12.** Garnet, chaîne de 11 CNOT, 1024 tirs, 2 Spark, job `b373d22f` :
 
 ```
-000000000000 = 387 · 111111111111 = 289  →  fidélité 66,0 %
+000000000000 = 387 · 111111111111 = 289  →  fidélité de population 66,0 %
 ```
 
 **Le plus grand état intriqué jamais produit par le labo.** Et il referme la courbe de Garnet : 94,5 → 94,6 → 88,5 → **66,0** — la décohérence s'accélère avec la taille, exactement ce que la courbe de Page (🧮, le matin) prédisait qualitativement. **La boucle de la journée est fermée : le même formalisme va du trou noir au chat.**

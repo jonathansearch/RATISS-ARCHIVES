@@ -1,5 +1,7 @@
 # KIT DE FRAPPE ANGLO — 30/09/2026 (séquence : Reddit → Show HN → QC Stack Exchange)
 
+> 📏 **Method note (audit 30/09)**: every QPU "fidelity" here is a **population fidelity** P(0…0)+P(1…1), Z-basis counts only. It **upper-bounds the GHZ fidelity and does not by itself prove entanglement**. Coherence measurements (parity oscillations, X basis) are the next step.
+
 *Contexte : compte Reddit 5 karma (⚠️ vérifier âge ≥ 2 jours avant de poster — règle 6, sinon AutoMod).*
 
 ---

@@ -5,7 +5,7 @@
 > Si tu es Jonathan, lis-le pour te rappeler où tout s'est arrêté.
 
 **Date de compilation :** 26 septembre 2026 · **Session concernée :** celle du 25–26 septembre 2026
-**MISE À JOUR 27/09 :** PHOTON + ETALONS publiés, hub Discord 22 salons, audit finance → lire la
+**MISE À JOUR 27/09 :** PHOTON + ETALONS publiés, hub Discord 22 salons branchés (24 textes rédigés), audit finance → lire la
 section « 🛰️🧮 MISE À JOUR DU 27/09 » en fin de fichier, et `documents/RECAP-26-27-SEPT-2026.md`.
 
 ---
@@ -138,7 +138,7 @@ git branch -M main
 ```
 
 Le dépôt distant existe déjà : `https://github.com/jonathansearch/RATISS-ARCHIVES` (public, branche `main`).
-Les 24 posts de salons Discord sont dans `discord/salons/` (index de copie : `discord/salons/INDEX.md`).
+Les 24 textes de salons Discord (contenu rédigé ; le hub en branche 22) sont dans `discord/salons/` (index de copie : `discord/salons/INDEX.md`).
 
 ---
 
@@ -274,7 +274,7 @@ Tout est publié, scellé, testé. Détail complet : **`documents/RECAP-26-27-SE
 
 ## C. ⏳ CE QUI EST EN ATTENTE — première action de la prochaine session
 
-1. ✅ **RÉCOLTÉ le 30/09** : `df23deac` = Completed → **97,27 %** ((0000=497 + 1111=499)/1024). Comptages bruts : RATISS-PLANCK `resultats/qpu_ghz4_ibex_counts.json` ; fig_13 « la carte complète » ; README+RAPPORT à jour (commits `4f39c90`, `7fb9939`). NOTE TECHNIQUE : `download_job_output` du SDK bugge (`'str' object has no attribute 'output_data_url'`) → récolter via `get_job(...).output_data_url` (URL signée CloudFront) + requests.GET. La trilogie GHZ-4 est COMPLÈTE : ions 97,3 > Garnet 94,6 > Cepheus 79,3 ; pente ions −1,9 pt/qubit confirmée sur 3 points.
+1. ✅ **RÉCOLTÉ le 30/09** : `df23deac` = Completed → **97,27 %** ((0000=497 + 1111=499)/1024). Comptages bruts : RATISS-PLANCK `resultats/qpu_ghz4_ibex_counts.json` ; fig_13 « la carte complète » ; README+RAPPORT à jour (commits `4f39c90`, `7fb9939`). NOTE TECHNIQUE : `download_job_output` du SDK bugge (`'str' object has no attribute 'output_data_url'`) → récolter via `get_job(...).output_data_url` (URL signée CloudFront) + requests.GET. La trilogie GHZ-4 est COMPLÈTE : ions 97,3 > Garnet 94,6 > Cepheus 79,3 ; pente ions compatible avec une moyenne ≈ −1,9 pt/qubit sur 3 points (pentes locales −1,2 puis −2,4 : décroissance qui s'accélère, exponentielle probable — à trancher avec GHZ-3 et GHZ-5 ions).
 2. Prochaines, sur ordre du chef uniquement : réclamer les 50 $ · extension Cepheus GHZ-7/12 (1 crédit) · GHZ-3/5 ions · le papier RATISS-PLANCK · communication anglo (kit `documents/kit-communication-anglo-20260930.md` : séquence Reddit(plume du chef) → Show HN → QC StackExchange).
 
 ## D. Les règles QPU (payées cash le 29/09 — ne PAS les re-payer)

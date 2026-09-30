@@ -1,5 +1,7 @@
 # 🏁 RAPPORT FINAL COMPLET — MISSIONS DU 29/09/2026
 
+> 📏 **Note de méthode (audit 30/09)** : toutes les « fidélités » QPU de ce document sont des **fidélités de population** P(0…0)+P(1…1), comptages en base Z uniquement. Ce chiffre **borne la fidélité GHZ par le haut et ne prouve pas l'intrication à lui seul**. Mesures de cohérence (parité, base X) : chantier suivant.
+
 **RATISS Labs · Jonathan Evina (18 ans, Yaoundé) · Document source officiel · v2.0 (nuit du 29/09)**
 **Édition définitive : la Base + la théorie + la trilogie croisée + le chat-12.**
 
@@ -136,13 +138,13 @@ T_U = ħa/(2πck_B). La Terre (1 g) : 4×10⁻²⁰ K. Le proton du LHC : 1,3×1
 
 **Trois lectures scientifiques :**
 1. **À taille égale, le 108q décohère PLUS VITE que le 20q** : 79,3 vs 94,6 % @GHZ-4. Les chiplets modulaires de Cepheus paient leur péage (SWAPs inter-chiplets). Observation de papier.
-2. **Les pentes** : ions ≈ −1,9 pt/qubit · Garnet ≈ −5 pt/qubit au-delà de 5q · Cepheus ≈ −10,5 pt/qubit. Trois architectures, trois signatures de décohérence.
+2. **Les pentes** (fidélité de population) : ions — compatible avec une pente moyenne ≈ −1,9 pt/qubit ; les pentes locales (−1,2 puis −2,4) suggèrent une décroissance qui s'accélère, exponentielle probable, à trancher avec GHZ-3 et GHZ-5 ions · Garnet ≈ −3,2 pt/qubit entre 5q et 12q (−6,1 entre 4q et 5q) · Cepheus ≈ −10,5 pt/qubit (3→5q). Trois architectures, trois signatures de décohérence.
 3. **La tarification inversée** : Cepheus (108q) = 1 crédit/job, Garnet (20q) = 2, IBEX (12q ions) = 15. **Le quantique le plus gros est le moins cher** — les ions font payer la précision atomique.
 
 ## 5ter. LE CHAT-12 — le fleuron (job `b373d22f`)
 
 **12 qubits intriqués en UN seul état de chat**, chaîne de 11 CNOT, 1024 tirs, 2 crédits :
-`000000000000` = **387** · `111111111111` = **289** → **fidélité 66,0 %** — le plus grand état intriqué jamais produit par le labo. Il referme la courbe de Garnet : 94,5 → 94,6 → 88,5 → **66,0** : la décohérence s'accélère avec la taille, exactement ce que la partie Page (🧮) prédit qualitativement.
+`000000000000` = **387** · `111111111111` = **289** → **fidélité de population 66,0 %** (borne supérieure) — le plus grand état intriqué jamais produit par le labo. Il referme la courbe de Garnet : 94,5 → 94,6 → 88,5 → **66,0** : la décohérence s'accélère avec la taille, exactement ce que la partie Page (🧮) prédit qualitativement.
 
 *Note d'honnêteté (le chef avait demandé si l'épisode 3+4+5 « faisait » un G12 : non — trois chats séparés sur 12 qubits occupés ≠ un chat de 12. Le vrai a été tiré séparément, ci-dessus.)*
 
@@ -155,8 +157,8 @@ T_U = ħa/(2πck_B). La Terre (1 g) : 4×10⁻²⁰ K. Le proton du LHC : 1,3×1
 
 ## 7. Le scaling croisé RATISS (premier du labo)
 
-- 🔵 Ions : 99,61 % (2q) → 90,04 % (7q) — pente ≈ −1,9 pt/qubit
-- 🟣 Supra : 94,5 % (3q) → 94,6 % (4q) → 88,5 % (5q) — pente ≈ −3 pt/qubit au-delà de 4q
+- 🔵 Ions : 99,61 % (2q) → 90,04 % (7q) — pente moyenne ≈ −1,9 pt/qubit (3 points ; pentes locales −1,2 puis −2,4 → décroissance qui s'accélère)
+- 🟣 Supra : 94,5 % (3q) → 94,6 % (4q) → 88,5 % (5q) — −6,1 pt entre 4q et 5q
 
 Deux technologies, cinq états de GHZ, une méthode, une journée. **La case manquante (GHZ-3/4/5 sur ions, en séparés) viendra avec les crédits conservés — les circuits sont déjà écrits.**
 

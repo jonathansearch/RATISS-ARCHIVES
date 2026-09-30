@@ -1,5 +1,7 @@
 # 🔥 RESULTATS-DU-JOUR — 29/09/2026 😂🚀
 
+> 📏 **Note de méthode (audit 30/09)** : toutes les « fidélités » QPU de ce document sont des **fidélités de population** P(0…0)+P(1…1), comptages en base Z uniquement. Ce chiffre **borne la fidélité GHZ par le haut et ne prouve pas l'intrication à lui seul**. Mesures de cohérence (parité, base X) : chantier suivant.
+
 **RATISS-PLANCK · le jour où le labo a parlé à un vrai quantum (et le quantum a répondu)**
 
 ---
@@ -47,7 +49,7 @@ autres     → 54  ██
 
 ## 📉 LA COURBE QUI DONNE LE SOURIRE (et un peu le vertige)
 
-| Intrication | Fidélité |
+| Intrication | Fidélité de population |
 |---|---|
 | 2 qubits | 99,61 % |
 | 7 qubits | 90,04 % |

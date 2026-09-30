@@ -6,9 +6,15 @@
   "backend": "AQT IBEX Q1 — 12 qubits ions piégés, connectivité all-to-all",
   "circuit": "Bell : h q[0]; cx q[0],q[1]",
   "shots": 1024,
-  "comptages": {"00": 515, "11": 505, "10": 2, "01": 2},
+  "comptages": {
+    "00": 515,
+    "11": 505,
+    "10": 2,
+    "01": 2
+  },
   "fidelite_bell": 0.99609,
   "commentaire": "1020/1024 sur les états attendus. Cohérent avec la donnée fraîche de la mission (cohérence IBEX le 29/09 : 99,5 % sur 12 qubits) — le même jour, la même machine.",
   "credits": "job facturé 15 crédits (plan public) ; les 50 $ gratuits restent À RÉCLAMER sur le tableau de bord",
-  "suites_prevues": "GHZ-7 (le lien réel vers la courbe de Page) dès crédits disponibles ; comparaison multi-QPU Garnet/Emerald/Cepheus"
+  "suites_prevues": "GHZ-7 (le lien réel vers la courbe de Page) dès crédits disponibles ; comparaison multi-QPU Garnet/Emerald/Cepheus",
+  "metrique": "fidélité de population P(0…0)+P(1…1), base Z uniquement — borne supérieure de la fidélité GHZ, ne prouve pas l'intrication seule (audit 30/09)"
 }

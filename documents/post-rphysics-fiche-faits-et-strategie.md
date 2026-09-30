@@ -1,5 +1,7 @@
 # r/Physics — fiche de faits + stratégie (30/09/2026)
 
+> 📏 **Method note (audit 30/09)**: every QPU "fidelity" here is a **population fidelity** P(0…0)+P(1…1), Z-basis counts only. It **upper-bounds the GHZ fidelity and does not by itself prove entanglement**. Coherence measurements (parity oscillations, X basis) are the next step.
+
 ## ⚠️ Règles du sub (vérifiées dans les captures du chef)
 R7 : contenu généré par IA INTERDIT · R2 : théories perso assistées par IA refusées (pas d'endorsement arXiv)
 → Le post r/Physics doit être ÉCRIT PAR LE CHEF LUI-MÊME (sa vraie voix). L'IA fournit les FAITS, pas les phrases.
@@ -19,7 +21,7 @@ R7 : contenu généré par IA INTERDIT · R2 : théories perso assistées par IA
   - IQM Garnet (20q superconducting, square lattice): GHZ-3/4/5 chains 94.5/94.6/88.5%; GHZ-12 66.0% (387×|0…0⟩ + 289×|1…1⟩)
   - Rigetti Cepheus-1-108Q (108q chiplets): GHZ-3/4/5 89.7/79.3/68.7%
 - Observations: at equal GHZ size the 108q chiplet device decoheres FASTER than the 20q lattice device
-  (79.3 vs 94.6% at GHZ-4); fidelity slopes ≈ −1.9 (ions), −5 (20q), −10.5 (108q) points/qubit.
+  (79.3 vs 94.6% at GHZ-4); population-fidelity slopes ≈ −1.9 mean over 3 points, accelerating (ions), −3.2 from 5q to 12q (20q), −10.5 (108q) points/qubit.
 - Systems finding: co-hosted GHZ compartments survive transpilation ONLY on all-to-all hardware
   (45% vs 94% same device, same hour — lattice transpiler inserts SWAPs that leak entanglement across compartments).
 - Costs per 1024-shot job: 1 / 2 / 15 credits (108q cheapest, ions most expensive).
@@ -52,7 +54,7 @@ Setup: GHZ chains (native linear coupling), 1024 shots per job, same circuit sha
 
 Three things I found interesting:
 1. At equal circuit size, the 108q chiplet device decoheres faster than the 20q lattice device
-   (79.3% vs 94.6% at GHZ-4). Fidelity slopes: ≈ −1.9 pts/qubit (ions), −5 (20q), −10.5 (108q).
+   (79.3% vs 94.6% at GHZ-4). Population-fidelity slopes (Z-basis only, an upper bound on GHZ fidelity): ≈ −1.9 pts/qubit mean over 3 points, local slopes −1.2 then −2.4 (ions), −3.2 from 5q to 12q (20q), −10.5 (108q).
 2. Co-hosting several GHZ compartments in ONE job only survives on all-to-all hardware: on the square
    lattice the transpiler inserts SWAPs and fidelity drops to ~45% vs ~94% for separate jobs
    (same device, same hour). Isolates the transpiler effect pretty cleanly.

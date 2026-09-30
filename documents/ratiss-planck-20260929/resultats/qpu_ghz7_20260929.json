@@ -7,8 +7,12 @@
   "backend": "AQT IBEX Q1 — 12 qubits ions piégés, all-to-all",
   "circuit": "GHZ-7 : h q[0]; cx q[0],q[1..6]; mesure des 7",
   "shots": 1024,
-  "comptages_ideaux": {"0000000": 470, "1111111": 452},
+  "comptages_ideaux": {
+    "0000000": 470,
+    "1111111": 452
+  },
   "fidélité_ghz": 0.9004,
   "erreurs": 102,
-  "commentaire": "922/1024 dans les deux états de chat. Les erreurs sont dominées par les flips d'un bit unique (ex. 0111111 = 16) — signature classique de décohérence ion. Bell (2q) 99,61 % → GHZ (7q) 90,04 % : PREMIÈRE DONNÉE DE SCALING du labo, la cohérence décroît avec la taille, exactement le terrain de la courbe de Page (fig_6)."
+  "commentaire": "922/1024 dans les deux états de chat. Les erreurs sont dominées par les flips d'un bit unique (ex. 0111111 = 16) — signature classique de décohérence ion. Bell (2q) 99,61 % → GHZ (7q) 90,04 % : PREMIÈRE DONNÉE DE SCALING du labo, la cohérence décroît avec la taille, exactement le terrain de la courbe de Page (fig_6).",
+  "metrique": "fidélité de population P(0…0)+P(1…1), base Z uniquement — borne supérieure de la fidélité GHZ, ne prouve pas l'intrication seule (audit 30/09)"
 }
