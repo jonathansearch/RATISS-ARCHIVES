@@ -3,7 +3,7 @@
  "auteur": "Jonathan Evina — RATISS Labs",
  "compile_le": "2026-09-29T21:06:51.430772+00:00",
  "algorithme": "sha256",
- "total_fichiers": 88,
+ "total_fichiers": 89,
  "octets_total": 18234725,
  "captures_noms_origine": {
   "preuves/captures/2026-09-26_1107_arena-preuve-token-github.jpg": "Screenshot_20260926-110705.jpg",
@@ -110,6 +110,7 @@
   "preuves/qpu/registre-jobs.json": "dcca32045ab7156a711ad81c01de8ea2e2722745f66f8ded0398d703312265b6",
   "preuves/qpu/tous-les-jobs.json": "c4f838a1dc61bc2352a8178d6d8354b46607b9ada4a5278b7d8470e23aa9d195",
   "preuves/tests/RAPPORT-TESTS-RATISS.md": "30649d06297032a35fe3745cc5f9876396e8a42c557b5ddef24ba7a25a57916c",
-  "documents/posts-ai-final-20260930.md": "fd45d0609f9ad437dc4b8df2ec1e67278a3d04844e7d88ae97bb49dbb038eb37"
+  "documents/posts-ai-final-20260930.md": "fd45d0609f9ad437dc4b8df2ec1e67278a3d04844e7d88ae97bb49dbb038eb37",
+  "documents/REPONSE-AUDIT-AUTRE-AGENT-20260930.md": "125bd37eb1b850690f4917247b5b12c767d0e61b09d66fbbc849bc5a659f62b5"
  }
 }
