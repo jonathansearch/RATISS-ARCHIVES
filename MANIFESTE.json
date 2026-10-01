@@ -1,10 +1,10 @@
 {
   "depot": "RATISS-ARCHIVES",
   "auteur": "Jonathan Evina — RATISS Labs",
-  "compile_le": "2026-10-01T23:51:58.548875+00:00",
+  "compile_le": "2026-10-01T23:59:47.489112+00:00",
   "algorithme": "sha256",
   "total_fichiers": 95,
-  "octets_total": 23711375,
+  "octets_total": 23711965,
   "captures_noms_origine": {
     "preuves/captures/2026-09-26_1107_arena-preuve-token-github.jpg": "Screenshot_20260926-110705.jpg",
     "preuves/captures/2026-09-22_2312_ibm-compte-1_liste-66-taches.jpg": "Screenshot_20260922-231234.jpg",
@@ -44,7 +44,7 @@
     "discord/salons/07-mon-histoire.md": "5386cf324a8b936e3b656d1698a0a7764749438845cd0584e3e3f0215548e7b0",
     "discord/salons/INDEX.md": "bdae413b8cfd5ff50cbec58f0afdb69bc201013c02b573ec817582714413b34d",
     "documents/MEMO-SESSION-RATISS.md": "cf4b7208d2aa152ca272375602b5364c370bbdf62db494cd672676b8fbbfb001",
-    "documents/RECAP-01-02-OCT-2026-NAVIER-COMMISSAIRE.md": "f089a017dde036b2ca9c0549e66e783e4bf8a959dd31b47aef0f0961b2987da9",
+    "documents/RECAP-01-02-OCT-2026-NAVIER-COMMISSAIRE.md": "869efdad998d2dbe3cfb78aaa3b52edb1164ef0310bddda9b31f2435708437a4",
     "documents/RECAP-26-27-SEPT-2026.md": "3151866ac00cf94c815e637528930fe5c316c8a3b5d74acf7930ee54a32c1724",
     "documents/RECAP-29-SEPT-2026-RATISS-PLANCK.md": "fbea6d0e45d57cf74c33c002109178ae92ae79e75b454722b16af3b9c7b98ccd",
     "documents/RECAP-SEMAINE-10-17-SEPT-2026.md": "4881f5a53b6445e4432cc9103517f00b97014f84ca78887f28ea5bf23f429188",

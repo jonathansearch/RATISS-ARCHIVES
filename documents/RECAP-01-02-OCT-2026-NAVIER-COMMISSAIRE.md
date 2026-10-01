@@ -19,3 +19,8 @@
 ## En attente (décision du chef)
 - V3 : signer ou amender `PARAMETRES-FIGES.md` (proposition : recalculer la dose de poussière à 0,9 % du v_rms de chaque montage), puis témoins à refaire.
 - T2 V3 (pic ×5,3 à ν 0,001) : re-run à une autre résolution seulement sur ordre.
+
+## Ajout du 02/10 (soir) — diagnostic de l'instrument ω (RATISS-NAVIER `78f0261`)
+- ω SPH : 20–45 % de l'enstrophie théorique, non convergé ; ζ = rapport de mélange (poussière isotrope = 2/3).
+- Le STOP de T0 lisait mal le témoin : un dipôle seul + poussière devient 3D de façon **cohérente** (ζ moyenné à l'échelle de la demi-boîte 0,12) ; la poussière seule ne bouge pas. Hypothèse : instabilité 3D d'une paire de tourbillons.
+- Proposition rév. 4 (témoin = 1 dipôle, critère anti-bruit par cellules, dose recalculée) : **non scellée**, en attente du chef.
