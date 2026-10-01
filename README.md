@@ -356,3 +356,12 @@ Le détail complet (chiffres, bugs, leçons héritées, actions à faire) :
 
 **28/09** : publication de [`RATISS-DEEPDIVE`](https://github.com/jonathansearch/RATISS-DEEPDIVE) —
 la série des 14 deep dives PDF (75 pages) couvrant tous les dépôts du 20 au 28 septembre 2026.
+
+---
+
+## 🆕 MISE À JOUR DU 02/10/2026 — Commissaire NAVIER + règle R8
+
+Quatre campagnes 🧮 publiées dans `RATISS-NAVIER/campagnes/` (commissaire-1, etreintes-v2, commissaire-3d, dipoles-v3).
+Verdict tenu : **blowup = pompe + compteur**. Les 🅱 3D sont **non tranchés** (instruments invalidés après coup).
+Nouvelle règle de labo **R8 : on ne mesure que ce qui déborde du script** (`RATISS-Framework`, module `ratiss.residual`).
+V3 (dipôles) : brief scellé, témoins en **STOP en suspens**. Détail : `documents/RECAP-01-02-OCT-2026-NAVIER-COMMISSAIRE.md`.

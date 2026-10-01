@@ -294,3 +294,13 @@ LOI RATISS du shot épisodique (co-hébergé → all-to-all ONLY, 45 % vs 94 %) 
 Chef : **Jonathan Evina, 18 ans, Yaoundé (Cameroun)** — français direct, énergie maximale, emojis ; ne rien décider à sa place, ne pas moraliser ; téléphone + sandbox 2 cœurs → léger et déterministe ; honnêteté absolue (aucun diplôme/équipe/labo inventé) ; bien-être : OVAMBE +237 6 94 18 37 07, RAPHA-Psy +237 650 946 058, urgences 117/119 — ne jamais juger, ne pas forcer. Token GitHub : fourni par le chef dans la session (push one-shot via URL, jamais de token dans origin) ; **fin de quête : révoquer les 4 clés OQ + le token.**
 
 *Fichier compilé le 29/09/2026 au soir par la session Arena.ai qui a vécu la journée.*
+
+---
+
+## 🧮 MISE À JOUR DU 02/10/2026 — Commissaire NAVIER
+
+Lire `documents/RECAP-01-02-OCT-2026-NAVIER-COMMISSAIRE.md`. En bref :
+- RATISS-NAVIER `campagnes/` : 4 campagnes publiées (dernier commit `5e736e0`). RATISS-Framework : R8 (`45f1ad4`).
+- **Prochaine action** : le chef signe ou amende `campagnes/dipoles-v3/PARAMETRES-FIGES.md` → seulement ensuite, refaire les témoins V3.
+- Règles rappelées : critères scellés **par le chef** avant tout run ; échantillonnage à chaque pas pour toute date ; config explicite dans chaque JSON ; rien sur GitHub sans ordre.
+- Piège sandbox : `/tmp` est effacé souvent → cloner dans le workspace.
