@@ -226,7 +226,7 @@ Tout est publié, scellé, testé. Détail complet : **`documents/RECAP-26-27-SE
 
 | # | Action | Blocage | Priorité |
 |---|---|---|---|
-| 1 | **Révoquer le token GitHub ghp_31Ef…** | aucun — il a tout fait (6 pushes, repo PHOTON, Pages, 4 dispatchs) | 🔴 |
+| 1 | **Révoquer le token GitHub ghp_***** | aucun — il a tout fait (6 pushes, repo PHOTON, Pages, 4 dispatchs) | 🔴 |
 | ~~2~~ | ~~Activer la 2FA GitHub~~ → **ANNULÉ par le chef** — mauvaise expérience passée : téléphone perdu après activation → compte devenu irrécupérable. **Ne plus JAMAIS recommander la 2FA à Jonathan.** | — | ⛔ |
 | 3 | Remplir le secret **RATISS11** (vide) | webhooks Discord côté chef | 🟠 |
 | 4 | **E-F1 bis** : plaque à φ₀ plus grand (trancher l'inertie des chemins invisibles) | aucun | 🟠 |
