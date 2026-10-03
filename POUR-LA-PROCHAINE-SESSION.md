@@ -341,3 +341,38 @@ Lire `documents/RECAP-02-03-OCT-2026-RATISS-LABS-AGENT.md`. En bref :
 - **Non redirigés volontairement** : Pages de RATISS-PHOTON et RATISS-QPU-AMBIENT (visualisations interactives = artefacts référencés par les nouvelles pages, pas des doublons).
 - **Dépôts sources du site** : `ratiss-labs-site` (build.py, content/*.yaml, rapports/, verif/).
 - ⚠️ À faire côté chef : Search Console (soumettre sitemap + Request indexing) · révoquer tokens Vercel + Zenodo + PAT GitHub · inspecter le dépôt Zenodo publié hors-RATISS (« ferroelectric domain weaving ») et supprimer le brouillon vide 22130962.
+
+## 🌙 MISE À JOUR DU 03/10 (nuit) — PAGE DE VENTE, COMPTES EXACTS, DEVIS EMERALD
+
+- **Page de vente `/audit/`** : rédigée par Claude sur prompt serré (preuve whitelistée,
+  promesses interdites, tokens du site), améliorée par l'agent (68 daté, JSON-LD `Person`,
+  lien `/research/`, repli CSS, mobile ≤ 520 px, footer légal). En production.
+  Commits `ratiss-labs-site` : `0f5df81` (correctifs relecture) → `2b9f657` (page Claude).
+- **Compte exact des dépôts (API GitHub, 03/10/2026)** : **68 publics**, dont **24 MIT
+  standard**, 35 licences personnalisées (NOASSERTION), 7 sans licence, 2 GPL-3.0.
+  L'ancien compteur « 57 sous MIT » était périmé : corrigé sur l'accueil ET la page de vente.
+  Rappel campagne 02/10 : 84 dépôts lus/vérifiés, 11 exécutés à froid, 51/51 tests.
+- **Zenodo, ménage fait** : brouillon vide `22130962` supprimé (HTTP 204). Le record
+  « ferroelectric domain weaving » = **préprint KTN:Li du chef (27/08/2026)** — pas une
+  intrusion. Version 2 publiée : **DOI 10.5281/zenodo.23122648** (4 fichiers hérités,
+  ORCID 0009-0000-4092-5313 présent). Limite avouée : le PUT de métadonnées a renvoyé
+  400, la v2 a donc été publiée avec les métadonnées héritées (nom « Evina, JONATHAN
+  PATRICK » inchangé, cosmétique). Pas de v3 pour un nom.
+- **💎 Devis Emerald (zéro soumission)** : `prepare_job` SDK 0.4.3, préparation
+  `f24959f2-dd50-40c8-a201-b78a940bf49b` (Completed). GHZ-4 chaîne, 1024 tirs, QASM :
+  **Public 2 Spark** · Public+Priority 4 · **Private 3** · Private+Priority 5.
+  Topologie réelle lue : grille carrée 54 qubits, arêtes [0,1] [0,4] [1,5]… ;
+  features OQ : `dynamic_circuits`, `mid_circuit_measure`, `verbatim_boxes` ;
+  max_shots 20 000, max_circuits 1024. Détail : workspace agent
+  `outils-oq/DEVIS-EMERALD-20261003.md`. Pour exécuter : ordre explicite du chef,
+  `create_job` jamais appelé cette nuit.
+- **Mentions légales** : déjà Vercel en production. Les 2 occurrences restantes de
+  « GitHub Pages » sont exactes et conservées (phrase sur la redirection + section
+  PHOTON dont les visus interactifs vivent toujours sur Pages).
+- **Propreté repo site** : `deploy_vercel.py` et `zenodo_depose.py` (lisent les tokens)
+  ajoutés au `.gitignore` — jamais de clé dans un commit.
+- **Restes (clics du chef, inchangés)** : Search Console (Verify + sitemap + Request
+  indexing, `/audit/` inclus) · révocation tokens Vercel/Zenodo/PAT en fin de quête ·
+  claim des 40 Spark Q3 (expirent 28/12/2026, dashboard uniquement) · PR #4→#6 de
+  RATISS-LABS-AGENT toujours en pause : pas de fusion sans sortie `pytest` rejouée,
+  impossible dans la sandbox actuelle (1 Go) — règle du labo avant la vitesse.
