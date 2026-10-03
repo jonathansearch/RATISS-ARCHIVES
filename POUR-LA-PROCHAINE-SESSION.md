@@ -397,3 +397,59 @@ Lire `documents/RECAP-02-03-OCT-2026-RATISS-LABS-AGENT.md`. En bref :
 - Commits `ratiss-labs-site` : `b601e17` (page + barre) puis correctif sitemap/footer.
 - Erreurs corrigées du doc source du chef : HALoGEN ≠ HalluLens (Meta) — vrais auteurs
   Ravichander/Ghela/Wadden/Choi ; pourcentages RLHF exacts introuvables → retirés.
+
+## 📡 MISE À JOUR — SITE VIVANT (03/10, fin de nuit)
+
+### Ce qui a été construit
+
+- **`/actualite/`** — faits marqués sourcés et datés (FTC vs OpenAI/Anthropic 30/09, décodeur
+  d'erreurs temps réel IonQ 22/09 testé sur 408 qubits logiques et 31,5 M opérations avec
+  0,02 % de surcoût, étude Georgetown+UW sur la mémoire 23/09 : 51,6 % d'omissions / 83,6 %
+  vs 44,8 % de rappel, AI Act art. 50 + sursis 02/12/2026, retour d'Ascella 28/09),
+  **4 visages réels** sous licence libre créditée (Altman, Amodei, Hassabis, Huang),
+  **flux vivant filtrable** (arXiv + Hacker News, collecté par `veille.py`).
+- **`/problemes/`** — **50 problèmes ouverts** en 5 familles (Vérité & fiabilité IA 12,
+  Intégrité & provenance 12, Audit & conformité 10, Quantique vérifiable 10, Science
+  ouverte & accès 6). Votes **critique / important / plus tard / je l'ai vécu** conservés
+  dans le navigateur (localStorage `ratiss-problemes-v1`), export JSON
+  (`ratiss-reponses-problemes.json`) + envoi courriel pré-rédigé. **Aucune donnée ne part
+  sans action de l'utilisateur** — pas de serveur, pas de traqueur.
+- **`/fondamentale/`** — recherche fondamentale : PHOTON, NAVIER, ÉTALONS, GHZ-4,
+  AUDIT-JOBIDS, chiffres du labo sans arrondi arrangeant, **échecs publiés** (PUT Zenodo 400,
+  portes `mz`/`measure` rejetées, sortie du 1ᵉʳ job photonique perdue), photos réelles
+  (table optique, wafer InP, marché de Yaoundé).
+
+### Automatisation — prouvée en production
+
+- **`veille.py`** : collecteur arXiv + Hacker News, **sans clé API**. `--jours N`, `--rapport`.
+  Détection automatique du dossier de sortie (CI : `data/` ; local : `site/data/`).
+- **`.github/workflows/veille.yml`** : collecte + build + **déploiement Vercel** + commit de
+  la veille, **tous les 2 jours à 05:41 UTC** (~06:41 Yaoundé) + `workflow_dispatch`.
+  Verrou `concurrency: veille` et `git pull --rebase` avant push (corrige le rejet
+  « fetch first » constaté sur un run sur deux).
+- **Secret `VERCEL_TOKEN` chiffré** (libsodium sealed box via l'API GitHub) — testé de bout
+  en bout, aucune clé n'est dans le dépôt (scan anti-clé : propre).
+- **`deploy_ci.py`** : même déploiement, token lu dans l'environnement.
+- **`maj.sh`** : `bash maj.sh` = veille + build + déploiement ; `bash maj.sh local` = sans déploiement.
+
+### Preuves
+
+| Quoi | Valeur |
+|---|---|
+| Run « push » | `c64e02c` → **success** (a committé la veille, fenêtre 4 j) |
+| Run « dispatch » durci | `e597894` → **success** en 24 s |
+| Commit automatique de la veille | `74adb32` par « RATISS Veille » (auteur du commit ≠ le chef, c'est voulu) |
+| Dépôt | `ratiss-labs-site` master = `e597894` (+ veille `74adb32`) |
+| Production | `/actualite/` 200, veille `2026-10-03T20:06:27`, sitemap à 14 URLs |
+
+### Leçons / pièges (à ne pas refaire)
+
+1. Dans le dépôt, les fichiers du site sont **à la racine** (build.py, data/, img/) — pas dans
+   un sous-dossier `site/`. Toute écriture doit détecter l'agencement.
+2. Un `git push` local pendant qu'un run de veille tourne ⇒ collision. Toujours
+   `git pull --rebase` avant de pousser si un run est passé.
+3. Les images Wikimedia Commons se **vérifient visuellement une par une** : une recherche
+   générique « photonic integrated circuit chip » a renvoyé un portrait noir et blanc sans
+   rapport, qui a été rejeté et remplacé (wafer InP).
+4. Modifier `.github/workflows/veille.yml` **ne déclenche pas** le workflow (les `paths`
+   couvrent veille.py, build.py, contenu_vivant.py seulement).
