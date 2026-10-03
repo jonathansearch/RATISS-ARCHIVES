@@ -109,7 +109,7 @@ Commande : `python3 outils/comparer_export_ibm.py --exports-dir <dl>/ --archives
 | ORCID | `0009-0000-4092-5313` |
 | Préprints OSF | `wf7qm`, `6jzmb`, `4867h`, `u4aek` |
 | Contact | jonathan.ratisslabs@zohomail.com |
-| Site | jonathansearch.github.io/ratiss-labs-site/ |
+| Site | **https://ratiss-labs.vercel.app** (l'ancien GitHub Pages redirige automatiquement) |
 | Dépôts | 57 · fenêtre de travail : 21 → 25/09/2026 |
 | Discord | serveur « RATISS LABS », 1 membre, salons structurés (voir captures) |
 
@@ -315,3 +315,29 @@ Lire `documents/RECAP-02-03-OCT-2026-RATISS-LABS-AGENT.md`. En bref :
 - Règle : l'agent de construction ne fusionne jamais ; aucune clé dans git.
 
 **Autres dossiers en attente :** ratiss-labs-site (logo en 404 + marge mobile, correction prête, attend « corrige ») · QPU-AMBIENT (image 08 manquante) · NAVIER rév. 4 scellée (`8557fc6`), attend le « go » · RATISS-SIMULTANEITE terminé (run scellé v1, `2b43a17`).
+
+---
+
+## 🌍 MISE À JOUR DU 03/10 (soir) — SITE PUBLIC, 5 DOI ZENODO, REDIRECTIONS
+
+**Tout est en ligne. Ne plus référencer l'ancienne URL Pages comme site principal.**
+
+- **Site canonique : https://ratiss-labs.vercel.app** (Vercel, production, sous-domaine gratuit — aucun domaine acheté).
+  - 10 pages : `/`, `/research/`, 5 pages Research canoniques, `/audits/`, `/protocols/`, `/about/`.
+  - `sitemap.xml` + `robots.txt` + canonical + Open Graph + JSON-LD `ScholarlyArticle`.
+  - Fichier de vérification Google Search Console déployé (vérification à terminer côté chef : soumettre le sitemap + demander l'indexation).
+  - Esthétique identique à l'ancien SPA : CSS/scène/header/footer extraits de `legacy/index.html`.
+- **5 rapports PDF en anglais illustrés** (LaTeX/Tectonic, figures matplotlib à valeurs archivées) :
+  `/research/<slug>/report.pdf`.
+- **5 records Zenodo PUBLIÉS le 03/10/2026** (métadonnées EN, licence MIT, auteur Evina Jonathan + ORCID) :
+  | Objet | DOI | Record |
+  |---|---|---|
+  | Photon | 10.5281/zenodo.23117607 | zenodo.org/records/23117607 |
+  | GHZ ions QPU | 10.5281/zenodo.23117609 | zenodo.org/records/23117609 |
+  | Navier–Stokes | 10.5281/zenodo.23117605 | zenodo.org/records/23117605 |
+  | Étalons | 10.5281/zenodo.23117603 | zenodo.org/records/23117603 |
+  | Audit job IDs IBM | 10.5281/zenodo.23117599 | zenodo.org/records/23117599 |
+- **Redirections** : `ratiss-labs-site` commit `7e31830` — `index.html` = redirection (meta-refresh 0 s + traduction des anciens `#/…`) ; ancien SPA conservé dans `legacy/` et vivant en accueil Vercel. Champs « website » GitHub à jour sur 7 dépôts (ARCHIVES, ratiss-labs-site, PHOTON, PLANCK, NAVIER, ETALONS, Framework).
+- **Non redirigés volontairement** : Pages de RATISS-PHOTON et RATISS-QPU-AMBIENT (visualisations interactives = artefacts référencés par les nouvelles pages, pas des doublons).
+- **Dépôts sources du site** : `ratiss-labs-site` (build.py, content/*.yaml, rapports/, verif/).
+- ⚠️ À faire côté chef : Search Console (soumettre sitemap + Request indexing) · révoquer tokens Vercel + Zenodo + PAT GitHub · inspecter le dépôt Zenodo publié hors-RATISS (« ferroelectric domain weaving ») et supprimer le brouillon vide 22130962.
