@@ -376,3 +376,24 @@ Lire `documents/RECAP-02-03-OCT-2026-RATISS-LABS-AGENT.md`. En bref :
   claim des 40 Spark Q3 (expirent 28/12/2026, dashboard uniquement) · PR #4→#6 de
   RATISS-LABS-AGENT toujours en pause : pas de fusion sans sortie `pytest` rejouée,
   impossible dans la sandbox actuelle (1 Go) — règle du labo avant la vitesse.
+
+## 💼 MISE À JOUR DU 03/10 (fin de nuit) — RATISS PRO
+
+- **La section business s'appelle désormais « RATISS Pro »**, URL canonique
+  **https://ratiss-labs.vercel.app/pro/** ; `/audit/` = redirection noindex vers `/pro/`.
+- Page complète type « doc de marché » : chiffres marqués **✓ revérifié 03/10/2026**
+  (HALoGEN ACL 2025 ≤86 % faits atomiques ; Google Research « Empty Shelves or Lost
+  Keys » 12/08/2026 : encodage 95–98 %, rappel en échec 26–34 %, >70 % des erreurs =
+  rappel ; RLHF arXiv 2404.18870 : biais↑ véracité↓ — les « +150 %/−25 % » du doc du
+  chef n'ont PAS été retrouvés, écartés ; AI Act art. 50 : applicable 02/08/2026,
+  sursis 02/12/2026, C2PA/filigrane, 15 M€/3 %) ou **⚠ cité non revérifié** (HalluCXR,
+  TimeStress, 67,4 Md$, 22 affaires, MDPI 89/59, Unit 42, financements startups).
+  Positionnement niche : « nous ne corrigeons pas le modèle, nous rendons les artefacts
+  vérifiables » (sceller/empreinter/rejouer/chaîner), complémentaire garde-fous/RAG.
+- **Barre d'accès rapide sur l'accueil** (`#rbar`, fixe sous le header SPA, z-index 68) :
+  📚 Research · 💼 RATISS Pro (or) · 🧾 Audits · 🧭 Protocoles · ℹ️ À propos.
+  Onglet « RATISS Pro » aussi dans la nav desktop, le menu mobile et le footer du SPA,
+  et dans la NAV/footer/sitemap des pages générées (« Entreprises » remplacé).
+- Commits `ratiss-labs-site` : `b601e17` (page + barre) puis correctif sitemap/footer.
+- Erreurs corrigées du doc source du chef : HALoGEN ≠ HalluLens (Meta) — vrais auteurs
+  Ravichander/Ghela/Wadden/Choi ; pourcentages RLHF exacts introuvables → retirés.
