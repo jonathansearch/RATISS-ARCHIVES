@@ -304,3 +304,14 @@ Lire `documents/RECAP-01-02-OCT-2026-NAVIER-COMMISSAIRE.md`. En bref :
 - **Prochaine action** : le chef signe ou amende `campagnes/dipoles-v3/PARAMETRES-FIGES.md` → seulement ensuite, refaire les témoins V3.
 - Règles rappelées : critères scellés **par le chef** avant tout run ; échantillonnage à chaque pas pour toute date ; config explicite dans chaque JSON ; rien sur GitHub sans ordre.
 - Piège sandbox : `/tmp` est effacé souvent → cloner dans le workspace.
+
+## 🤖 MISE À JOUR DU 03/10/2026 — RATISS LABS AGENT
+
+Lire `documents/RECAP-02-03-OCT-2026-RATISS-LABS-AGENT.md`. En bref :
+- Dépôt `RATISS-LABS-AGENT` : `main` = `12f9e87`. Fait : catalogue (84 dépôts), `MONTAGE.md`, `VERSIONS.md`, 6 contrats (PR #2), noyau mock (PR #3), `PROMPT-GLM-RESTE-A-FAIRE.md` (étapes A à L).
+- GLM a ouvert **PR #4 (A, socle), #5 (B, Model Gateway), #6 (C, MCP Gateway)**. Elles sont **empilées : à fusionner dans l'ordre 4, 5, 6**. Rien n'a encore tourné dans Docker.
+- **Prochaine action :** vérifier les PR #4 à #6 (tests + lecture), le chef tranche les 7 décisions de GLM, fusion dans l'ordre, puis étape D.
+- Plan : GLM construit → DeepSeek corrige et installe sur le PC du chef → ensuite, les idées nouvelles du chef (sur papier).
+- Règle : l'agent de construction ne fusionne jamais ; aucune clé dans git.
+
+**Autres dossiers en attente :** ratiss-labs-site (logo en 404 + marge mobile, correction prête, attend « corrige ») · QPU-AMBIENT (image 08 manquante) · NAVIER rév. 4 scellée (`8557fc6`), attend le « go » · RATISS-SIMULTANEITE terminé (run scellé v1, `2b43a17`).
