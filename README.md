@@ -1,274 +1,274 @@
 # 🧬 RATISS ARCHIVES
 
-**Dépôt de mémoire opérationnelle de RATISS Labs · Jonathan Evina**
-Compilé le **26 septembre 2026** · mis à jour le **26/09 au soir** → voir
-[**§ 🛰️ LA MACHINE DISCORD**](#-la-machine-discord--section-mémoire-pour-la-prochaine-session-ia)
+**Operational memory repository of RATISS Labs · Jonathan Evina**
+Compiled on **26 September 2026** · updated on the **evening of 26/09** → see
+[**§ 🛰️ THE DISCORD MACHINE**](#-the-discord-machine--memory-section-for-the-next-ai-session)
 
-> **But de ce dépôt :** ne plus jamais perdre une preuve, et ne plus jamais avoir à la rechercher.
-> Tout ce qui a été produit, capturé, mesuré ou écrit entre le 12 août et le 26 septembre 2026 est ici,
-> classé, nommé, daté, et **vérifié par empreinte SHA-256** (`MANIFESTE.json`).
+> **Purpose of this repository:** never lose a piece of evidence again, and never have to search for it again.
+> Everything that was produced, captured, measured or written between 12 August and 26 September 2026 is here,
+> classified, named, dated, and **verified by SHA-256 fingerprint** (`MANIFESTE.json`).
 
 ---
 
-## 🚀 Tu ouvres ce dépôt sans contexte ? Lis dans cet ordre
+## 🚀 Opening this repo with no context? Read in this order
 
-| Ordre | Fichier | Pourquoi |
+| Order | File | Why |
 |---|---|---|
-| **1** | [`POUR-LA-PROCHAINE-SESSION.md`](POUR-LA-PROCHAINE-SESSION.md) | **Le résumé complet de la session du 26/09.** À coller à une IA, ou à lire soi-même. |
-| **2** | [`identite/AMORCE-AGENT.md`](identite/AMORCE-AGENT.md) | Le bloc à coller en début de conversation avec n'importe quelle IA. |
-| **3** | [`identite/IDENTITE.md`](identite/IDENTITE.md) | Qui je suis, ce qui est vérifié, ce qui ne l'est pas. |
-| **4** | [`preuves/qpu/REGISTRE-QPU.md`](preuves/qpu/REGISTRE-QPU.md) | Les tâches IBM Quantum : décodage, corroboration, quota. |
-| **5** | [**§ 🛰️ La machine Discord**](#-la-machine-discord--section-mémoire-pour-la-prochaine-session-ia) ↓ | **Tout ce qui a été construit le 26/09 au soir : hub, webhook, CI, 24 textes de salons (22 branchés au hub).** |
+| **1** | [`POUR-LA-PROCHAINE-SESSION.md`](POUR-LA-PROCHAINE-SESSION.md) | **The complete summary of the 26/09 session.** Paste it to an AI, or read it yourself. |
+| **2** | [`identite/AMORCE-AGENT.md`](identite/AMORCE-AGENT.md) | The block to paste at the start of a conversation with any AI. |
+| **3** | [`identite/IDENTITE.md`](identite/IDENTITE.md) | Who I am, what is verified, what is not. |
+| **4** | [`preuves/qpu/REGISTRE-QPU.md`](preuves/qpu/REGISTRE-QPU.md) | The IBM Quantum jobs: decoding, corroboration, quota. |
+| **5** | [**§ 🛰️ The Discord machine**](#-the-discord-machine--memory-section-for-the-next-ai-session) ↓ | **Everything built on the evening of 26/09: hub, webhook, CI, 24 channel texts (22 wired to the hub).** |
 
 ---
 
-## 🗂️ Organisation
+## 🗂️ Organization
 
 ```
 RATISS-ARCHIVES/
-├── POUR-LA-PROCHAINE-SESSION.md   ← LIRE EN PREMIER
-├── MANIFESTE.json                 ← SHA-256 de chaque fichier
-├── creer-le-repo.sh               ← crée/repousse le dépôt en une commande
+├── POUR-LA-PROCHAINE-SESSION.md   ← READ FIRST
+├── MANIFESTE.json                 ← SHA-256 of every file
+├── creer-le-repo.sh               ← creates/re-pushes the repo in one command
 │
-├── identite/                      Qui je suis, comment le dire à une IA
-│   ├── IDENTITE.md                l'ancre complète
-│   ├── AMORCE-AGENT.md            la version courte à coller
-│   ├── PROFIL-README.md           à mettre dans un dépôt nommé jonathansearch
-│   ├── llms.txt                   fiche lisible par les robots
-│   ├── person.jsonld              identité structurée schema.org
+├── identite/                      Who I am, how to say it to an AI
+│   ├── IDENTITE.md                the complete anchor
+│   ├── AMORCE-AGENT.md            the short paste-in version
+│   ├── PROFIL-README.md           to put in a repo named jonathansearch
+│   ├── llms.txt                   robot-readable sheet
+│   ├── person.jsonld              schema.org structured identity
 │   └── LISEZ-MOI-comment-etre-memorise.md
 │
 ├── preuves/
-│   ├── captures/                  15 photos, renommées et indexées (voir INDEX.md)
+│   ├── captures/                  15 photos, renamed and indexed (see INDEX.md)
 │   ├── qpu/
-│   │   ├── REGISTRE-QPU.md        le rapport complet
-│   │   ├── registre-jobs.json     86 identifiants datés + provenance
-│   │   └── tous-les-jobs.json      idem, format liste
+│   │   ├── REGISTRE-QPU.md        the full report
+│   │   ├── registre-jobs.json     86 dated IDs + provenance
+│   │   └── tous-les-jobs.json      same, list format
 │   └── tests/
-│       └── RAPPORT-TESTS-RATISS.md  51/51 tests, repro bit à bit
+│       └── RAPPORT-TESTS-RATISS.md  51/51 tests, bit-for-bit repro
 │
-├── outils/                        7 scripts Python, testés, sans dépendance lourde
-│   ├── decode_job_id.py           décode un job ID IBM → horodatage
-│   ├── verifier_corpus.py         reconstruit le registre depuis un clone
-│   ├── recuperer_jobs_ibm.py      rapatrie les tâches depuis le compte IBM
-│   ├── comparer_export_ibm.py     compare un export IBM aux comptages archivés
-│   ├── archiver_nouvelles_taches.py  archive + journalise après chaque campagne
-│   ├── verifier_manifeste.py      vérifie les empreintes (texte ou --json)
-│   └── notifier_discord.py        poste un message dans un salon Discord
+├── outils/                        7 Python scripts, tested, no heavy dependency
+│   ├── decode_job_id.py           decodes an IBM job ID → timestamp
+│   ├── verifier_corpus.py         rebuilds the register from a clone
+│   ├── recuperer_jobs_ibm.py      brings the jobs back from the IBM account
+│   ├── comparer_export_ibm.py     compares an IBM export with the archived counts
+│   ├── archiver_nouvelles_taches.py  archives + logs after each campaign
+│   ├── verifier_manifeste.py      verifies the fingerprints (text or --json)
+│   └── notifier_discord.py        posts a message in a Discord channel
 │
 ├── .github/workflows/
-│   └── notifier-discord.yml       à chaque push + chaque lundi 08:00 UTC → Discord
+│   └── notifier-discord.yml       on every push + every Monday 08:00 UTC → Discord
 │
-├── documents/                     sources brutes
+├── documents/                     raw sources
 │   ├── MEMO-SESSION-RATISS.md
 │   └── RECAP-SEMAINE-10-17-SEPT-2026.md
 │
-└── discord/                       tout le contenu Discord
-    ├── 01-bienvenue.md            (déjà posté par le chef — ne pas toucher)
-    ├── 02-regle-du-labo.md        (idem)
-    ├── 03-annonces-officielles.md (idem)
-    ├── CI-INSTALLATION.md         le mode d'emploi webhook + CI (10 min)
-    ├── CI-modele-tests-depots.yml modèle à copier dans GCR / QVM / NAVIER…
-    └── salons/                    LES 24 SALONS + LE MANIFESTE
-        ├── INDEX.md               l'index de copie
+└── discord/                       all the Discord content
+    ├── 01-bienvenue.md            (already posted by the boss — do not touch)
+    ├── 02-regle-du-labo.md        (same)
+    ├── 03-annonces-officielles.md (same)
+    ├── CI-INSTALLATION.md         the webhook + CI how-to (10 min)
+    ├── CI-modele-tests-depots.yml template to copy into GCR / QVM / NAVIER…
+    └── salons/                    THE 24 CHANNELS + THE MANIFESTO
+        ├── INDEX.md               the copy index
         ├── 01-vie-du-labo.md      accueil-discussion · questions-ouvertes · découvertes
         ├── 02-simulations.md      gcr · navier · fusion · nucleaire · synchrotron · tissu · dose12
         ├── 03-quantique.md        qvm-calibration · qpu-live · omni-bus · fpga-controle
         ├── 04-mct-ia.md           mct-comprehension · agents-ia · ratiss-os
         ├── 05-atelier.md          cours-c · travail-chez-le-maitre · resultats · pannes
         ├── 06-ressources.md       liens-github · documents · brouillons
-        └── 07-mon-histoire.md     ⭐ LE MANIFESTE (le texte personnel du chef)
+        └── 07-mon-histoire.md     ⭐ THE MANIFESTO (the boss's personal text)
 ```
 
 ---
 
-## 🔐 Les résultats clés, en une page
+## 🔐 The key results, on one page
 
-### Découverte : les job IDs IBM encodent leur date de création
+### Discovery: IBM job IDs encode their creation date
 
 ```
-créé_le = base32(id[:9]) / 8192      secondes depuis le 1970-01-01 UTC
+créé_le = base32(id[:9]) / 8192      seconds since 1970-01-01 UTC
 ```
-Étalonnée sur **66 tâches horodatées par IBM** : écart médian **278 ms**, maximum **799 ms**.
-Vérifiable sans clé, sans compte, par n'importe qui, en une commande. (R7 ✅)
+Calibrated on **66 jobs timestamped by IBM**: median deviation **278 ms**, maximum **799 ms**.
+Verifiable without a key, without an account, by anyone, in one command. (R7 ✅)
 
-### Ce qui est établi
+### What is established
 
-| Contrôle | Résultat |
+| Check | Result |
 |---|---|
-| Tests des 6 dépôts physiques | **51/51** ✅ |
-| `RATISS-NAVIER` blowup | reproduit **bit à bit** (`Om_max = 5654.1668`, écart 0.0000) |
-| Sceau Omni redteam | `79ff9ee9847330d22bed0a1101734e17` recalculé à l'identique |
-| `ratiss-focal` exp58/60/61/62/63 | JSON **identiques octet à octet** |
-| `ratiss-audit-public` | **4/4** hashes conformes |
-| Identifiants IBM archivés | **86** · période **12/08 → 23/09/2026** |
-| Charges brutes horodatées | **66** · noms ↔ identifiants : 66/66 cohérents |
-| Ordre chronologique des IDs | **84/84 paires correctes**, 0 inversion |
-| Calibrations qubit (ro, T1, T2) | **24 qubits**, `T2 ≤ 2·T1` respecté 24/24 |
-| Captures IBM ↔ identifiants ↔ archives | **17/17 concordances** (2 comptes) |
-| Comptabilité du quota Open Plan | recoupe l'inventaire à **0,3 s/tâche près** |
+| Tests of the 6 physics repos | **51/51** ✅ |
+| `RATISS-NAVIER` blowup | reproduced **bit for bit** (`Om_max = 5654.1668`, deviation 0.0000) |
+| Omni redteam seal | `79ff9ee9847330d22bed0a1101734e17` recomputed identically |
+| `ratiss-focal` exp58/60/61/62/63 | JSON **identical byte for byte** |
+| `ratiss-audit-public` | **4/4** hashes compliant |
+| IBM IDs archived | **86** · period **12/08 → 23/09/2026** |
+| Timestamped raw workloads | **66** · names ↔ IDs: 66/66 consistent |
+| Chronological order of the IDs | **84/84 pairs correct**, 0 inversion |
+| Qubit calibrations (ro, T1, T2) | **24 qubits**, `T2 ≤ 2·T1` respected 24/24 |
+| IBM screenshots ↔ IDs ↔ archives | **17/17 matches** (2 accounts) |
+| Open Plan quota accounting | cross-checks the inventory to within **0.3 s/job** |
 
-### Ce qui n'est PAS établi (à ne jamais présenter comme acquis)
+### What is NOT established (never to be presented as settled)
 
-- Que les **comptages publiés** proviennent des tâches exactes → réglé par `comparer_export_ibm.py`.
-- Le lien **résultat ↔ tâche** côté IBM (authentification requise).
-- Le caractère « physique » du blow-up Navier-Stokes.
-- Toute affiliation institutionnelle. **Pas de ZK-STARK** : hashes SHA-256.
+- That the **published counts** come from the exact jobs → settled by `comparer_export_ibm.py`.
+- The **result ↔ job** link on the IBM side (authentication required).
+- The “physical” nature of the Navier-Stokes blow-up.
+- Any institutional affiliation. **No ZK-STARK**: SHA-256 hashes.
 
 ---
 
-## 🧾 Contexte IBM (à jour au 26/09/2026)
+## 🧾 IBM context (up to date as of 26/09/2026)
 
 | | |
 |---|---|
-| Compte n°1 | `bridejackson137@gmail.com` — **travaux actuels** (22 → 23/09) — ⚠️ **suspendu**, carte à valider |
-| Compte n°2 | `evinajonathan13@gmail.com` — compte « passerelle » (26/08 → 01/09) — ✅ accessible |
-| Plan | **Open Plan** (gratuit), mention `open-instance` sur chaque tâche |
-| Quota | 10 min de QPU par fenêtre glissante de 28 jours |
-| Backends utilisés | `ibm_kingston`, `ibm_fez`, `ibm_marrakesh` — 156 qubits, Heron r2 |
-| Cible suivante | `ibm_phoenix` (Nighthawk r2), annoncé sur la plateforme |
+| Account #1 | `bridejackson137@gmail.com` — **current work** (22 → 23/09) — ⚠️ **suspended**, card to validate |
+| Account #2 | `evinajonathan13@gmail.com` — “gateway” account (26/08 → 01/09) — ✅ accessible |
+| Plan | **Open Plan** (free), `open-instance` mention on every job |
+| Quota | 10 min of QPU per rolling 28-day window |
+| Backends used | `ibm_kingston`, `ibm_fez`, `ibm_marrakesh` — 156 qubits, Heron r2 |
+| Next target | `ibm_phoenix` (Nighthawk r2), announced on the platform |
 
-**Rappel IBM, texte exact :** *« Aucun prélèvement ne sera effectué automatiquement et vous pourrez
-continuer à exécuter gratuitement vos charges de travail avec le forfait Open Plan. »*
-→ La carte **débloque l'accès**, elle ne facture rien.
+**IBM reminder, exact text:** *“No charge will be made automatically and you will be able to
+continue running your workloads for free with the Open Plan.”*
+→ The card **unlocks access**, it charges nothing.
 
 ---
 
-## ⚡ Reprendre le travail en 3 commandes
+## ⚡ Resume work in 3 commands
 
 ```bash
-# 1. archiver les nouvelles tâches (après chaque campagne — compte n°2 en attendant)
+# 1. archive the new jobs (after each campaign — account #2 in the meantime)
 export IBM_QUANTUM_TOKEN=...
 python3 outils/archiver_nouvelles_taches.py --depots ~/RATISS-QVM --jours 120
 
-# 2. vérifier le corpus
+# 2. verify the corpus
 python3 outils/verifier_corpus.py ~/
 
-# 3. comparer un export IBM aux comptages publiés (ferme R7)
+# 3. compare an IBM export with the published counts (closes R7)
 python3 outils/comparer_export_ibm.py --export job-<id>.zip \
     --archive <depot>/jobs_ibm/<id>.json
 ```
 
 ---
 
-## 🛰️ LA MACHINE DISCORD — section mémoire pour la prochaine session IA
+## 🛰️ THE DISCORD MACHINE — memory section for the next AI session
 
-> **Lis ce bloc en entier avant de toucher à quoi que ce soit du côté Discord.**
-> Tout ce qui suit a été construit **le 26 septembre 2026 au soir**, testé, et **tourne réellement**.
-> Si tu es une IA qui reprend le travail : ne reconstruis rien de ce qui est décrit ici, vérifie-le et continue.
-
----
-
-### ✅ CE QUI TOURNE DÉJÀ (preuves datées)
-
-| Quoi | Preuve | Où |
-|---|---|---|
-| L'agent poste un message dans Discord | journal du run : `[rapport] OK — 55/55 empreintes conformes` puis `✅ message envoyé (HTTP 204)` | run **#1** de `agent.yml`, 26/09 15:21 UTC |
-| Le second workflow aussi | `✅ envoyé (HTTP 204)` | run **#2** de `notifier.yml`, 15:22 UTC |
-| Les 2 dépôts sont publics et à jour | 56 fichiers · 4,8 Mo · poussé 15:20 UTC | `jonathansearch/RATISS-ARCHIVES` |
-| Le hub est en ligne | 8 fichiers · poussé 15:22 UTC | `jonathansearch/DISCORD-RATISS` |
-| Le secret est bien un webhook Discord | journal : `Discord webhook is configured (URL hidden)` + `RATISS: ***` | masqué automatiquement par GitHub |
-| Aucun token nulle part | `git log -p --all` → **0 occurrence** ; pas de `~/.git-credentials` | vérifié |
-
-**Deux dépôts, deux rôles — ne pas les confondre :**
-
-| Dépôt | Rôle | Ce qu'il contient |
-|---|---|---|
-| **`RATISS-ARCHIVES`** | **la mémoire** : preuves, captures, registre, textes Discord | 56 fichiers, scellés par `MANIFESTE.json` |
-| **`DISCORD-RATISS`** | **la tuyauterie** : le robot qui parle à Discord | `agent.py`, 2 workflows, outils |
+> **Read this whole block before touching anything on the Discord side.**
+> Everything below was built **on the evening of 26 September 2026**, tested, and **actually running**.
+> If you are an AI taking over the work: rebuild nothing of what is described here, verify it and continue.
 
 ---
 
-### 🤖 `DISCORD-RATISS` — le robot
+### ✅ WHAT IS ALREADY RUNNING (dated proofs)
+
+| What | Proof | Where |
+|---|---|---|
+| The agent posts a message in Discord | run log: `[rapport] OK — 55/55 empreintes conformes` then `✅ message envoyé (HTTP 204)` | run **#1** of `agent.yml`, 26/09 15:21 UTC |
+| The second workflow too | `✅ envoyé (HTTP 204)` | run **#2** of `notifier.yml`, 15:22 UTC |
+| The 2 repos are public and up to date | 56 files · 4.8 MB · pushed 15:20 UTC | `jonathansearch/RATISS-ARCHIVES` |
+| The hub is online | 8 files · pushed 15:22 UTC | `jonathansearch/DISCORD-RATISS` |
+| The secret is indeed a Discord webhook | log: `Discord webhook is configured (URL hidden)` + `RATISS: ***` | automatically masked by GitHub |
+| No token anywhere | `git log -p --all` → **0 occurrences**; no `~/.git-credentials` | verified |
+
+**Two repos, two roles — do not confuse them:**
+
+| Repo | Role | What it contains |
+|---|---|---|
+| **`RATISS-ARCHIVES`** | **the memory**: proofs, screenshots, register, Discord texts | 56 files, sealed by `MANIFESTE.json` |
+| **`DISCORD-RATISS`** | **the plumbing**: the bot that talks to Discord | `agent.py`, 2 workflows, tools |
+
+---
+
+### 🤖 `DISCORD-RATISS` — the bot
 
 ```
 DISCORD-RATISS/
-├── agent.py                              ← LE point d'entrée (activé par agent.yml)
-├── .github/workflows/agent.yml           ← bouton manuel, écrit par un autre agent : NE PAS ÉCRASER
-├── .github/workflows/notifier.yml        ← manuel + appelable + quotidien 08:00 UTC
-├── outils/notifier_discord.py            ← poste un embed ✅/❌/🔵
-├── outils/verifier_manifeste.py          ← vérifie les empreintes SHA-256
+├── agent.py                              ← THE entry point (activated by agent.yml)
+├── .github/workflows/agent.yml           ← manual button, written by another agent: DO NOT OVERWRITE
+├── .github/workflows/notifier.yml        ← manual + callable + daily 08:00 UTC
+├── outils/notifier_discord.py            ← posts an embed ✅/❌/🔵
+├── outils/verifier_manifeste.py          ← verifies the SHA-256 fingerprints
 ├── README.md
-└── POUR-L-AUTRE-AGENT.md                 ← le brief d'intégration (contrat + code)
+└── POUR-L-AUTRE-AGENT.md                 ← the onboarding brief (contract + code)
 ```
 
-**`agent.py` — trois usages, aucun argument obligatoire :**
+**`agent.py` — three usages, no mandatory argument:**
 
 ```bash
-python3 agent.py                  # RAPPORT : clone RATISS-ARCHIVES, vérifie les empreintes, poste le verdict
-python3 agent.py --test           # message de connexion
+python3 agent.py                  # REPORT: clones RATISS-ARCHIVES, verifies the fingerprints, posts the verdict
+python3 agent.py --test           # connection message
 python3 agent.py --statut OK --titre "…" --details "…" --lien "…"
-python3 agent.py … --dry-run      # n'envoie rien, affiche le JSON (marche SANS secret)
+python3 agent.py … --dry-run      # sends nothing, displays the JSON (works WITHOUT a secret)
 ```
 
-- **Python 3, bibliothèque standard seule** → zéro installation, zéro dépendance
-- lit le webhook sous **deux noms, dans cet ordre** : `DISCORD_WEBHOOK_URL` puis `RATISS`
-- vérifie que la valeur commence par `https://discord.com/api/webhooks/` → sinon message d'erreur clair
-- **ne peut pas** mentionner `@everyone` (`allowed_mentions: {parse: []}` est verrouillé)
-- code de sortie : `0` = envoyé · `1` = problème (secret, réseau, envoi)
+- **Python 3, standard library only** → zero install, zero dependency
+- reads the webhook under **two names, in this order**: `DISCORD_WEBHOOK_URL` then `RATISS`
+- checks that the value starts with `https://discord.com/api/webhooks/` → otherwise a clear error message
+- **cannot** mention `@everyone` (`allowed_mentions: {parse: []}` is locked)
+- exit code: `0` = sent · `1` = problem (secret, network, sending)
 
 ---
 
-### 🔐 LES SECRETS — les règles à ne jamais casser
+### 🔐 THE SECRETS — the rules to never break
 
-| Nom du secret | Où | Contenu |
+| Secret name | Where | Content |
 |---|---|---|
-| `RATISS` | `DISCORD-RATISS` ✅ **déjà en place** | l'URL complète du webhook Discord |
-| `RATISS` | `RATISS-ARCHIVES` ⏳ à ajouter si on veut la CI à chaque push | la même URL |
-| `DISCORD_WEBHOOK` | à créer dans les dépôts de **code** (GCR, QVM…) | la même URL |
+| `RATISS` | `DISCORD-RATISS` ✅ **already in place** | the full Discord webhook URL |
+| `RATISS` | `RATISS-ARCHIVES` ⏳ to add if we want CI on every push | the same URL |
+| `DISCORD_WEBHOOK` | to create in the **code** repos (GCR, QVM…) | the same URL |
 
-**Les quatre vérités sur les secrets GitHub — à retenir :**
+**The four truths about GitHub secrets — to remember:**
 
-1. **Un secret ne se relit jamais.** Ni par toi, ni par l'IA, ni après l'enregistrement. C'est chiffré, point.
-   → Le seul moyen de savoir ce qu'il contient : **le faire utiliser par un workflow** et lire sa réaction.
-2. **GitHub masque la valeur dans les journaux** (`RATISS: ***`). C'est normal et sain.
-3. **`RATISS` doit contenir un webhook Discord, pas un token GitHub.** L'erreur classique.
-   Si ça arrive, `agent.py` répond : `✘ n'est pas une URL de webhook Discord` + début de valeur masqué.
-4. **Un webhook = un seul salon.** Discord lie le webhook au salon où il a été créé.
-   Pour poster ailleurs → créer un **second** webhook et un **second** secret.
+1. **A secret can never be read back.** Not by you, not by the AI, not after saving. It is encrypted, period.
+   → The only way to know what it contains: **have a workflow use it** and read its reaction.
+2. **GitHub masks the value in the logs** (`RATISS: ***`). That is normal and healthy.
+3. **`RATISS` must contain a Discord webhook, not a GitHub token.** The classic mistake.
+   If it happens, `agent.py` answers: `✘ n'est pas une URL de webhook Discord` + masked start of the value.
+4. **One webhook = one channel.** Discord binds the webhook to the channel where it was created.
+   To post elsewhere → create a **second** webhook and a **second** secret.
 
-> ⚠️ **Loi n°5 du serveur :** aucun token, aucune clé API, aucun webhook **dans le chat public**.
-> Un webhook qui fuit = n'importe qui peut écrire dans le salon. S'il fuite → le supprimer et en créer un autre.
+> ⚠️ **Server law #5:** no token, no API key, no webhook **in the public chat**.
+> A leaked webhook = anyone can write in the channel. If it leaks → delete it and create another one.
 
 ---
 
-### 🎮 COMMENT ON L'UTILISE
+### 🎮 HOW WE USE IT
 
-**Pour poster un message (le cas courant) :**
+**To post a message (the common case):**
 
-> GitHub → `DISCORD-RATISS` → onglet **Actions** → *Run agent with Discord webhook* → **Run workflow**
+> GitHub → `DISCORD-RATISS` → **Actions** tab → *Run agent with Discord webhook* → **Run workflow**
 
-**Ce qui se déclenche tout seul, sans personne :**
+**What triggers by itself, with nobody:**
 
-| Événement | Ce qui part dans Discord |
+| Event | What goes to Discord |
 |---|---|
-| **Chaque jour à 08:00 UTC** | vérification des empreintes de `RATISS-ARCHIVES` → ✅ ou ❌ avec la liste des fichiers divergents |
-| Push sur `RATISS-ARCHIVES` *(si le secret y est aussi)* | même vérification, immédiatement |
-| Un dépôt de code qui pousse *(après avoir copié `CI-modele-tests-depots.yml`)* | la ligne `pytest` : combien de tests passent ou échouent |
+| **Every day at 08:00 UTC** | fingerprint verification of `RATISS-ARCHIVES` → ✅ or ❌ with the list of divergent files |
+| Push to `RATISS-ARCHIVES` *(if the secret is there too)* | same verification, immediately |
+| A code repo pushing *(after copying `CI-modele-tests-depots.yml`)* | the `pytest` line: how many tests pass or fail |
 
-**Brancher un dépôt de code (GCR, QVM, NAVIER…) en 3 étapes :**
+**Wiring up a code repo (GCR, QVM, NAVIER…) in 3 steps:**
 
-1. copier `discord/CI-modele-tests-depots.yml` → `<dépôt>/.github/workflows/tests-discord.yml`
-2. y ajouter le secret `DISCORD_WEBHOOK` (même URL)
-3. renseigner `COMPAGNONS` s'il y a des imports croisés :
+1. copy `discord/CI-modele-tests-depots.yml` → `<repo>/.github/workflows/tests-discord.yml`
+2. add the `DISCORD_WEBHOOK` secret to it (same URL)
+3. fill in `COMPAGNONS` if there are cross imports:
 
-| Dépôt | `COMPAGNONS` |
+| Repo | `COMPAGNONS` |
 |---|---|
-| `GCR`, `RATISS-QVM`, `RATISS-NAVIER` | *(vide — autonomes)* |
+| `GCR`, `RATISS-QVM`, `RATISS-NAVIER` | *(empty — self-contained)* |
 | `RATISS-NUCLEAIRE` | `"RATISS-NAVIER RATISS-FUSION"` |
 | `RATISS-Omni` | `"RATISS-NAVIER RATISS-QVM"` |
 
-> 🎯 **Le détail qui débloque tout :** les dépôts utilisent des chemins absolus `/home/user/<dépôt>`.
-> Le modèle **recrée `/home/user` dans le runner GitHub** et clone dedans → les tests tournent **tels quels**,
-> sans modifier une seule ligne de code.
+> 🎯 **The detail that unlocks everything:** the repos use absolute paths `/home/user/<repo>`.
+> The template **recreates `/home/user` in the GitHub runner** and clones into it → the tests run **as-is**,
+> without changing a single line of code.
 
 ---
 
-### 📣 LE CONTENU DISCORD — 24 textes de salons + le manifeste (le hub DISCORD-RATISS en branche 22)
+### 📣 THE DISCORD CONTENT — 24 channel texts + the manifesto (the DISCORD-RATISS hub on branch 22)
 
-Tout est dans **`discord/salons/`**, prêt à copier-coller. Index de copie : `discord/salons/INDEX.md`.
+Everything is in **`discord/salons/`**, ready to copy-paste. Copy index: `discord/salons/INDEX.md`.
 
-| Fichier | Salons |
+| File | Channels |
 |---|---|
 | `01-vie-du-labo.md` | accueil-discussion · questions-ouvertes · découvertes |
 | `02-simulations.md` | gcr-topologie · navier-turbulence · fusion-propulsion · nucleaire · synchrotron-24 · tissu-continuums-focal · dose12 |
@@ -276,92 +276,92 @@ Tout est dans **`discord/salons/`**, prêt à copier-coller. Index de copie : `d
 | `04-mct-ia.md` | mct-comprehension · agents-ia · ratiss-os |
 | `05-atelier.md` | cours-c-electronique · travail-chez-le-maitre · resultats-mesures · carnet-de-pannes |
 | `06-ressources.md` | liens-github · documents-references · brouillons-publications |
-| `07-mon-histoire.md` | ⭐ **le manifeste personnel** (1951 caractères, tient en UN message Discord) |
+| `07-mon-histoire.md` | ⭐ **the personal manifesto** (1951 characters, fits in ONE Discord message) |
 
-**Les 3 salons du chef déjà remplis — ON N'Y TOUCHE PAS :** `#bienvenue`, `#règle-du-labo`, `#annonces-officielles`.
+**The boss's 3 channels already filled in — WE DO NOT TOUCH THEM:** `#bienvenue`, `#règle-du-labo`, `#annonces-officielles`.
 
-**Chaque post respecte les 3 lois du labo** et porte une **étiquette de terrain obligatoire** :
-🛰️ **mesuré sur QPU réel** (identifiant archivé) · 🧮 **calcul exact** · 🌫️ **calcul bruité calibré sur backend réel**.
-Aucun des trois ne se fait passer pour un autre. *(Correction importante du 26/09 : la v1 étiquetait « simulation »
-des choses qui étaient des mesures sur de vrais qubits supraconducteurs — 770 points au total.)*
+**Every post respects the 3 lab laws** and carries a **mandatory field tag**:
+🛰️ **measured on real QPU** (archived ID) · 🧮 **exact computation** · 🌫️ **noisy computation calibrated on a real backend**.
+None of the three may pass itself off as another. *(Important correction of 26/09: v1 tagged as “simulation”
+things that were measurements on real superconducting qubits — 770 data points in total.)*
 
 ---
 
-### 🕳️ LES PIÈGES DÉJÀ RENCONTRÉS — ne pas retomber dedans
+### 🕳️ PITFALLS ALREADY ENCOUNTERED — do not fall back into them
 
-| Piège | Ce qui s'est passé | La leçon |
+| Pitfall | What happened | The lesson |
 |---|---|---|
-| **`/tmp` se vide** | le premier token GitHub a disparu avec `/tmp` | ne jamais compter sur `/tmp` entre deux sessions ; remettre le matériel dans le workspace |
-| **branche `master` vs `main`** | `git push` refusé : `src refspec main does not match any` | toujours faire `git branch -M main` avant de pousser |
-| **scope `workflow` manquant** | GitHub refuse tout fichier dans `.github/workflows/` | le token doit avoir **`repo` + `workflow`** |
-| **une poussée qui efface `agent.yml`** | repéré en simulant le push : le fichier de l'autre agent aurait disparu | `pousser-tout.sh` compare l'en ligne au local et **ANNULE** si un fichier disparaît |
-| **nom de variable incohérent** | le workflow exposait `WEBHOOK`, l'outil lisait `DISCORD_WEBHOOK` → run en échec | **le nom posé dans `env:` doit être exactement celui que lit le script** |
-| **secret illisible** | impossible de « vérifier » un secret GitHub, même en étant propriétaire | le faire réagir dans un workflow, et lire son message |
-| **agent en double** | deux agents écrivaient dans le même dépôt | un seul point d'entrée, un seul propriétaire par fichier — et un garde-fou anti-effacement |
-| **le chat refuse les `.zip`** | impossible d'envoyer une archive | passer par le dépôt (ou des JSON/CSV) |
+| **`/tmp` gets wiped** | the first GitHub token disappeared with `/tmp` | never rely on `/tmp` between two sessions; put the material back into the workspace |
+| **`master` vs `main` branch** | `git push` refused: `src refspec main does not match any` | always run `git branch -M main` before pushing |
+| **missing `workflow` scope** | GitHub refuses any file in `.github/workflows/` | the token must have **`repo` + `workflow`** |
+| **a push that wipes `agent.yml`** | spotted by simulating the push: the other agent's file would have disappeared | `pousser-tout.sh` compares live vs local and **CANCELS** if a file disappears |
+| **inconsistent variable name** | the workflow exposed `WEBHOOK`, the tool read `DISCORD_WEBHOOK` → failing run | **the name set in `env:` must be exactly the one the script reads** |
+| **unreadable secret** | impossible to “verify” a GitHub secret, even as owner | make it react in a workflow, and read its message |
+| **duplicate agent** | two agents were writing to the same repo | one single entry point, one single owner per file — and an anti-deletion guard |
+| **the chat refuses `.zip` files** | impossible to send an archive | go through the repo (or JSON/CSV files) |
 
 ---
 
-### 🧾 CE QU'IL RESTE À FAIRE (état exact au 26/09/2026, soir)
+### 🧾 WHAT REMAINS TO BE DONE (exact state as of 26/09/2026, evening)
 
-1. **Ajouter le secret `RATISS` dans `RATISS-ARCHIVES`** → active la vérification **à chaque push** des archives.
-   *(Settings → Secrets and variables → Actions → New repository secret — même URL de webhook.)*
-2. **Copier les textes des 24 salons** dans Discord (`discord/salons/INDEX.md` fait la liste).
-3. **Poster `#mon-histoire`** — le manifeste est prêt, 1951 caractères, un seul message.
-4. **Brancher GCR puis RATISS-QVM** sur la CI (3 étapes ci-dessus).
-5. **Renvoyer un token GitHub frais** quand une nouvelle poussée est nécessaire : il se révoque tous les ~3 jours,
-   c'est le calendrier du chef. *Ne pas redemander de token entre deux: il n'y en a pas.*
-6. **Le bot Discord** (commandes `/status`, `/tests`, `/repos`) : **pas maintenant**. Il faut un hébergeur
-   qui tourne 24/7. Le webhook couvre 90 % du besoin pour 0 € et 0 maintenance.
-
----
-
-### 🗣️ COMMENT PARLER AU CHEF (rappel de session)
-
-- **Tutoiement franc, enthousiaste, avec emojis** 🔥. Il appelle son agent « mon bras droit ».
-- **Réponses courtes et denses.** « Évite-moi le bavardage inutile. »
-- **Ne jamais lancer une action qu'il n'a pas demandée.** S'il dit « stop », on s'arrête net.
-- **Il décide de tout** : ce qu'on publie, quand, et sous quel nom. Ne pas proposer de la reconnaissance
-  académique, des citations, des partenariats : il fait ça **pour le plaisir**, et il peut tout refaire.
-- **Il fournit les tokens** et les révoque à son rythme. Ne pas le sermonner là-dessus.
+1. **Add the `RATISS` secret to `RATISS-ARCHIVES`** → enables verification **on every push** of the archives.
+   *(Settings → Secrets and variables → Actions → New repository secret — same webhook URL.)*
+2. **Copy the 24 channel texts** into Discord (`discord/salons/INDEX.md` lists them).
+3. **Post `#mon-histoire`** — the manifesto is ready, 1951 characters, a single message.
+4. **Wire up GCR then RATISS-QVM** to the CI (3 steps above).
+5. **Send a fresh GitHub token** when a new push is needed: it gets revoked every ~3 days,
+   that is the boss's schedule. *Do not ask for a token in between: there isn't one.*
+6. **The Discord bot** (`/status`, `/tests`, `/repos` commands): **not now**. It needs a host
+   running 24/7. The webhook covers 90% of the need for €0 and 0 maintenance.
 
 ---
 
-## 📌 La règle
+### 🗣️ HOW TO TALK TO THE BOSS (session reminder)
 
-> **Une tâche non archivée le jour même est une tâche qui n'a jamais existé.**
-
-C'est la règle R5 appliquée au matériel. Ce qui n'est pas copié ne peut plus être prouvé.
-**Et depuis le 26/09, elle s'applique aussi à Discord : ce qui est dans le salon a été poussé par le robot, avec un run daté.**
-
----
-
-*RATISS Labs — Yaoundé, Cameroun · jonathan.ratisslabs@zohomail.com*
-*Licence : MIT (voir `LICENSE`)*
+- **Direct, enthusiastic informal address, with emojis** 🔥. He calls his agent “my right-hand man”.
+- **Short, dense answers.** “Spare me the useless chit-chat.”
+- **Never launch an action he did not ask for.** If he says “stop”, we stop dead.
+- **He decides everything**: what we publish, when, and under what name. Do not offer academic
+  recognition, citations, partnerships: he does this **for the fun of it**, and he can redo it all.
+- **He provides the tokens** and revokes them at his own pace. Do not lecture him about that.
 
 ---
 
-## 🆕 MISE À JOUR DU 27/09/2026 — RATISS-PHOTON, ETALONS, HUB 22 SALONS
+## 📌 The rule
 
-| Dépôt / événement | Ce qu'il faut retenir |
+> **A job not archived the same day is a job that never existed.**
+
+That is rule R5 applied to material. What is not copied can no longer be proven.
+**And since 26/09, it also applies to Discord: what is in the channel was pushed by the bot, with a dated run.**
+
+---
+
+*RATISS Labs — Yaoundé, Cameroon · jonathan.ratisslabs@zohomail.com*
+*License: MIT (see `LICENSE`)*
+
+---
+
+## 🆕 UPDATE OF 27/09/2026 — RATISS-PHOTON, ETALONS, 22-CHANNEL HUB
+
+| Repo / event | What to remember |
 |---|---|
-| [`RATISS-ETALONS`](https://github.com/jonathansearch/RATISS-ETALONS) | 4 étalons, critères figés avant exécution · **11/16 → 14/16** · 2 rouges assumés (E01-P2 hypothèse invalide, E04-P4 ψ₆ = 0,827/0,935) · sceau 23/23 · README + bannière au format labo |
-| [`RATISS-PHOTON`](https://github.com/jonathansearch/RATISS-PHOTON) | Reproduction de **Wen et al., Sci. Adv. 12, eaeh1011 (2026)** dans le monde simulé : **8 396 800 chemins** à module égal, fidélité **95,9–96,8 %** (fenêtre Canton 95–98,5 %) · **le hasard ÉMERGE du bain thermique** (T = 0 K → déterminisme) · contre-flux mesurés, redistribution falsifiée (linéarité) · 6 bugs documentés · [vue 3D interactive](https://jonathansearch.github.io/RATISS-PHOTON/visualisation.html) (Plotly embarqué, Pages actives) |
-| **HUB Discord multi-salons** | `DISCORD-RATISS` : `hub-central.yml` (commits `34ca814`, `fd6fef5`) route RATISS→RATISS23, mode `all` · **22 envois HTTP 204** au test global (run 36357382700) · RATISS11 à remplir · annonces PHOTON + ETALONS publiées le 27/09 à 22:05 UTC |
-| **Audit externe** | Examen d'analyse financière (ESSEC) : résolution Qwen vérifiée — fonctionnel juste, **bilan financier absent (6 pts)**, litige mal lu, IS oublié · corrigé complet testé 20/20 (actif réel = passif réel = 1 121 500 · FR 10 000 · BFR −34 000) |
+| [`RATISS-ETALONS`](https://github.com/jonathansearch/RATISS-ETALONS) | 4 standards, criteria frozen before execution · **11/16 → 14/16** · 2 owned reds (E01-P2 invalid hypothesis, E04-P4 ψ₆ = 0.827/0.935) · seal 23/23 · README + banner in lab format |
+| [`RATISS-PHOTON`](https://github.com/jonathansearch/RATISS-PHOTON) | Reproduction of **Wen et al., Sci. Adv. 12, eaeh1011 (2026)** in the simulated world: **8,396,800 paths** with equal modulus, fidelity **95.9–96.8%** (Canton window 95–98.5%) · **chance EMERGES from the thermal bath** (T = 0 K → determinism) · counter-flows measured, redistribution falsified (linearity) · 6 documented bugs · [interactive 3D view](https://jonathansearch.github.io/RATISS-PHOTON/visualisation.html) (embedded Plotly, Pages active) |
+| **Multi-channel Discord HUB** | `DISCORD-RATISS`: `hub-central.yml` (commits `34ca814`, `fd6fef5`) routes RATISS→RATISS23, mode `all` · **22 HTTP 204 sends** on the global test (run 36357382700) · RATISS11 to be filled in · PHOTON + ETALONS announcements published on 27/09 at 22:05 UTC |
+| **External audit** | Financial analysis exam (ESSEC): Qwen solution verified — functionally correct, **financial balance sheet missing (6 pts)**, dispute misread, corporate tax forgotten · complete corrected version tested 20/20 (real assets = real liabilities = 1,121,500 · working capital 10,000 · WCR −34,000) |
 
-Le détail complet (chiffres, bugs, leçons héritées, actions à faire) :
-[`documents/RECAP-26-27-SEPT-2026.md`](documents/RECAP-26-27-SEPT-2026.md) et la section
-**« 🛰️🧮 MISE À JOUR DU 27/09 »** de [`POUR-LA-PROCHAINE-SESSION.md`](POUR-LA-PROCHAINE-SESSION.md).
+The full detail (numbers, bugs, inherited lessons, actions to do):
+[`documents/RECAP-26-27-SEPT-2026.md`](documents/RECAP-26-27-SEPT-2026.md) and the
+**“🛰️🧮 UPDATE OF 27/09”** section of [`POUR-LA-PROCHAINE-SESSION.md`](POUR-LA-PROCHAINE-SESSION.md).
 
-**28/09** : publication de [`RATISS-DEEPDIVE`](https://github.com/jonathansearch/RATISS-DEEPDIVE) —
-la série des 14 deep dives PDF (75 pages) couvrant tous les dépôts du 20 au 28 septembre 2026.
+**28/09**: publication of [`RATISS-DEEPDIVE`](https://github.com/jonathansearch/RATISS-DEEPDIVE) —
+the series of 14 PDF deep dives (75 pages) covering all the repos from 20 to 28 September 2026.
 
 ---
 
-## 🆕 MISE À JOUR DU 02/10/2026 — Commissaire NAVIER + règle R8
+## 🆕 UPDATE OF 02/10/2026 — NAVIER commissioner + rule R8
 
-Quatre campagnes 🧮 publiées dans `RATISS-NAVIER/campagnes/` (commissaire-1, etreintes-v2, commissaire-3d, dipoles-v3).
-Verdict tenu : **blowup = pompe + compteur**. Les 🅱 3D sont **non tranchés** (instruments invalidés après coup).
-Nouvelle règle de labo **R8 : on ne mesure que ce qui déborde du script** (`RATISS-Framework`, module `ratiss.residual`).
-V3 (dipôles) : brief scellé, témoins en **STOP en suspens**. Détail : `documents/RECAP-01-02-OCT-2026-NAVIER-COMMISSAIRE.md`.
+Four 🧮 campaigns published in `RATISS-NAVIER/campagnes/` (commissaire-1, etreintes-v2, commissaire-3d, dipoles-v3).
+Verdict held: **blowup = pump + counter**. The 🅱 3D ones are **unresolved** (instruments invalidated after the fact).
+New lab rule **R8: only measure what overflows the script** (`RATISS-Framework`, module `ratiss.residual`).
+V3 (dipoles): sealed brief, witnesses on **suspended STOP**. Detail: `documents/RECAP-01-02-OCT-2026-NAVIER-COMMISSAIRE.md`.
