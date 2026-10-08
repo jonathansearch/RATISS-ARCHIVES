@@ -365,3 +365,16 @@ Four 🧮 campaigns published in `RATISS-NAVIER/campagnes/` (commissaire-1, etre
 Verdict held: **blowup = pump + counter**. The 🅱 3D ones are **unresolved** (instruments invalidated after the fact).
 New lab rule **R8: only measure what overflows the script** (`RATISS-Framework`, module `ratiss.residual`).
 V3 (dipoles): sealed brief, witnesses on **suspended STOP**. Detail: `documents/RECAP-01-02-OCT-2026-NAVIER-COMMISSAIRE.md`.
+
+---
+
+## 🆕 UPDATE OF 08/10/2026 — RATISS-ONE dialogues (lessons 38-40) + bases-donnees
+
+New repo [`bases-donnees`](https://github.com/jonathansearch/bases-donnees): 16-source
+catalog (fiches + ≤3 MB samples + scripts), one full dataset at a time.
+**3 datasets drunk** by the manual school: accueil-ubs (41 dialogues, +101/+2 166),
+ding-01 (10 dialogues, +536/+12 102), french_CEFR (6 000 sentences, +5 571/+38 332).
+Brain: 25 171/159 288 → **31 374/211 888**, 36 motifs, battery **129/129** 🟢.
+Dialogue converter v3 (3 formats, resolved elisions, 180 hand-listed noises),
+each dataset replayed ×3 (+0, 100 %, identical signature = empty reservoir).
+Handover to GLM written (lesson 41+). Detail: `documents/RECAP-08-OCT-2026-RATISS-ONE-DIALOGUES.md`.
