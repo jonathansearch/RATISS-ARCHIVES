@@ -453,3 +453,35 @@ Lire `documents/RECAP-02-03-OCT-2026-RATISS-LABS-AGENT.md`. En bref :
    rapport, qui a été rejeté et remplacé (wafer InP).
 4. Modifier `.github/workflows/veille.yml` **ne déclenche pas** le workflow (les `paths`
    couvrent veille.py, build.py, contenu_vivant.py seulement).
+
+
+## 🚀 MISE À JOUR — 17–18 OCTOBRE 2026 : DÉBLOCAGE COMPLET RATISS-GI & RATISS-ONE, FORK REA ET FONDATION DE RATISS X
+
+### 1. Dépôts Actifs et Liens
+- **`RATISS-ONE`** : `https://github.com/jonathansearch/RATISS-ONE` (branche main, commit `7203caf`, 27/27 tests OK)
+- **`Ratiss-GI`** : `https://github.com/jonathansearch/Ratiss-GI` (branche main commit `651363f`, branche v4 commit `1143765` avec 57 tests OK)
+- **`rea`** : `https://github.com/jonathansearch/rea` (fork officiel de l'outil d'ingénierie inverse binaire / APK / Flutter)
+- **`RATISS-ARCHIVES`** : `https://github.com/jonathansearch/RATISS-ARCHIVES` (branche main, registre scellé)
+
+### 2. Ce qui a été accompli et mesuré
+1. **Déblocage Intégral Silicium des 7 Corrections :**
+   - Résolution de l'attracteur parasite Open-Hermes sur la marche markovienne.
+   - Validation bit-à-bit sur les 8 prompts fondamentaux avec réponse Sanctuaire en 0,1 à 0,3 ms.
+   - Intégration dans `ratiss_v3.py`, `entrainer_gpu.py`, notebooks et documentation.
+   - 27/27 tests unitaires au vert, commit `7203caf` (RATISS-ONE) et `651363f` (Ratiss-GI).
+2. **Victoire Expérimentale Marche v4 (Ratiss-GI) :**
+   - Évaluation rigoureuse sur 11 000 positions : passage de 13,74 % (ancienne roulette) à **16,09 % top-1 (moteur faisceau v4)**, soit +2,35 pts à ~6σ.
+   - Restauration de la poésie et de la syntaxe naturelle (*« le soleil brille »* -> *« intensément les oiseaux chantent… »*).
+   - Optimisation CPU majeure : argmax en une passe remplaçant l'union de dicts, 57/57 tests OK. Commit `1143765` sur v4.
+3. **Ingénierie Inverse Souveraine (Fork REA) :**
+   - Outil forké sur `jonathansearch/rea`. Décompilation de binaires, APKs Android (JADX headless) et snapshots AOT Flutter.
+
+### 3. La Nouvelle Ère Fondatrice : RATISS X (L'IA Cérébrale 20W)
+Jonathan Evina a formulé la rupture architecturale majeure de RATISS Labs :
+1. **Le Modèle Cérébral 20 Watts vs Force Brute :** Remplacer le calcul dense aveugle par la sparsité biologique (seuls 1 à 2 % des neurones s'activent en même temps).
+2. **Étude Topologique des Graphes Matriciels (Colab GPU) :** Cartographier les zones d'activation d'un modèle cobaye 100M sur des millions de requêtes pour extraire les « cheminées stationnaires de réponse ».
+3. **Têtes d'Attention Hybrides (RATISS-Attention) :** Routage d'onde instantané en microsecondes sur CPU via le tissu RATISS. La tête d'attention ne calcule que la sous-tranche ciblée de poids virtuels (90 % des calculs matriciels éliminés).
+4. **Rétropropagation par Raccourci d'Attention :** Redescente directe de l'erreur via la cheminée active sans stocker les états intermédiaires denses en VRAM (gain de mémoire x10, zéro crash CUDA OOM).
+5. **Autonomie Totale sur PC 4 Go de RAM :** Inférence complète à moins de 300 Mo de RAM, 100 % hors-ligne à Yaoundé.
+
+*Voir `documents/RECAP-17-18-OCT-2026-DEBLOCAGE-GI-ET-NAISSANCE-RATISS-X.md` pour le rapport complet.*
